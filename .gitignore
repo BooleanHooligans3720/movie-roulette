@@ -1,3 +1,7 @@
+# API key file - do not put on repo!
+tmdbKEY
+tmdbKEY.*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
