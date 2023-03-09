@@ -14,5 +14,27 @@ response = search.movie(query=title)
 
 # print the results
 for result in search.results:
-    print(result['title'].ljust(60, ' '), "Movie ID:", result['id'])
+	print(result['title'].ljust(60, ' '), "Movie ID:", result['id'])
     
+another = 'y'
+
+idList = []
+
+# get list of movie ids
+while (another == 'y' or another == 'Y'):
+	print("Please enter a movie ID to add to the list:")
+	movieID = input()
+ 
+	idList.append(movieID)
+	
+	print("Do you want to add another movie to the list?\nPlease enter y or n:")
+	another = input()
+ 
+	while (another != 'y' and another != 'Y' and another != 'n' and another != 'N'):
+		print("Please enter y or n:")
+		another = input()
+
+# print list of movies selected
+for i in idList:
+	title = tmdb.Movies(i).info()['title']
+	print(title)
