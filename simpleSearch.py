@@ -22,7 +22,7 @@ idList = []
 
 # get list of movie ids
 while (another == 'y' or another == 'Y'):
-	print("Please enter a movie ID to add to the list:")
+	print("\nPlease enter a movie ID to add to the list:")
 	movieID = input()
  
 	idList.append(movieID)
@@ -35,6 +35,7 @@ while (another == 'y' or another == 'Y'):
 		another = input()
 
 # print list of movies selected
+print("\nMovies in list:")
 for i in idList:
 	title = tmdb.Movies(i).info()['title']
 	print(title)
