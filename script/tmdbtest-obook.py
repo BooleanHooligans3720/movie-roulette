@@ -27,7 +27,9 @@ def main():
     print(response.keys())
 
     list_id = 143762 #random ass number i don't know how to find public lists
-    listtest = req.get{'https://https://api.themoviedb.org/4/list/{list_id}', params={'page': '1', 'api_key': tmdbKEY}}
+    listtest = req.get(f'https://https://api.themoviedb.org/4/list/{list_id}', params={'page': '1', 'api_key': tmdbKEY})
+    print(listtest.status_code)
+    print(listtest.text)
 
 
 if __name__ == '__main__':
