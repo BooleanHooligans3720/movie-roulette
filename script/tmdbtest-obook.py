@@ -11,7 +11,8 @@ def main():
         exit()
 
     with open("script\\tmdbKEY", mode='rt') as keyFile:
-        tmdb.API_KEY = keyFile.read()
+        tmdbKEY = keyFile.read()
+        tmdb.API_KEY = tmdbKEY
 
     searchTitle = sys.argv[1]
 
@@ -24,6 +25,11 @@ def main():
         print(json.dumps(t, indent=4))
 
     print(response.keys())
+
+    list_id = 143762 #random ass number i don't know how to find public lists
+    listtest = req.get(f'https://https://api.themoviedb.org/4/list/{list_id}', params={'page': '1', 'api_key': tmdbKEY})
+    print(listtest.status_code)
+    print(listtest.text)
 
 
 if __name__ == '__main__':
