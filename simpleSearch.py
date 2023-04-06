@@ -14,7 +14,10 @@ response = search.movie(query=title)
 
 # print the results
 for result in search.results:
-	print(result['title'].ljust(60, ' '), "Movie ID:", result['id'])
+	if (len(result['title']) > 48):
+		print((result['title'][0:45] + "...").ljust(50, ' '), "Movie ID:", result['id'])
+	else:
+		print(result['title'].ljust(50, ' '), "Movie ID:", result['id'])
     
 another = 'y'
 
@@ -38,4 +41,7 @@ while (another == 'y' or another == 'Y'):
 print("\nMovies in list:")
 for i in idList:
 	title = tmdb.Movies(i).info()['title']
-	print(title)
+	if (len(title) > 48):
+		print(title[0:45] + "...")
+	else:
+		print(title)
