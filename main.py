@@ -65,7 +65,7 @@ class MainWindow(QMainWindow):
 
         # BUTTONS CLICK
         # ///////////////////////////////////////////////////////////////
-
+        widgets.btn_spin.clicked.connect(self.buttonClick)
         # LEFT MENUS
         widgets.btn_home.clicked.connect(self.buttonClick)
         widgets.btn_widgets.clicked.connect(self.buttonClick)
@@ -136,6 +136,7 @@ class MainWindow(QMainWindow):
             print("Save BTN clicked!")
             
         if btnName == "btn_spin":
+            
             print("Spin button clicked")
 
         # PRINT BTN NAME

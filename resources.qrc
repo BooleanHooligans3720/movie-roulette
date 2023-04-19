@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/images">
-        <file>images/images/PyDracula.png</file>
         <file>images/images/PyDracula_vertical.png</file>
         <file>images/images/SpinWheel.gif</file>
         <file>images/images/transparent.png</file>
