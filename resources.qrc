@@ -4,6 +4,7 @@
         <file>images/images/PyDracula_vertical.png</file>
         <file>images/images/SpinWheel.gif</file>
         <file>images/images/transparent.png</file>
+        <file>images/images/SpinWheel.png</file>
     </qresource>
     <qresource prefix="/icons">
         <file>images/icons/cil-3d.png</file>
