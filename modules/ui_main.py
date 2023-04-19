@@ -1492,20 +1492,28 @@ class Ui_MainWindow(object):
         self.creditsLabel = QLabel(self.bottomBar)
         self.creditsLabel.setObjectName(u"creditsLabel")
         self.creditsLabel.setMaximumSize(QSize(16777215, 16))
+
         font5 = QFont()
         font5.setFamily(u"Segoe UI")
         font5.setBold(False)
         font5.setItalic(False)
         self.creditsLabel.setFont(font5)
-        self.creditsLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.creditsLabel.setAlignment(Qt.AlignLeft|Qt.AlignLeading|Qt.AlignVCenter)
+        
 
         self.horizontalLayout_5.addWidget(self.creditsLabel)
 
-        self.version = QLabel(self.bottomBar)
-        self.version.setObjectName(u"version")
-        self.version.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.creditsImageLabel = QLabel(self.bottomBar)
+        self.creditImage = QImage(":/icons/images/icons/tmdb_icon.png")
+        self.creditImagePixMap = QPixmap(self.creditImage)
+        self.creditImageSize = QSize(137, 18)
+        self.creditImagePixMap.scaled(self.creditImageSize, Qt.KeepAspectRatio)
+        self.creditsImageLabel.setPixmap(self.creditImagePixMap)
+        self.creditsImageLabel.setScaledContents(False)
+        self.creditsImageLabel.setObjectName(u"creditsImageLabel")
+        self.creditsImageLabel.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
 
-        self.horizontalLayout_5.addWidget(self.version)
+        self.horizontalLayout_5.addWidget(self.creditsImageLabel)
 
         self.frame_size_grip = QFrame(self.bottomBar)
         self.frame_size_grip.setObjectName(u"frame_size_grip")
@@ -1658,7 +1666,7 @@ class Ui_MainWindow(object):
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
         self.btn_print.setText(QCoreApplication.translate("MainWindow", u"Print", None))
         self.btn_logout.setText(QCoreApplication.translate("MainWindow", u"Logout", None))
-        self.creditsLabel.setText(QCoreApplication.translate("MainWindow", u"By: Wanderson M. Pimenta", None))
-        self.version.setText(QCoreApplication.translate("MainWindow", u"v1.0.3", None))
+        self.creditsLabel.setText(QCoreApplication.translate("MainWindow", u"This product uses the TMDB API but is not endorsed or certified by TMDB.", None))
+        
     # retranslateUi
 

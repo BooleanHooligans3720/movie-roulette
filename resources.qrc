@@ -262,5 +262,6 @@
         <file>images/icons/icon_minimize.png</file>
         <file>images/icons/icon_restore.png</file>
         <file>images/icons/icon_settings.png</file>
+        <file>images/icons/tmdb_icon.png</file>
     </qresource>
 </RCC>
