@@ -1,4 +1,6 @@
 import tmdbsimple as tmdb
+import movie 
+import randomPicker
 
 # set up API key
 tmdb.API_KEY = '3acd4a216c74c749376f9d840b43977c'
@@ -37,11 +39,12 @@ while (another == 'y' or another == 'Y'):
 		print("Please enter y or n:")
 		another = input()
 
-# print list of movies selected
-print("\nMovies in list:")
-for i in idList:
-	title = tmdb.Movies(i).info()['title']
-	if (len(title) > 48):
-		print(title[0:45] + "...")
-	else:
-		print(title)
+#list that holds the movies as objects 
+listOBJ = []
+#converts the list of IDs into a list of movie objects
+for x in idList:
+  holder = movie.movie(x)
+  listOBJ.append(holder)
+
+#outputs the chosen movie
+print (randomPicker.randomPicker(listOBJ))
