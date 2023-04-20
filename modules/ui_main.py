@@ -1045,11 +1045,9 @@ class Ui_MainWindow(object):
         self.home.setObjectName(u"home")
         self.home.setLayoutDirection(Qt.LeftToRight)
         self.home.setAutoFillBackground(False)
-        self.home.setStyleSheet(u"background-image: url(:/images/images/images/SpinWheel.gif);\n"
-"background-position: center;\n"
-"background-repeat: no-repeat;")
-        self.gridLayout_3 = QGridLayout(self.home)
-        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.home.setStyleSheet(u"")
+        self.verticalLayout_21 = QVBoxLayout(self.home)
+        self.verticalLayout_21.setObjectName(u"verticalLayout_21")
         self.btn_spin = QPushButton(self.home)
         self.btn_spin.setObjectName(u"btn_spin")
         self.btn_spin.setEnabled(True)
@@ -1068,14 +1066,46 @@ class Ui_MainWindow(object):
         self.btn_spin.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
 "border-color: rgba(0, 0, 0, 0);\n"
 "font: 700 36pt \"Segoe UI\";\n"
-"background-image: url(:/images/images/images/Transparent.png);\n"
+"background-image: url(:/images/images/images/SpinWheel.gif);\n"
 "background-position: center;\n"
 "background-repeat: no-repeat;\n"
+"\n"
 "")
 
-        self.gridLayout_3.addWidget(self.btn_spin, 0, 0, 1, 1)
+        self.verticalLayout_21.addWidget(self.btn_spin)
+
+        self.comboBox_2 = QComboBox(self.home)
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.setObjectName(u"comboBox_2")
+        sizePolicy4 = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        sizePolicy4.setHorizontalStretch(0)
+        sizePolicy4.setVerticalStretch(0)
+        sizePolicy4.setHeightForWidth(self.comboBox_2.sizePolicy().hasHeightForWidth())
+        self.comboBox_2.setSizePolicy(sizePolicy4)
+        self.comboBox_2.setMinimumSize(QSize(450, 0))
+        self.comboBox_2.setFont(font)
+        self.comboBox_2.setAutoFillBackground(False)
+        self.comboBox_2.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+        self.comboBox_2.setEditable(True)
+        self.comboBox_2.setIconSize(QSize(16, 16))
+        self.comboBox_2.setFrame(True)
+
+        self.verticalLayout_21.addWidget(self.comboBox_2, 0, Qt.AlignHCenter)
 
         self.stackedWidget.addWidget(self.home)
+        self.LoadingScreen = QWidget()
+        self.LoadingScreen.setObjectName(u"LoadingScreen")
+        self.LoadingScreen.setEnabled(True)
+        self.gridLayout_4 = QGridLayout(self.LoadingScreen)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.LoadingLabel = QLabel(self.LoadingScreen)
+        self.LoadingLabel.setObjectName(u"LoadingLabel")
+
+        self.gridLayout_4.addWidget(self.LoadingLabel, 0, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
+
+        self.stackedWidget.addWidget(self.LoadingScreen)
         self.widgets = QWidget()
         self.widgets.setObjectName(u"widgets")
         self.widgets.setStyleSheet(u"b")
@@ -1350,11 +1380,11 @@ class Ui_MainWindow(object):
         __qtablewidgetitem23 = QTableWidgetItem()
         self.tableWidget.setItem(0, 3, __qtablewidgetitem23)
         self.tableWidget.setObjectName(u"tableWidget")
-        sizePolicy4 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
-        sizePolicy4.setHorizontalStretch(0)
-        sizePolicy4.setVerticalStretch(0)
-        sizePolicy4.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
-        self.tableWidget.setSizePolicy(sizePolicy4)
+        sizePolicy5 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy5.setHorizontalStretch(0)
+        sizePolicy5.setVerticalStretch(0)
+        sizePolicy5.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
+        self.tableWidget.setSizePolicy(sizePolicy5)
         palette = QPalette()
         brush = QBrush(QColor(221, 221, 221, 255))
         brush.setStyle(Qt.SolidPattern)
@@ -1432,7 +1462,7 @@ class Ui_MainWindow(object):
 
         self.stackedWidget.addWidget(self.new_page)
 
-        self.verticalLayout_15.addWidget(self.stackedWidget)
+        self.verticalLayout_15.addWidget(self.stackedWidget, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
 
         self.horizontalLayout_4.addWidget(self.pagesContainer)
@@ -1623,6 +1653,12 @@ class Ui_MainWindow(object):
 #endif // QT_CONFIG(tooltip)
         self.closeAppBtn.setText("")
         self.btn_spin.setText(QCoreApplication.translate("MainWindow", u"Spin The Wheel", None))
+        self.comboBox_2.setItemText(0, QCoreApplication.translate("MainWindow", u"Test 1", None))
+        self.comboBox_2.setItemText(1, QCoreApplication.translate("MainWindow", u"Test 2", None))
+        self.comboBox_2.setItemText(2, QCoreApplication.translate("MainWindow", u"Test 3", None))
+
+        self.comboBox_2.setCurrentText(QCoreApplication.translate("MainWindow", u"WatchLists", None))
+        self.LoadingLabel.setText("")
         self.labelBoxBlenderInstalation.setText(QCoreApplication.translate("MainWindow", u"FILE BOX", None))
         self.lineEdit.setText("")
         self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Type here", None))
