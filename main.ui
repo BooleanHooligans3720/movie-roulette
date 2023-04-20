@@ -1856,7 +1856,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                    <property name="bottomMargin">
                     <number>10</number>
                    </property>
-                   <item>
+                   <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                     <widget class="QStackedWidget" name="stackedWidget">
                      <property name="autoFillBackground">
                       <bool>false</bool>
@@ -1865,7 +1865,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>0</number>
+                      <number>1</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="layoutDirection">
@@ -1875,12 +1875,10 @@ li.checked::marker { content: &quot;\2612&quot;; }
                        <bool>false</bool>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">background-image: url(:/images/images/images/SpinWheel.gif);
-background-position: center;
-background-repeat: no-repeat;</string>
+                       <string notr="true"/>
                       </property>
-                      <layout class="QGridLayout" name="gridLayout_3">
-                       <item row="0" column="0">
+                      <layout class="QVBoxLayout" name="verticalLayout_21">
+                       <item>
                         <widget class="QPushButton" name="btn_spin">
                          <property name="enabled">
                           <bool>true</bool>
@@ -1906,13 +1904,91 @@ background-repeat: no-repeat;</string>
                           <string notr="true">background-color: rgba(0, 0, 0, 0);
 border-color: rgba(0, 0, 0, 0);
 font: 700 36pt &quot;Segoe UI&quot;;
-background-image: url(:/images/images/images/Transparent.png);
+background-image: url(:/images/images/images/SpinWheel.gif);
 background-position: center;
 background-repeat: no-repeat;
+
 </string>
                          </property>
                          <property name="text">
                           <string>Spin The Wheel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item alignment="Qt::AlignHCenter">
+                        <widget class="QComboBox" name="WatchListComboBox">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>450</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>10</pointsize>
+                           <italic>false</italic>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="autoFillBackground">
+                          <bool>false</bool>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(33, 37, 43);</string>
+                         </property>
+                         <property name="editable">
+                          <bool>true</bool>
+                         </property>
+                         <property name="currentText">
+                          <string>Test 1</string>
+                         </property>
+                         <property name="iconSize">
+                          <size>
+                           <width>16</width>
+                           <height>16</height>
+                          </size>
+                         </property>
+                         <property name="placeholderText">
+                          <string/>
+                         </property>
+                         <property name="frame">
+                          <bool>true</bool>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>Test 1</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>Test 2</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>Test 3</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="LoadingScreen">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_6">
+                       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                        <widget class="QLabel" name="LoadingLabel">
+                         <property name="text">
+                          <string/>
                          </property>
                         </widget>
                        </item>
