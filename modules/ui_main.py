@@ -1094,7 +1094,7 @@ class Ui_MainWindow(object):
         self.LoadingLabel.setMovie(self.LoadingMovie)
         self.LoadingLabel.setObjectName(u"LoadingLabel")
 
-        self.horizontalLayout_6.addWidget(self.LoadingLabel)
+        self.horizontalLayout_6.addWidget(self.LoadingLabel, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.stackedWidget.addWidget(self.LoadingScreen)
         self.widgets = QWidget()
@@ -1238,7 +1238,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 218, 218))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 353, 218))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"

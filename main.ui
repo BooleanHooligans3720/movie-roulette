@@ -1985,7 +1985,7 @@ background-repeat: no-repeat;
                        <bool>true</bool>
                       </property>
                       <layout class="QHBoxLayout" name="horizontalLayout_6">
-                       <item alignment="Qt::AlignHCenter">
+                       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                         <widget class="QLabel" name="LoadingLabel">
                          <property name="text">
                           <string/>
@@ -2289,7 +2289,7 @@ background-repeat: no-repeat;
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>218</width>
+                                 <width>353</width>
                                  <height>218</height>
                                 </rect>
                                </property>
