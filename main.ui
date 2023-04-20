@@ -1868,6 +1868,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
                       <number>0</number>
                      </property>
                      <widget class="QWidget" name="home">
+                      <property name="layoutDirection">
+                       <enum>Qt::LeftToRight</enum>
+                      </property>
                       <property name="autoFillBackground">
                        <bool>false</bool>
                       </property>
@@ -1876,40 +1879,44 @@ li.checked::marker { content: &quot;\2612&quot;; }
 background-position: center;
 background-repeat: no-repeat;</string>
                       </property>
-                      <widget class="QPushButton" name="btn_spin">
-                       <property name="enabled">
-                        <bool>true</bool>
-                       </property>
-                       <property name="geometry">
-                        <rect>
-                         <x>340</x>
-                         <y>70</y>
-                         <width>491</width>
-                         <height>461</height>
-                        </rect>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <family>Segoe UI</family>
-                         <pointsize>36</pointsize>
-                         <italic>false</italic>
-                         <bold>true</bold>
-                        </font>
-                       </property>
-                       <property name="autoFillBackground">
-                        <bool>false</bool>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgba(0, 0, 0, 0);
+                      <layout class="QGridLayout" name="gridLayout_3">
+                       <item row="0" column="0">
+                        <widget class="QPushButton" name="btn_spin">
+                         <property name="enabled">
+                          <bool>true</bool>
+                         </property>
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>36</pointsize>
+                           <italic>false</italic>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="autoFillBackground">
+                          <bool>false</bool>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(0, 0, 0, 0);
 border-color: rgba(0, 0, 0, 0);
 font: 700 36pt &quot;Segoe UI&quot;;
-background-image: url(:/images/images/images/transparent.png);
+background-image: url(:/images/images/images/Transparent.png);
+background-position: center;
+background-repeat: no-repeat;
 </string>
-                       </property>
-                       <property name="text">
-                        <string>Spin The Wheel</string>
-                       </property>
-                      </widget>
+                         </property>
+                         <property name="text">
+                          <string>Spin The Wheel</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
                      </widget>
                      <widget class="QWidget" name="widgets">
                       <property name="styleSheet">
@@ -2206,7 +2213,7 @@ background-image: url(:/images/images/images/transparent.png);
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>218</width>
+                                 <width>353</width>
                                  <height>218</height>
                                 </rect>
                                </property>
@@ -3007,20 +3014,29 @@ background-image: url(:/images/images/images/transparent.png);
                    </font>
                   </property>
                   <property name="text">
-                   <string>By: Wanderson M. Pimenta</string>
+                   <string>This product uses the TMDB API but is not endorsed or certified by TMDB.</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                   </property>
                  </widget>
                 </item>
-                <item>
-                 <widget class="QLabel" name="version">
-                  <property name="text">
-                   <string>v1.0.3</string>
+                <item alignment="Qt::AlignRight|Qt::AlignBottom">
+                 <widget class="QLabel" name="CreditLogoLabel">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
                   </property>
-                  <property name="alignment">
-                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="resources.qrc">:/icons/images/icons/tmdb_icon.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>false</bool>
                   </property>
                  </widget>
                 </item>
