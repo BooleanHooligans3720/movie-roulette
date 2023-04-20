@@ -71,6 +71,7 @@ class MainWindow(QMainWindow):
         widgets.btn_widgets.clicked.connect(self.buttonClick)
         widgets.btn_new.clicked.connect(self.buttonClick)
         widgets.btn_save.clicked.connect(self.buttonClick)
+        widgets.btn_SearchMovie.clicked.connect(self.buttonClick)
 
         # EXTRA LEFT BOX
         def openCloseLeftBox():
@@ -133,12 +134,20 @@ class MainWindow(QMainWindow):
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
 
         if btnName == "btn_save":
-            print("Save BTN clicked!")
+            widgets.stackedWidget.setCurrentWidget(widgets.SearchMoviePage)
+            UIFunctions.resetStyle(self, btnName)
+            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
             
         if btnName == "btn_spin":
             widgets.stackedWidget.setCurrentWidget(widgets.LoadingScreen)
             widgets.LoadingMovie.start()
+            UIFunctions.resetStyle(self, btnName)
+            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
             print("Spin button clicked")
+        if btnName == "btn_SearchMovie":
+            print("pressed search")
+            widgets.scrollArea_2.setVisible(True)
+            
 
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')
@@ -161,6 +170,8 @@ class MainWindow(QMainWindow):
             print('Mouse click: LEFT CLICK')
         if event.buttons() == Qt.RightButton:
             print('Mouse click: RIGHT CLICK')
+    
+    
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

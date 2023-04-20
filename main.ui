@@ -974,7 +974,7 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-save.png)</string>
+                   <string notr="true">background-image: url(:/icons/images/icons/cil-magnifying-glass.png)</string>
                   </property>
                   <property name="text">
                    <string>Save</string>
@@ -1856,7 +1856,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                    <property name="bottomMargin">
                     <number>10</number>
                    </property>
-                   <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <item>
                     <widget class="QStackedWidget" name="stackedWidget">
                      <property name="autoFillBackground">
                       <bool>false</bool>
@@ -1865,7 +1865,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>1</number>
+                      <number>4</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="layoutDirection">
@@ -1947,7 +1947,7 @@ background-repeat: no-repeat;
                           <bool>true</bool>
                          </property>
                          <property name="currentText">
-                          <string>Test 1</string>
+                          <string>Watch Lists</string>
                          </property>
                          <property name="iconSize">
                           <size>
@@ -2844,6 +2844,1273 @@ background-repeat: no-repeat;
                          <property name="alignment">
                           <set>Qt::AlignCenter</set>
                          </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="SearchMoviePage">
+                      <property name="minimumSize">
+                       <size>
+                        <width>1178</width>
+                        <height>603</height>
+                       </size>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_22">
+                       <item>
+                        <widget class="QWidget" name="widget" native="true">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>50</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>50</height>
+                          </size>
+                         </property>
+                         <layout class="QHBoxLayout" name="horizontalLayout_7">
+                          <item>
+                           <widget class="QLineEdit" name="searchBar">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>50</height>
+                             </size>
+                            </property>
+                           </widget>
+                          </item>
+                          <item alignment="Qt::AlignRight|Qt::AlignVCenter">
+                           <widget class="QPushButton" name="btn_SearchMovie">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>45</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">background-color: rgb(44, 49, 58);</string>
+                            </property>
+                            <property name="text">
+                             <string>Search Movie</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QScrollArea" name="scrollArea_2">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="widgetResizable">
+                          <bool>true</bool>
+                         </property>
+                         <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                          <property name="enabled">
+                           <bool>true</bool>
+                          </property>
+                          <property name="geometry">
+                           <rect>
+                            <x>0</x>
+                            <y>0</y>
+                            <width>1150</width>
+                            <height>2352</height>
+                           </rect>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_23">
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_7" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_17">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_7" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_7" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_30">
+                                 <item>
+                                  <widget class="QLabel" name="Title_7">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_7">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_7">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_15" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_25">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_15" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_15" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_38">
+                                 <item>
+                                  <widget class="QLabel" name="Title_15">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_15">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_15">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget" native="true">
+                             <property name="enabled">
+                              <bool>true</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_8">
+                              <item>
+                               <widget class="QWidget" name="posterWidget" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_24">
+                                 <item>
+                                  <widget class="QLabel" name="Title">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details">
+                                   <property name="enabled">
+                                    <bool>true</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_3" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_13">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_3" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_3" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_26">
+                                 <item>
+                                  <widget class="QLabel" name="Title_3">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_3">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_3">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_10" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_20">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_10" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_10" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_33">
+                                 <item>
+                                  <widget class="QLabel" name="Title_10">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_10">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_10">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_4" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_14">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_4" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_4" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_27">
+                                 <item>
+                                  <widget class="QLabel" name="Title_4">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_4">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_4">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_6" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_16">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_6" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_6" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_29">
+                                 <item>
+                                  <widget class="QLabel" name="Title_6">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_6">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_6">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_5" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_15">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_5" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_5" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_28">
+                                 <item>
+                                  <widget class="QLabel" name="Title_5">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_5">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_5">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_11" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_21">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_11" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_11" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_34">
+                                 <item>
+                                  <widget class="QLabel" name="Title_11">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_11">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_11">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_13" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_23">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_13" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_13" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_36">
+                                 <item>
+                                  <widget class="QLabel" name="Title_13">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_13">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_13">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_12" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_22">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_12" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_12" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_35">
+                                 <item>
+                                  <widget class="QLabel" name="Title_12">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_12">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_12">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_14" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_24">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_14" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_14" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_37">
+                                 <item>
+                                  <widget class="QLabel" name="Title_14">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_14">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_14">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_2" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_10">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_2" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_2" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_25">
+                                 <item>
+                                  <widget class="QLabel" name="Title_2">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_2">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_2">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_8" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_18">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_8" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_8" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_31">
+                                 <item>
+                                  <widget class="QLabel" name="Title_8">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_8">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_8">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="SearchMovieWidget_9" native="true">
+                             <property name="enabled">
+                              <bool>false</bool>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>150</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">background-color: rgb(44, 49, 58);</string>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_19">
+                              <item>
+                               <widget class="QWidget" name="posterWidget_9" native="true">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QWidget" name="TitleWidget_9" native="true">
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(44, 49, 58);</string>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_32">
+                                 <item>
+                                  <widget class="QLabel" name="Title_9">
+                                   <property name="styleSheet">
+                                    <string notr="true"/>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLabel" name="Details_9">
+                                   <property name="enabled">
+                                    <bool>false</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="addMovieButton_9">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>75</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">background-color: rgb(48, 53, 63);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Add Movie</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
                         </widget>
                        </item>
                       </layout>
