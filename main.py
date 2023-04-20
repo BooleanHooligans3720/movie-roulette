@@ -136,7 +136,8 @@ class MainWindow(QMainWindow):
             print("Save BTN clicked!")
             
         if btnName == "btn_spin":
-            
+            widgets.stackedWidget.setCurrentWidget(widgets.LoadingScreen)
+            widgets.LoadingMovie.start()
             print("Spin button clicked")
 
         # PRINT BTN NAME

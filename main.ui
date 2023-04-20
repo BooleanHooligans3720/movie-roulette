@@ -1865,7 +1865,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>0</number>
+                      <number>1</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="layoutDirection">
@@ -1916,7 +1916,7 @@ background-repeat: no-repeat;
                         </widget>
                        </item>
                        <item alignment="Qt::AlignHCenter">
-                        <widget class="QComboBox" name="comboBox_2">
+                        <widget class="QComboBox" name="WatchListComboBox">
                          <property name="sizePolicy">
                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                            <horstretch>0</horstretch>
@@ -1947,13 +1947,16 @@ background-repeat: no-repeat;
                           <bool>true</bool>
                          </property>
                          <property name="currentText">
-                          <string>WatchLists</string>
+                          <string>Test 1</string>
                          </property>
                          <property name="iconSize">
                           <size>
                            <width>16</width>
                            <height>16</height>
                           </size>
+                         </property>
+                         <property name="placeholderText">
+                          <string/>
                          </property>
                          <property name="frame">
                           <bool>true</bool>
@@ -1981,8 +1984,8 @@ background-repeat: no-repeat;
                       <property name="enabled">
                        <bool>true</bool>
                       </property>
-                      <layout class="QGridLayout" name="gridLayout_4">
-                       <item row="0" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <layout class="QHBoxLayout" name="horizontalLayout_6">
+                       <item alignment="Qt::AlignHCenter">
                         <widget class="QLabel" name="LoadingLabel">
                          <property name="text">
                           <string/>
@@ -2286,7 +2289,7 @@ background-repeat: no-repeat;
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>353</width>
+                                 <width>218</width>
                                  <height>218</height>
                                 </rect>
                                </property>

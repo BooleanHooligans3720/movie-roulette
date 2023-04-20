@@ -8,20 +8,9 @@
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
-    QMetaObject, QObject, QPoint, QRect,
-    QSize, QTime, QUrl, Qt)
-from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-    QFont, QFontDatabase, QGradient, QIcon,
-    QImage, QKeySequence, QLinearGradient, QPainter,
-    QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QAbstractItemView, QAbstractScrollArea, QApplication, QCheckBox,
-    QComboBox, QCommandLinkButton, QFrame, QGridLayout,
-    QHBoxLayout, QHeaderView, QLabel, QLineEdit,
-    QMainWindow, QPlainTextEdit, QPushButton, QRadioButton,
-    QScrollArea, QScrollBar, QSizePolicy, QSlider,
-    QStackedWidget, QTableWidget, QTableWidgetItem, QTextEdit,
-    QVBoxLayout, QWidget)
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
 from modules import resources_rc
 
 class Ui_MainWindow(object):
@@ -1074,36 +1063,38 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_21.addWidget(self.btn_spin)
 
-        self.comboBox_2 = QComboBox(self.home)
-        self.comboBox_2.addItem("")
-        self.comboBox_2.addItem("")
-        self.comboBox_2.addItem("")
-        self.comboBox_2.setObjectName(u"comboBox_2")
+        self.WatchListComboBox = QComboBox(self.home)
+        self.WatchListComboBox.addItem("")
+        self.WatchListComboBox.addItem("")
+        self.WatchListComboBox.addItem("")
+        self.WatchListComboBox.setObjectName(u"WatchListComboBox")
         sizePolicy4 = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
         sizePolicy4.setHorizontalStretch(0)
         sizePolicy4.setVerticalStretch(0)
-        sizePolicy4.setHeightForWidth(self.comboBox_2.sizePolicy().hasHeightForWidth())
-        self.comboBox_2.setSizePolicy(sizePolicy4)
-        self.comboBox_2.setMinimumSize(QSize(450, 0))
-        self.comboBox_2.setFont(font)
-        self.comboBox_2.setAutoFillBackground(False)
-        self.comboBox_2.setStyleSheet(u"background-color: rgb(33, 37, 43);")
-        self.comboBox_2.setEditable(True)
-        self.comboBox_2.setIconSize(QSize(16, 16))
-        self.comboBox_2.setFrame(True)
+        sizePolicy4.setHeightForWidth(self.WatchListComboBox.sizePolicy().hasHeightForWidth())
+        self.WatchListComboBox.setSizePolicy(sizePolicy4)
+        self.WatchListComboBox.setMinimumSize(QSize(450, 0))
+        self.WatchListComboBox.setFont(font)
+        self.WatchListComboBox.setAutoFillBackground(False)
+        self.WatchListComboBox.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+        self.WatchListComboBox.setEditable(True)
+        self.WatchListComboBox.setIconSize(QSize(16, 16))
+        self.WatchListComboBox.setFrame(True)
 
-        self.verticalLayout_21.addWidget(self.comboBox_2, 0, Qt.AlignHCenter)
+        self.verticalLayout_21.addWidget(self.WatchListComboBox, 0, Qt.AlignHCenter)
 
         self.stackedWidget.addWidget(self.home)
         self.LoadingScreen = QWidget()
         self.LoadingScreen.setObjectName(u"LoadingScreen")
         self.LoadingScreen.setEnabled(True)
-        self.gridLayout_4 = QGridLayout(self.LoadingScreen)
-        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.horizontalLayout_6 = QHBoxLayout(self.LoadingScreen)
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.LoadingLabel = QLabel(self.LoadingScreen)
+        self.LoadingMovie = QMovie(u":/images/images/images/SpinWheel.gif")
+        self.LoadingLabel.setMovie(self.LoadingMovie)
         self.LoadingLabel.setObjectName(u"LoadingLabel")
 
-        self.gridLayout_4.addWidget(self.LoadingLabel, 0, 0, 1, 1, Qt.AlignHCenter|Qt.AlignVCenter)
+        self.horizontalLayout_6.addWidget(self.LoadingLabel)
 
         self.stackedWidget.addWidget(self.LoadingScreen)
         self.widgets = QWidget()
@@ -1247,7 +1238,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 353, 218))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 218, 218))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"
@@ -1593,7 +1584,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1653,11 +1644,12 @@ class Ui_MainWindow(object):
 #endif // QT_CONFIG(tooltip)
         self.closeAppBtn.setText("")
         self.btn_spin.setText(QCoreApplication.translate("MainWindow", u"Spin The Wheel", None))
-        self.comboBox_2.setItemText(0, QCoreApplication.translate("MainWindow", u"Test 1", None))
-        self.comboBox_2.setItemText(1, QCoreApplication.translate("MainWindow", u"Test 2", None))
-        self.comboBox_2.setItemText(2, QCoreApplication.translate("MainWindow", u"Test 3", None))
+        self.WatchListComboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"Test 1", None))
+        self.WatchListComboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"Test 2", None))
+        self.WatchListComboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"Test 3", None))
 
-        self.comboBox_2.setCurrentText(QCoreApplication.translate("MainWindow", u"WatchLists", None))
+        self.WatchListComboBox.setCurrentText(QCoreApplication.translate("MainWindow", u"Test 1", None))
+        self.WatchListComboBox.setPlaceholderText("")
         self.LoadingLabel.setText("")
         self.labelBoxBlenderInstalation.setText(QCoreApplication.translate("MainWindow", u"FILE BOX", None))
         self.lineEdit.setText("")
