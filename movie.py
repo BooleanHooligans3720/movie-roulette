@@ -8,7 +8,7 @@ class movie:
 
     #one call to the API and stores the data
     self.info = tmdb.Movies(self.id).info()
-    #assigns data to the varibles
+    #assigns data to the variables
     self.title = self.info['title']
     self.genre = self.info['genres'][0]['name']
     self.runtime = int(self.info['runtime'])

@@ -2,6 +2,7 @@ import random
 import movie
 from typing import List
 
+# not used anymore 
 def randomPicker(movieList: List[movie.movie]):
 
 	#this is a placeholder

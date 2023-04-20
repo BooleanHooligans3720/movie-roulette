@@ -23,8 +23,8 @@ title = input()
 response = search.movie(query=title)
 
 # PLACEHOLDER 
-# show the results of the search
-for result in search.results:
+# show the first 15 results of the search using the slicing method [:#:]
+for result in search.results[:15:]:
 	if (len(result['title']) > 48):
 		print((result['title'][0:45] + "...").ljust(50, ' '), "Movie ID:", result['id'])
 	else:
