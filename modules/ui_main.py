@@ -1041,10 +1041,10 @@ class Ui_MainWindow(object):
         self.btn_spin.setObjectName(u"btn_spin")
         self.btn_spin.setEnabled(True)
         sizePolicy3 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy3.setRetainSizeWhenHidden(True)
         sizePolicy3.setHorizontalStretch(0)
         sizePolicy3.setVerticalStretch(0)
         sizePolicy3.setHeightForWidth(self.btn_spin.sizePolicy().hasHeightForWidth())
-        sizePolicy3.setRetainSizeWhenHidden(True)
         self.btn_spin.setSizePolicy(sizePolicy3)
         font4 = QFont()
         font4.setFamilies([u"Segoe UI"])
@@ -1490,94 +1490,6 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1150, 2352))
         self.verticalLayout_23 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_23.setObjectName(u"verticalLayout_23")
-        self.SearchMovieWidget_7 = QWidget(self.scrollAreaWidgetContents_2)
-        self.SearchMovieWidget_7.setObjectName(u"SearchMovieWidget_7")
-        self.SearchMovieWidget_7.setEnabled(False)
-        self.SearchMovieWidget_7.setMinimumSize(QSize(0, 150))
-        self.SearchMovieWidget_7.setMaximumSize(QSize(16777215, 150))
-        self.SearchMovieWidget_7.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.horizontalLayout_17 = QHBoxLayout(self.SearchMovieWidget_7)
-        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
-        self.posterWidget_7 = QWidget(self.SearchMovieWidget_7)
-        self.posterWidget_7.setObjectName(u"posterWidget_7")
-        self.posterWidget_7.setMaximumSize(QSize(95, 16777215))
-
-        self.horizontalLayout_17.addWidget(self.posterWidget_7)
-
-        self.TitleWidget_7 = QWidget(self.SearchMovieWidget_7)
-        self.TitleWidget_7.setObjectName(u"TitleWidget_7")
-        self.TitleWidget_7.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.verticalLayout_30 = QVBoxLayout(self.TitleWidget_7)
-        self.verticalLayout_30.setObjectName(u"verticalLayout_30")
-        self.Title_7 = QLabel(self.TitleWidget_7)
-        self.Title_7.setObjectName(u"Title_7")
-        self.Title_7.setStyleSheet(u"")
-
-        self.verticalLayout_30.addWidget(self.Title_7)
-
-        self.Details_7 = QLabel(self.TitleWidget_7)
-        self.Details_7.setObjectName(u"Details_7")
-        self.Details_7.setEnabled(False)
-
-        self.verticalLayout_30.addWidget(self.Details_7)
-
-
-        self.horizontalLayout_17.addWidget(self.TitleWidget_7)
-
-        self.addMovieButton_7 = QPushButton(self.SearchMovieWidget_7)
-        self.addMovieButton_7.setObjectName(u"addMovieButton_7")
-        self.addMovieButton_7.setMaximumSize(QSize(200, 75))
-        self.addMovieButton_7.setStyleSheet(u"background-color: rgb(48, 53, 63);")
-
-        self.horizontalLayout_17.addWidget(self.addMovieButton_7)
-
-
-        self.verticalLayout_23.addWidget(self.SearchMovieWidget_7)
-
-        self.SearchMovieWidget_15 = QWidget(self.scrollAreaWidgetContents_2)
-        self.SearchMovieWidget_15.setObjectName(u"SearchMovieWidget_15")
-        self.SearchMovieWidget_15.setEnabled(False)
-        self.SearchMovieWidget_15.setMinimumSize(QSize(0, 150))
-        self.SearchMovieWidget_15.setMaximumSize(QSize(16777215, 150))
-        self.SearchMovieWidget_15.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.horizontalLayout_25 = QHBoxLayout(self.SearchMovieWidget_15)
-        self.horizontalLayout_25.setObjectName(u"horizontalLayout_25")
-        self.posterWidget_15 = QWidget(self.SearchMovieWidget_15)
-        self.posterWidget_15.setObjectName(u"posterWidget_15")
-        self.posterWidget_15.setMaximumSize(QSize(95, 16777215))
-
-        self.horizontalLayout_25.addWidget(self.posterWidget_15)
-
-        self.TitleWidget_15 = QWidget(self.SearchMovieWidget_15)
-        self.TitleWidget_15.setObjectName(u"TitleWidget_15")
-        self.TitleWidget_15.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.verticalLayout_38 = QVBoxLayout(self.TitleWidget_15)
-        self.verticalLayout_38.setObjectName(u"verticalLayout_38")
-        self.Title_15 = QLabel(self.TitleWidget_15)
-        self.Title_15.setObjectName(u"Title_15")
-        self.Title_15.setStyleSheet(u"")
-
-        self.verticalLayout_38.addWidget(self.Title_15)
-
-        self.Details_15 = QLabel(self.TitleWidget_15)
-        self.Details_15.setObjectName(u"Details_15")
-        self.Details_15.setEnabled(False)
-
-        self.verticalLayout_38.addWidget(self.Details_15)
-
-
-        self.horizontalLayout_25.addWidget(self.TitleWidget_15)
-
-        self.addMovieButton_15 = QPushButton(self.SearchMovieWidget_15)
-        self.addMovieButton_15.setObjectName(u"addMovieButton_15")
-        self.addMovieButton_15.setMaximumSize(QSize(200, 75))
-        self.addMovieButton_15.setStyleSheet(u"background-color: rgb(48, 53, 63);")
-
-        self.horizontalLayout_25.addWidget(self.addMovieButton_15)
-
-
-        self.verticalLayout_23.addWidget(self.SearchMovieWidget_15)
-
         self.SearchMovieWidget = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget.setObjectName(u"SearchMovieWidget")
         self.SearchMovieWidget.setEnabled(True)
@@ -1621,6 +1533,50 @@ class Ui_MainWindow(object):
 
 
         self.verticalLayout_23.addWidget(self.SearchMovieWidget)
+
+        self.SearchMovieWidget_2 = QWidget(self.scrollAreaWidgetContents_2)
+        self.SearchMovieWidget_2.setObjectName(u"SearchMovieWidget_2")
+        self.SearchMovieWidget_2.setEnabled(False)
+        self.SearchMovieWidget_2.setMinimumSize(QSize(0, 150))
+        self.SearchMovieWidget_2.setMaximumSize(QSize(16777215, 150))
+        self.SearchMovieWidget_2.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.horizontalLayout_10 = QHBoxLayout(self.SearchMovieWidget_2)
+        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.posterWidget_2 = QWidget(self.SearchMovieWidget_2)
+        self.posterWidget_2.setObjectName(u"posterWidget_2")
+        self.posterWidget_2.setMaximumSize(QSize(95, 16777215))
+
+        self.horizontalLayout_10.addWidget(self.posterWidget_2)
+
+        self.TitleWidget_2 = QWidget(self.SearchMovieWidget_2)
+        self.TitleWidget_2.setObjectName(u"TitleWidget_2")
+        self.TitleWidget_2.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.verticalLayout_25 = QVBoxLayout(self.TitleWidget_2)
+        self.verticalLayout_25.setObjectName(u"verticalLayout_25")
+        self.Title_2 = QLabel(self.TitleWidget_2)
+        self.Title_2.setObjectName(u"Title_2")
+        self.Title_2.setStyleSheet(u"")
+
+        self.verticalLayout_25.addWidget(self.Title_2)
+
+        self.Details_2 = QLabel(self.TitleWidget_2)
+        self.Details_2.setObjectName(u"Details_2")
+        self.Details_2.setEnabled(False)
+
+        self.verticalLayout_25.addWidget(self.Details_2)
+
+
+        self.horizontalLayout_10.addWidget(self.TitleWidget_2)
+
+        self.addMovieButton_2 = QPushButton(self.SearchMovieWidget_2)
+        self.addMovieButton_2.setObjectName(u"addMovieButton_2")
+        self.addMovieButton_2.setMaximumSize(QSize(200, 75))
+        self.addMovieButton_2.setStyleSheet(u"background-color: rgb(48, 53, 63);")
+
+        self.horizontalLayout_10.addWidget(self.addMovieButton_2)
+
+
+        self.verticalLayout_23.addWidget(self.SearchMovieWidget_2)
 
         self.SearchMovieWidget_3 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_3.setObjectName(u"SearchMovieWidget_3")
@@ -1666,50 +1622,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_23.addWidget(self.SearchMovieWidget_3)
 
-        self.SearchMovieWidget_10 = QWidget(self.scrollAreaWidgetContents_2)
-        self.SearchMovieWidget_10.setObjectName(u"SearchMovieWidget_10")
-        self.SearchMovieWidget_10.setEnabled(False)
-        self.SearchMovieWidget_10.setMinimumSize(QSize(0, 150))
-        self.SearchMovieWidget_10.setMaximumSize(QSize(16777215, 150))
-        self.SearchMovieWidget_10.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.horizontalLayout_20 = QHBoxLayout(self.SearchMovieWidget_10)
-        self.horizontalLayout_20.setObjectName(u"horizontalLayout_20")
-        self.posterWidget_10 = QWidget(self.SearchMovieWidget_10)
-        self.posterWidget_10.setObjectName(u"posterWidget_10")
-        self.posterWidget_10.setMaximumSize(QSize(95, 16777215))
-
-        self.horizontalLayout_20.addWidget(self.posterWidget_10)
-
-        self.TitleWidget_10 = QWidget(self.SearchMovieWidget_10)
-        self.TitleWidget_10.setObjectName(u"TitleWidget_10")
-        self.TitleWidget_10.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.verticalLayout_33 = QVBoxLayout(self.TitleWidget_10)
-        self.verticalLayout_33.setObjectName(u"verticalLayout_33")
-        self.Title_10 = QLabel(self.TitleWidget_10)
-        self.Title_10.setObjectName(u"Title_10")
-        self.Title_10.setStyleSheet(u"")
-
-        self.verticalLayout_33.addWidget(self.Title_10)
-
-        self.Details_10 = QLabel(self.TitleWidget_10)
-        self.Details_10.setObjectName(u"Details_10")
-        self.Details_10.setEnabled(False)
-
-        self.verticalLayout_33.addWidget(self.Details_10)
-
-
-        self.horizontalLayout_20.addWidget(self.TitleWidget_10)
-
-        self.addMovieButton_10 = QPushButton(self.SearchMovieWidget_10)
-        self.addMovieButton_10.setObjectName(u"addMovieButton_10")
-        self.addMovieButton_10.setMaximumSize(QSize(200, 75))
-        self.addMovieButton_10.setStyleSheet(u"background-color: rgb(48, 53, 63);")
-
-        self.horizontalLayout_20.addWidget(self.addMovieButton_10)
-
-
-        self.verticalLayout_23.addWidget(self.SearchMovieWidget_10)
-
         self.SearchMovieWidget_4 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_4.setObjectName(u"SearchMovieWidget_4")
         self.SearchMovieWidget_4.setEnabled(False)
@@ -1753,50 +1665,6 @@ class Ui_MainWindow(object):
 
 
         self.verticalLayout_23.addWidget(self.SearchMovieWidget_4)
-
-        self.SearchMovieWidget_6 = QWidget(self.scrollAreaWidgetContents_2)
-        self.SearchMovieWidget_6.setObjectName(u"SearchMovieWidget_6")
-        self.SearchMovieWidget_6.setEnabled(False)
-        self.SearchMovieWidget_6.setMinimumSize(QSize(0, 150))
-        self.SearchMovieWidget_6.setMaximumSize(QSize(16777215, 150))
-        self.SearchMovieWidget_6.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.horizontalLayout_16 = QHBoxLayout(self.SearchMovieWidget_6)
-        self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
-        self.posterWidget_6 = QWidget(self.SearchMovieWidget_6)
-        self.posterWidget_6.setObjectName(u"posterWidget_6")
-        self.posterWidget_6.setMaximumSize(QSize(95, 16777215))
-
-        self.horizontalLayout_16.addWidget(self.posterWidget_6)
-
-        self.TitleWidget_6 = QWidget(self.SearchMovieWidget_6)
-        self.TitleWidget_6.setObjectName(u"TitleWidget_6")
-        self.TitleWidget_6.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.verticalLayout_29 = QVBoxLayout(self.TitleWidget_6)
-        self.verticalLayout_29.setObjectName(u"verticalLayout_29")
-        self.Title_6 = QLabel(self.TitleWidget_6)
-        self.Title_6.setObjectName(u"Title_6")
-        self.Title_6.setStyleSheet(u"")
-
-        self.verticalLayout_29.addWidget(self.Title_6)
-
-        self.Details_6 = QLabel(self.TitleWidget_6)
-        self.Details_6.setObjectName(u"Details_6")
-        self.Details_6.setEnabled(False)
-
-        self.verticalLayout_29.addWidget(self.Details_6)
-
-
-        self.horizontalLayout_16.addWidget(self.TitleWidget_6)
-
-        self.addMovieButton_6 = QPushButton(self.SearchMovieWidget_6)
-        self.addMovieButton_6.setObjectName(u"addMovieButton_6")
-        self.addMovieButton_6.setMaximumSize(QSize(200, 75))
-        self.addMovieButton_6.setStyleSheet(u"background-color: rgb(48, 53, 63);")
-
-        self.horizontalLayout_16.addWidget(self.addMovieButton_6)
-
-
-        self.verticalLayout_23.addWidget(self.SearchMovieWidget_6)
 
         self.SearchMovieWidget_5 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_5.setObjectName(u"SearchMovieWidget_5")
@@ -1842,225 +1710,93 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_23.addWidget(self.SearchMovieWidget_5)
 
-        self.SearchMovieWidget_11 = QWidget(self.scrollAreaWidgetContents_2)
-        self.SearchMovieWidget_11.setObjectName(u"SearchMovieWidget_11")
-        self.SearchMovieWidget_11.setEnabled(False)
-        self.SearchMovieWidget_11.setMinimumSize(QSize(0, 150))
-        self.SearchMovieWidget_11.setMaximumSize(QSize(16777215, 150))
-        self.SearchMovieWidget_11.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.horizontalLayout_21 = QHBoxLayout(self.SearchMovieWidget_11)
-        self.horizontalLayout_21.setObjectName(u"horizontalLayout_21")
-        self.posterWidget_11 = QWidget(self.SearchMovieWidget_11)
-        self.posterWidget_11.setObjectName(u"posterWidget_11")
-        self.posterWidget_11.setMaximumSize(QSize(95, 16777215))
+        self.SearchMovieWidget_6 = QWidget(self.scrollAreaWidgetContents_2)
+        self.SearchMovieWidget_6.setObjectName(u"SearchMovieWidget_6")
+        self.SearchMovieWidget_6.setEnabled(False)
+        self.SearchMovieWidget_6.setMinimumSize(QSize(0, 150))
+        self.SearchMovieWidget_6.setMaximumSize(QSize(16777215, 150))
+        self.SearchMovieWidget_6.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.horizontalLayout_16 = QHBoxLayout(self.SearchMovieWidget_6)
+        self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
+        self.posterWidget_6 = QWidget(self.SearchMovieWidget_6)
+        self.posterWidget_6.setObjectName(u"posterWidget_6")
+        self.posterWidget_6.setMaximumSize(QSize(95, 16777215))
 
-        self.horizontalLayout_21.addWidget(self.posterWidget_11)
+        self.horizontalLayout_16.addWidget(self.posterWidget_6)
 
-        self.TitleWidget_11 = QWidget(self.SearchMovieWidget_11)
-        self.TitleWidget_11.setObjectName(u"TitleWidget_11")
-        self.TitleWidget_11.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.verticalLayout_34 = QVBoxLayout(self.TitleWidget_11)
-        self.verticalLayout_34.setObjectName(u"verticalLayout_34")
-        self.Title_11 = QLabel(self.TitleWidget_11)
-        self.Title_11.setObjectName(u"Title_11")
-        self.Title_11.setStyleSheet(u"")
+        self.TitleWidget_6 = QWidget(self.SearchMovieWidget_6)
+        self.TitleWidget_6.setObjectName(u"TitleWidget_6")
+        self.TitleWidget_6.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.verticalLayout_29 = QVBoxLayout(self.TitleWidget_6)
+        self.verticalLayout_29.setObjectName(u"verticalLayout_29")
+        self.Title_6 = QLabel(self.TitleWidget_6)
+        self.Title_6.setObjectName(u"Title_6")
+        self.Title_6.setStyleSheet(u"")
 
-        self.verticalLayout_34.addWidget(self.Title_11)
+        self.verticalLayout_29.addWidget(self.Title_6)
 
-        self.Details_11 = QLabel(self.TitleWidget_11)
-        self.Details_11.setObjectName(u"Details_11")
-        self.Details_11.setEnabled(False)
+        self.Details_6 = QLabel(self.TitleWidget_6)
+        self.Details_6.setObjectName(u"Details_6")
+        self.Details_6.setEnabled(False)
 
-        self.verticalLayout_34.addWidget(self.Details_11)
-
-
-        self.horizontalLayout_21.addWidget(self.TitleWidget_11)
-
-        self.addMovieButton_11 = QPushButton(self.SearchMovieWidget_11)
-        self.addMovieButton_11.setObjectName(u"addMovieButton_11")
-        self.addMovieButton_11.setMaximumSize(QSize(200, 75))
-        self.addMovieButton_11.setStyleSheet(u"background-color: rgb(48, 53, 63);")
-
-        self.horizontalLayout_21.addWidget(self.addMovieButton_11)
+        self.verticalLayout_29.addWidget(self.Details_6)
 
 
-        self.verticalLayout_23.addWidget(self.SearchMovieWidget_11)
+        self.horizontalLayout_16.addWidget(self.TitleWidget_6)
 
-        self.SearchMovieWidget_13 = QWidget(self.scrollAreaWidgetContents_2)
-        self.SearchMovieWidget_13.setObjectName(u"SearchMovieWidget_13")
-        self.SearchMovieWidget_13.setEnabled(False)
-        self.SearchMovieWidget_13.setMinimumSize(QSize(0, 150))
-        self.SearchMovieWidget_13.setMaximumSize(QSize(16777215, 150))
-        self.SearchMovieWidget_13.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.horizontalLayout_23 = QHBoxLayout(self.SearchMovieWidget_13)
-        self.horizontalLayout_23.setObjectName(u"horizontalLayout_23")
-        self.posterWidget_13 = QWidget(self.SearchMovieWidget_13)
-        self.posterWidget_13.setObjectName(u"posterWidget_13")
-        self.posterWidget_13.setMaximumSize(QSize(95, 16777215))
+        self.addMovieButton_6 = QPushButton(self.SearchMovieWidget_6)
+        self.addMovieButton_6.setObjectName(u"addMovieButton_6")
+        self.addMovieButton_6.setMaximumSize(QSize(200, 75))
+        self.addMovieButton_6.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
-        self.horizontalLayout_23.addWidget(self.posterWidget_13)
-
-        self.TitleWidget_13 = QWidget(self.SearchMovieWidget_13)
-        self.TitleWidget_13.setObjectName(u"TitleWidget_13")
-        self.TitleWidget_13.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.verticalLayout_36 = QVBoxLayout(self.TitleWidget_13)
-        self.verticalLayout_36.setObjectName(u"verticalLayout_36")
-        self.Title_13 = QLabel(self.TitleWidget_13)
-        self.Title_13.setObjectName(u"Title_13")
-        self.Title_13.setStyleSheet(u"")
-
-        self.verticalLayout_36.addWidget(self.Title_13)
-
-        self.Details_13 = QLabel(self.TitleWidget_13)
-        self.Details_13.setObjectName(u"Details_13")
-        self.Details_13.setEnabled(False)
-
-        self.verticalLayout_36.addWidget(self.Details_13)
+        self.horizontalLayout_16.addWidget(self.addMovieButton_6)
 
 
-        self.horizontalLayout_23.addWidget(self.TitleWidget_13)
+        self.verticalLayout_23.addWidget(self.SearchMovieWidget_6)
 
-        self.addMovieButton_13 = QPushButton(self.SearchMovieWidget_13)
-        self.addMovieButton_13.setObjectName(u"addMovieButton_13")
-        self.addMovieButton_13.setMaximumSize(QSize(200, 75))
-        self.addMovieButton_13.setStyleSheet(u"background-color: rgb(48, 53, 63);")
+        self.SearchMovieWidget_7 = QWidget(self.scrollAreaWidgetContents_2)
+        self.SearchMovieWidget_7.setObjectName(u"SearchMovieWidget_7")
+        self.SearchMovieWidget_7.setEnabled(False)
+        self.SearchMovieWidget_7.setMinimumSize(QSize(0, 150))
+        self.SearchMovieWidget_7.setMaximumSize(QSize(16777215, 150))
+        self.SearchMovieWidget_7.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.horizontalLayout_17 = QHBoxLayout(self.SearchMovieWidget_7)
+        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
+        self.posterWidget_7 = QWidget(self.SearchMovieWidget_7)
+        self.posterWidget_7.setObjectName(u"posterWidget_7")
+        self.posterWidget_7.setMaximumSize(QSize(95, 16777215))
 
-        self.horizontalLayout_23.addWidget(self.addMovieButton_13)
+        self.horizontalLayout_17.addWidget(self.posterWidget_7)
 
+        self.TitleWidget_7 = QWidget(self.SearchMovieWidget_7)
+        self.TitleWidget_7.setObjectName(u"TitleWidget_7")
+        self.TitleWidget_7.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.verticalLayout_30 = QVBoxLayout(self.TitleWidget_7)
+        self.verticalLayout_30.setObjectName(u"verticalLayout_30")
+        self.Title_7 = QLabel(self.TitleWidget_7)
+        self.Title_7.setObjectName(u"Title_7")
+        self.Title_7.setStyleSheet(u"")
 
-        self.verticalLayout_23.addWidget(self.SearchMovieWidget_13)
+        self.verticalLayout_30.addWidget(self.Title_7)
 
-        self.SearchMovieWidget_12 = QWidget(self.scrollAreaWidgetContents_2)
-        self.SearchMovieWidget_12.setObjectName(u"SearchMovieWidget_12")
-        self.SearchMovieWidget_12.setEnabled(False)
-        self.SearchMovieWidget_12.setMinimumSize(QSize(0, 150))
-        self.SearchMovieWidget_12.setMaximumSize(QSize(16777215, 150))
-        self.SearchMovieWidget_12.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.horizontalLayout_22 = QHBoxLayout(self.SearchMovieWidget_12)
-        self.horizontalLayout_22.setObjectName(u"horizontalLayout_22")
-        self.posterWidget_12 = QWidget(self.SearchMovieWidget_12)
-        self.posterWidget_12.setObjectName(u"posterWidget_12")
-        self.posterWidget_12.setMaximumSize(QSize(95, 16777215))
+        self.Details_7 = QLabel(self.TitleWidget_7)
+        self.Details_7.setObjectName(u"Details_7")
+        self.Details_7.setEnabled(False)
 
-        self.horizontalLayout_22.addWidget(self.posterWidget_12)
-
-        self.TitleWidget_12 = QWidget(self.SearchMovieWidget_12)
-        self.TitleWidget_12.setObjectName(u"TitleWidget_12")
-        self.TitleWidget_12.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.verticalLayout_35 = QVBoxLayout(self.TitleWidget_12)
-        self.verticalLayout_35.setObjectName(u"verticalLayout_35")
-        self.Title_12 = QLabel(self.TitleWidget_12)
-        self.Title_12.setObjectName(u"Title_12")
-        self.Title_12.setStyleSheet(u"")
-
-        self.verticalLayout_35.addWidget(self.Title_12)
-
-        self.Details_12 = QLabel(self.TitleWidget_12)
-        self.Details_12.setObjectName(u"Details_12")
-        self.Details_12.setEnabled(False)
-
-        self.verticalLayout_35.addWidget(self.Details_12)
+        self.verticalLayout_30.addWidget(self.Details_7)
 
 
-        self.horizontalLayout_22.addWidget(self.TitleWidget_12)
+        self.horizontalLayout_17.addWidget(self.TitleWidget_7)
 
-        self.addMovieButton_12 = QPushButton(self.SearchMovieWidget_12)
-        self.addMovieButton_12.setObjectName(u"addMovieButton_12")
-        self.addMovieButton_12.setMaximumSize(QSize(200, 75))
-        self.addMovieButton_12.setStyleSheet(u"background-color: rgb(48, 53, 63);")
+        self.addMovieButton_7 = QPushButton(self.SearchMovieWidget_7)
+        self.addMovieButton_7.setObjectName(u"addMovieButton_7")
+        self.addMovieButton_7.setMaximumSize(QSize(200, 75))
+        self.addMovieButton_7.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
-        self.horizontalLayout_22.addWidget(self.addMovieButton_12)
-
-
-        self.verticalLayout_23.addWidget(self.SearchMovieWidget_12)
-
-        self.SearchMovieWidget_14 = QWidget(self.scrollAreaWidgetContents_2)
-        self.SearchMovieWidget_14.setObjectName(u"SearchMovieWidget_14")
-        self.SearchMovieWidget_14.setEnabled(False)
-        self.SearchMovieWidget_14.setMinimumSize(QSize(0, 150))
-        self.SearchMovieWidget_14.setMaximumSize(QSize(16777215, 150))
-        self.SearchMovieWidget_14.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.horizontalLayout_24 = QHBoxLayout(self.SearchMovieWidget_14)
-        self.horizontalLayout_24.setObjectName(u"horizontalLayout_24")
-        self.posterWidget_14 = QWidget(self.SearchMovieWidget_14)
-        self.posterWidget_14.setObjectName(u"posterWidget_14")
-        self.posterWidget_14.setMaximumSize(QSize(95, 16777215))
-
-        self.horizontalLayout_24.addWidget(self.posterWidget_14)
-
-        self.TitleWidget_14 = QWidget(self.SearchMovieWidget_14)
-        self.TitleWidget_14.setObjectName(u"TitleWidget_14")
-        self.TitleWidget_14.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.verticalLayout_37 = QVBoxLayout(self.TitleWidget_14)
-        self.verticalLayout_37.setObjectName(u"verticalLayout_37")
-        self.Title_14 = QLabel(self.TitleWidget_14)
-        self.Title_14.setObjectName(u"Title_14")
-        self.Title_14.setStyleSheet(u"")
-
-        self.verticalLayout_37.addWidget(self.Title_14)
-
-        self.Details_14 = QLabel(self.TitleWidget_14)
-        self.Details_14.setObjectName(u"Details_14")
-        self.Details_14.setEnabled(False)
-
-        self.verticalLayout_37.addWidget(self.Details_14)
+        self.horizontalLayout_17.addWidget(self.addMovieButton_7)
 
 
-        self.horizontalLayout_24.addWidget(self.TitleWidget_14)
-
-        self.addMovieButton_14 = QPushButton(self.SearchMovieWidget_14)
-        self.addMovieButton_14.setObjectName(u"addMovieButton_14")
-        self.addMovieButton_14.setMaximumSize(QSize(200, 75))
-        self.addMovieButton_14.setStyleSheet(u"background-color: rgb(48, 53, 63);")
-
-        self.horizontalLayout_24.addWidget(self.addMovieButton_14)
-
-
-        self.verticalLayout_23.addWidget(self.SearchMovieWidget_14)
-
-        self.SearchMovieWidget_2 = QWidget(self.scrollAreaWidgetContents_2)
-        self.SearchMovieWidget_2.setObjectName(u"SearchMovieWidget_2")
-        self.SearchMovieWidget_2.setEnabled(False)
-        self.SearchMovieWidget_2.setMinimumSize(QSize(0, 150))
-        self.SearchMovieWidget_2.setMaximumSize(QSize(16777215, 150))
-        self.SearchMovieWidget_2.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.horizontalLayout_10 = QHBoxLayout(self.SearchMovieWidget_2)
-        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
-        self.posterWidget_2 = QWidget(self.SearchMovieWidget_2)
-        self.posterWidget_2.setObjectName(u"posterWidget_2")
-        self.posterWidget_2.setMaximumSize(QSize(95, 16777215))
-
-        self.horizontalLayout_10.addWidget(self.posterWidget_2)
-
-        self.TitleWidget_2 = QWidget(self.SearchMovieWidget_2)
-        self.TitleWidget_2.setObjectName(u"TitleWidget_2")
-        self.TitleWidget_2.setStyleSheet(u"background-color: rgb(44, 49, 58);")
-        self.verticalLayout_25 = QVBoxLayout(self.TitleWidget_2)
-        self.verticalLayout_25.setObjectName(u"verticalLayout_25")
-        self.Title_2 = QLabel(self.TitleWidget_2)
-        self.Title_2.setObjectName(u"Title_2")
-        self.Title_2.setStyleSheet(u"")
-
-        self.verticalLayout_25.addWidget(self.Title_2)
-
-        self.Details_2 = QLabel(self.TitleWidget_2)
-        self.Details_2.setObjectName(u"Details_2")
-        self.Details_2.setEnabled(False)
-
-        self.verticalLayout_25.addWidget(self.Details_2)
-
-
-        self.horizontalLayout_10.addWidget(self.TitleWidget_2)
-
-        self.addMovieButton_2 = QPushButton(self.SearchMovieWidget_2)
-        self.addMovieButton_2.setObjectName(u"addMovieButton_2")
-        self.addMovieButton_2.setMaximumSize(QSize(200, 75))
-        self.addMovieButton_2.setStyleSheet(u"background-color: rgb(48, 53, 63);")
-
-        self.horizontalLayout_10.addWidget(self.addMovieButton_2)
-
-
-        self.verticalLayout_23.addWidget(self.SearchMovieWidget_2)
+        self.verticalLayout_23.addWidget(self.SearchMovieWidget_7)
 
         self.SearchMovieWidget_8 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_8.setObjectName(u"SearchMovieWidget_8")
@@ -2149,6 +1885,270 @@ class Ui_MainWindow(object):
 
 
         self.verticalLayout_23.addWidget(self.SearchMovieWidget_9)
+
+        self.SearchMovieWidget_10 = QWidget(self.scrollAreaWidgetContents_2)
+        self.SearchMovieWidget_10.setObjectName(u"SearchMovieWidget_10")
+        self.SearchMovieWidget_10.setEnabled(False)
+        self.SearchMovieWidget_10.setMinimumSize(QSize(0, 150))
+        self.SearchMovieWidget_10.setMaximumSize(QSize(16777215, 150))
+        self.SearchMovieWidget_10.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.horizontalLayout_20 = QHBoxLayout(self.SearchMovieWidget_10)
+        self.horizontalLayout_20.setObjectName(u"horizontalLayout_20")
+        self.posterWidget_10 = QWidget(self.SearchMovieWidget_10)
+        self.posterWidget_10.setObjectName(u"posterWidget_10")
+        self.posterWidget_10.setMaximumSize(QSize(95, 16777215))
+
+        self.horizontalLayout_20.addWidget(self.posterWidget_10)
+
+        self.TitleWidget_10 = QWidget(self.SearchMovieWidget_10)
+        self.TitleWidget_10.setObjectName(u"TitleWidget_10")
+        self.TitleWidget_10.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.verticalLayout_33 = QVBoxLayout(self.TitleWidget_10)
+        self.verticalLayout_33.setObjectName(u"verticalLayout_33")
+        self.Title_10 = QLabel(self.TitleWidget_10)
+        self.Title_10.setObjectName(u"Title_10")
+        self.Title_10.setStyleSheet(u"")
+
+        self.verticalLayout_33.addWidget(self.Title_10)
+
+        self.Details_10 = QLabel(self.TitleWidget_10)
+        self.Details_10.setObjectName(u"Details_10")
+        self.Details_10.setEnabled(False)
+
+        self.verticalLayout_33.addWidget(self.Details_10)
+
+
+        self.horizontalLayout_20.addWidget(self.TitleWidget_10)
+
+        self.addMovieButton_10 = QPushButton(self.SearchMovieWidget_10)
+        self.addMovieButton_10.setObjectName(u"addMovieButton_10")
+        self.addMovieButton_10.setMaximumSize(QSize(200, 75))
+        self.addMovieButton_10.setStyleSheet(u"background-color: rgb(48, 53, 63);")
+
+        self.horizontalLayout_20.addWidget(self.addMovieButton_10)
+
+
+        self.verticalLayout_23.addWidget(self.SearchMovieWidget_10)
+
+        self.SearchMovieWidget_11 = QWidget(self.scrollAreaWidgetContents_2)
+        self.SearchMovieWidget_11.setObjectName(u"SearchMovieWidget_11")
+        self.SearchMovieWidget_11.setEnabled(False)
+        self.SearchMovieWidget_11.setMinimumSize(QSize(0, 150))
+        self.SearchMovieWidget_11.setMaximumSize(QSize(16777215, 150))
+        self.SearchMovieWidget_11.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.horizontalLayout_21 = QHBoxLayout(self.SearchMovieWidget_11)
+        self.horizontalLayout_21.setObjectName(u"horizontalLayout_21")
+        self.posterWidget_11 = QWidget(self.SearchMovieWidget_11)
+        self.posterWidget_11.setObjectName(u"posterWidget_11")
+        self.posterWidget_11.setMaximumSize(QSize(95, 16777215))
+
+        self.horizontalLayout_21.addWidget(self.posterWidget_11)
+
+        self.TitleWidget_11 = QWidget(self.SearchMovieWidget_11)
+        self.TitleWidget_11.setObjectName(u"TitleWidget_11")
+        self.TitleWidget_11.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.verticalLayout_34 = QVBoxLayout(self.TitleWidget_11)
+        self.verticalLayout_34.setObjectName(u"verticalLayout_34")
+        self.Title_11 = QLabel(self.TitleWidget_11)
+        self.Title_11.setObjectName(u"Title_11")
+        self.Title_11.setStyleSheet(u"")
+
+        self.verticalLayout_34.addWidget(self.Title_11)
+
+        self.Details_11 = QLabel(self.TitleWidget_11)
+        self.Details_11.setObjectName(u"Details_11")
+        self.Details_11.setEnabled(False)
+
+        self.verticalLayout_34.addWidget(self.Details_11)
+
+
+        self.horizontalLayout_21.addWidget(self.TitleWidget_11)
+
+        self.addMovieButton_11 = QPushButton(self.SearchMovieWidget_11)
+        self.addMovieButton_11.setObjectName(u"addMovieButton_11")
+        self.addMovieButton_11.setMaximumSize(QSize(200, 75))
+        self.addMovieButton_11.setStyleSheet(u"background-color: rgb(48, 53, 63);")
+
+        self.horizontalLayout_21.addWidget(self.addMovieButton_11)
+
+
+        self.verticalLayout_23.addWidget(self.SearchMovieWidget_11)
+
+        self.SearchMovieWidget_12 = QWidget(self.scrollAreaWidgetContents_2)
+        self.SearchMovieWidget_12.setObjectName(u"SearchMovieWidget_12")
+        self.SearchMovieWidget_12.setEnabled(False)
+        self.SearchMovieWidget_12.setMinimumSize(QSize(0, 150))
+        self.SearchMovieWidget_12.setMaximumSize(QSize(16777215, 150))
+        self.SearchMovieWidget_12.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.horizontalLayout_22 = QHBoxLayout(self.SearchMovieWidget_12)
+        self.horizontalLayout_22.setObjectName(u"horizontalLayout_22")
+        self.posterWidget_12 = QWidget(self.SearchMovieWidget_12)
+        self.posterWidget_12.setObjectName(u"posterWidget_12")
+        self.posterWidget_12.setMaximumSize(QSize(95, 16777215))
+
+        self.horizontalLayout_22.addWidget(self.posterWidget_12)
+
+        self.TitleWidget_12 = QWidget(self.SearchMovieWidget_12)
+        self.TitleWidget_12.setObjectName(u"TitleWidget_12")
+        self.TitleWidget_12.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.verticalLayout_35 = QVBoxLayout(self.TitleWidget_12)
+        self.verticalLayout_35.setObjectName(u"verticalLayout_35")
+        self.Title_12 = QLabel(self.TitleWidget_12)
+        self.Title_12.setObjectName(u"Title_12")
+        self.Title_12.setStyleSheet(u"")
+
+        self.verticalLayout_35.addWidget(self.Title_12)
+
+        self.Details_12 = QLabel(self.TitleWidget_12)
+        self.Details_12.setObjectName(u"Details_12")
+        self.Details_12.setEnabled(False)
+
+        self.verticalLayout_35.addWidget(self.Details_12)
+
+
+        self.horizontalLayout_22.addWidget(self.TitleWidget_12)
+
+        self.addMovieButton_12 = QPushButton(self.SearchMovieWidget_12)
+        self.addMovieButton_12.setObjectName(u"addMovieButton_12")
+        self.addMovieButton_12.setMaximumSize(QSize(200, 75))
+        self.addMovieButton_12.setStyleSheet(u"background-color: rgb(48, 53, 63);")
+
+        self.horizontalLayout_22.addWidget(self.addMovieButton_12)
+
+
+        self.verticalLayout_23.addWidget(self.SearchMovieWidget_12)
+
+        self.SearchMovieWidget_13 = QWidget(self.scrollAreaWidgetContents_2)
+        self.SearchMovieWidget_13.setObjectName(u"SearchMovieWidget_13")
+        self.SearchMovieWidget_13.setEnabled(False)
+        self.SearchMovieWidget_13.setMinimumSize(QSize(0, 150))
+        self.SearchMovieWidget_13.setMaximumSize(QSize(16777215, 150))
+        self.SearchMovieWidget_13.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.horizontalLayout_23 = QHBoxLayout(self.SearchMovieWidget_13)
+        self.horizontalLayout_23.setObjectName(u"horizontalLayout_23")
+        self.posterWidget_13 = QWidget(self.SearchMovieWidget_13)
+        self.posterWidget_13.setObjectName(u"posterWidget_13")
+        self.posterWidget_13.setMaximumSize(QSize(95, 16777215))
+
+        self.horizontalLayout_23.addWidget(self.posterWidget_13)
+
+        self.TitleWidget_13 = QWidget(self.SearchMovieWidget_13)
+        self.TitleWidget_13.setObjectName(u"TitleWidget_13")
+        self.TitleWidget_13.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.verticalLayout_36 = QVBoxLayout(self.TitleWidget_13)
+        self.verticalLayout_36.setObjectName(u"verticalLayout_36")
+        self.Title_13 = QLabel(self.TitleWidget_13)
+        self.Title_13.setObjectName(u"Title_13")
+        self.Title_13.setStyleSheet(u"")
+
+        self.verticalLayout_36.addWidget(self.Title_13)
+
+        self.Details_13 = QLabel(self.TitleWidget_13)
+        self.Details_13.setObjectName(u"Details_13")
+        self.Details_13.setEnabled(False)
+
+        self.verticalLayout_36.addWidget(self.Details_13)
+
+
+        self.horizontalLayout_23.addWidget(self.TitleWidget_13)
+
+        self.addMovieButton_13 = QPushButton(self.SearchMovieWidget_13)
+        self.addMovieButton_13.setObjectName(u"addMovieButton_13")
+        self.addMovieButton_13.setMaximumSize(QSize(200, 75))
+        self.addMovieButton_13.setStyleSheet(u"background-color: rgb(48, 53, 63);")
+
+        self.horizontalLayout_23.addWidget(self.addMovieButton_13)
+
+
+        self.verticalLayout_23.addWidget(self.SearchMovieWidget_13)
+
+        self.SearchMovieWidget_14 = QWidget(self.scrollAreaWidgetContents_2)
+        self.SearchMovieWidget_14.setObjectName(u"SearchMovieWidget_14")
+        self.SearchMovieWidget_14.setEnabled(False)
+        self.SearchMovieWidget_14.setMinimumSize(QSize(0, 150))
+        self.SearchMovieWidget_14.setMaximumSize(QSize(16777215, 150))
+        self.SearchMovieWidget_14.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.horizontalLayout_24 = QHBoxLayout(self.SearchMovieWidget_14)
+        self.horizontalLayout_24.setObjectName(u"horizontalLayout_24")
+        self.posterWidget_14 = QWidget(self.SearchMovieWidget_14)
+        self.posterWidget_14.setObjectName(u"posterWidget_14")
+        self.posterWidget_14.setMaximumSize(QSize(95, 16777215))
+
+        self.horizontalLayout_24.addWidget(self.posterWidget_14)
+
+        self.TitleWidget_14 = QWidget(self.SearchMovieWidget_14)
+        self.TitleWidget_14.setObjectName(u"TitleWidget_14")
+        self.TitleWidget_14.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.verticalLayout_37 = QVBoxLayout(self.TitleWidget_14)
+        self.verticalLayout_37.setObjectName(u"verticalLayout_37")
+        self.Title_14 = QLabel(self.TitleWidget_14)
+        self.Title_14.setObjectName(u"Title_14")
+        self.Title_14.setStyleSheet(u"")
+
+        self.verticalLayout_37.addWidget(self.Title_14)
+
+        self.Details_14 = QLabel(self.TitleWidget_14)
+        self.Details_14.setObjectName(u"Details_14")
+        self.Details_14.setEnabled(False)
+
+        self.verticalLayout_37.addWidget(self.Details_14)
+
+
+        self.horizontalLayout_24.addWidget(self.TitleWidget_14)
+
+        self.addMovieButton_14 = QPushButton(self.SearchMovieWidget_14)
+        self.addMovieButton_14.setObjectName(u"addMovieButton_14")
+        self.addMovieButton_14.setMaximumSize(QSize(200, 75))
+        self.addMovieButton_14.setStyleSheet(u"background-color: rgb(48, 53, 63);")
+
+        self.horizontalLayout_24.addWidget(self.addMovieButton_14)
+
+
+        self.verticalLayout_23.addWidget(self.SearchMovieWidget_14)
+
+        self.SearchMovieWidget_15 = QWidget(self.scrollAreaWidgetContents_2)
+        self.SearchMovieWidget_15.setObjectName(u"SearchMovieWidget_15")
+        self.SearchMovieWidget_15.setEnabled(False)
+        self.SearchMovieWidget_15.setMinimumSize(QSize(0, 150))
+        self.SearchMovieWidget_15.setMaximumSize(QSize(16777215, 150))
+        self.SearchMovieWidget_15.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.horizontalLayout_25 = QHBoxLayout(self.SearchMovieWidget_15)
+        self.horizontalLayout_25.setObjectName(u"horizontalLayout_25")
+        self.posterWidget_15 = QWidget(self.SearchMovieWidget_15)
+        self.posterWidget_15.setObjectName(u"posterWidget_15")
+        self.posterWidget_15.setMaximumSize(QSize(95, 16777215))
+
+        self.horizontalLayout_25.addWidget(self.posterWidget_15)
+
+        self.TitleWidget_15 = QWidget(self.SearchMovieWidget_15)
+        self.TitleWidget_15.setObjectName(u"TitleWidget_15")
+        self.TitleWidget_15.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.verticalLayout_38 = QVBoxLayout(self.TitleWidget_15)
+        self.verticalLayout_38.setObjectName(u"verticalLayout_38")
+        self.Title_15 = QLabel(self.TitleWidget_15)
+        self.Title_15.setObjectName(u"Title_15")
+        self.Title_15.setStyleSheet(u"")
+
+        self.verticalLayout_38.addWidget(self.Title_15)
+
+        self.Details_15 = QLabel(self.TitleWidget_15)
+        self.Details_15.setObjectName(u"Details_15")
+        self.Details_15.setEnabled(False)
+
+        self.verticalLayout_38.addWidget(self.Details_15)
+
+
+        self.horizontalLayout_25.addWidget(self.TitleWidget_15)
+
+        self.addMovieButton_15 = QPushButton(self.SearchMovieWidget_15)
+        self.addMovieButton_15.setObjectName(u"addMovieButton_15")
+        self.addMovieButton_15.setMaximumSize(QSize(200, 75))
+        self.addMovieButton_15.setStyleSheet(u"background-color: rgb(48, 53, 63);")
+
+        self.horizontalLayout_25.addWidget(self.addMovieButton_15)
+
+
+        self.verticalLayout_23.addWidget(self.SearchMovieWidget_15)
 
         self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
 
@@ -2422,51 +2422,51 @@ class Ui_MainWindow(object):
 
         self.label.setText(QCoreApplication.translate("MainWindow", u"NEW PAGE TEST", None))
         self.btn_SearchMovie.setText(QCoreApplication.translate("MainWindow", u"Search Movie", None))
-        self.Title_7.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.Details_7.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.addMovieButton_7.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
-        self.Title_15.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.Details_15.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.addMovieButton_15.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
         self.Title.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.Details.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.addMovieButton.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
-        self.Title_3.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.Details_3.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.addMovieButton_3.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
-        self.Title_10.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.Details_10.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.addMovieButton_10.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
-        self.Title_4.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.Details_4.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.addMovieButton_4.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
-        self.Title_6.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.Details_6.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.addMovieButton_6.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
-        self.Title_5.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.Details_5.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.addMovieButton_5.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
-        self.Title_11.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.Details_11.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.addMovieButton_11.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
-        self.Title_13.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.Details_13.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.addMovieButton_13.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
-        self.Title_12.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.Details_12.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.addMovieButton_12.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
-        self.Title_14.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.Details_14.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.addMovieButton_14.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
         self.Title_2.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.Details_2.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.addMovieButton_2.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
+        self.Title_3.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.Details_3.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.addMovieButton_3.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
+        self.Title_4.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.Details_4.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.addMovieButton_4.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
+        self.Title_5.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.Details_5.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.addMovieButton_5.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
+        self.Title_6.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.Details_6.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.addMovieButton_6.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
+        self.Title_7.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.Details_7.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.addMovieButton_7.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
         self.Title_8.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.Details_8.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.addMovieButton_8.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
         self.Title_9.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.Details_9.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.addMovieButton_9.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
+        self.Title_10.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.Details_10.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.addMovieButton_10.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
+        self.Title_11.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.Details_11.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.addMovieButton_11.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
+        self.Title_12.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.Details_12.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.addMovieButton_12.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
+        self.Title_13.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.Details_13.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.addMovieButton_13.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
+        self.Title_14.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.Details_14.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.addMovieButton_14.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
+        self.Title_15.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.Details_15.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.addMovieButton_15.setText(QCoreApplication.translate("MainWindow", u"Add Movie", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
         self.btn_print.setText(QCoreApplication.translate("MainWindow", u"Print", None))
         self.creditsLabel.setText(QCoreApplication.translate("MainWindow", u"This product uses the TMDB API but is not endorsed or certified by TMDB.", None))

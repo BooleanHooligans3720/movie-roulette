@@ -17,6 +17,7 @@
 import sys
 import os
 import platform
+#import fullBackend
 
 # IMPORT / GUI AND MODULES AND WIDGETS
 # ///////////////////////////////////////////////////////////////
@@ -146,7 +147,10 @@ class MainWindow(QMainWindow):
             print("Spin button clicked")
         if btnName == "btn_SearchMovie":
             print("pressed search")
-            widgets.scrollArea_2.setVisible(True)
+            if(widgets.searchBar.textChanged):
+                #fullBackend.title = widgets.searchBar.text
+                widgets.scrollArea_2.setVisible(True)
+                #widgets.Details.setText(QCoreApplication.translate("MainWindow", fullBackend.search.results[0], None))
             
 
         # PRINT BTN NAME

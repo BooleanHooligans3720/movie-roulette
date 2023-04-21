@@ -17,8 +17,8 @@ url = "https://streaming-availability.p.rapidapi.com/v2/get/basic"
 search = tmdb.Search()
 
 # PLACEHOLDER for UI search
-print("Please enter a keyword to search for:")
-title = input()
+#print("Please enter a keyword to search for:")
+title = ""
 
 response = search.movie(query=title)
 
