@@ -56,6 +56,10 @@ class MainWindow(QMainWindow):
         # ///////////////////////////////////////////////////////////////
         widgets.toggleButton.clicked.connect(lambda: UIFunctions.toggleMenu(self, True))
 
+
+        self.LoadingMovie = QMovie(u":/images/images/images/SpinWheel.gif")
+        widgets.LoadingLabel.setMovie(self.LoadingMovie)
+
         # SET UI DEFINITIONS
         # ///////////////////////////////////////////////////////////////
         UIFunctions.uiDefinitions(self)
@@ -105,7 +109,7 @@ class MainWindow(QMainWindow):
         # SET HOME PAGE AND SELECT MENU
         # ///////////////////////////////////////////////////////////////
         widgets.stackedWidget.setCurrentWidget(widgets.home)
-        widgets.btn_home.setStyleSheet(UIFunctions.selectMenu(widgets.btn_home.styleSheet()))
+        #widgets.btn_home.setStyleSheet(UIFunctions.selectMenu(widgets.btn_home.styleSheet()))
 
 
     # BUTTONS CLICK
@@ -119,33 +123,42 @@ class MainWindow(QMainWindow):
         # SHOW HOME PAGE
         if btnName == "btn_home":
             widgets.stackedWidget.setCurrentWidget(widgets.home)
-            UIFunctions.resetStyle(self, btnName)
-            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+            #UIFunctions.resetStyle(self, btnName)
+            #btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
         # SHOW WIDGETS PAGE
         if btnName == "btn_widgets":
             widgets.stackedWidget.setCurrentWidget(widgets.widgets)
-            UIFunctions.resetStyle(self, btnName)
-            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+            #UIFunctions.resetStyle(self, btnName)
+            #btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
         # SHOW NEW PAGE
         if btnName == "btn_new":
             widgets.stackedWidget.setCurrentWidget(widgets.new_page) # SET PAGE
-            UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
-            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
+            #UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
+            #btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
 
         if btnName == "btn_save":
             widgets.stackedWidget.setCurrentWidget(widgets.SearchMoviePage)
-            UIFunctions.resetStyle(self, btnName)
-            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+            #UIFunctions.resetStyle(self, btnName)
+            #btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
             
         if btnName == "btn_spin":
             widgets.stackedWidget.setCurrentWidget(widgets.LoadingScreen)
+<<<<<<< HEAD
             widgets.LoadingMovie.start()
             print("Spin button clicked")
             
+=======
+            self.LoadingMovie.start()
+            #UIFunctions.resetStyle(self, btnName)
+            #$btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+            print("Spin button clicked")
+        
+>>>>>>> EvenMoreSearchPageLuke
         if btnName == "btn_SearchMovie":
             print("pressed search")
+            
             ##hiding the movie widgets at the start, so multiple searches won't keep old search results
             widgets.SearchMovieWidget.setHidden(True)
             widgets.SearchMovieWidget_2.setHidden(True)
@@ -163,9 +176,13 @@ class MainWindow(QMainWindow):
             widgets.SearchMovieWidget_14.setHidden(True)
             widgets.SearchMovieWidget_15.setHidden(True)
             
+            #Makes a list to show results
             search = str(widgets.searchBar.text())
             self.searchList = splitBackend.Backend.searchMovies(search)
+            
+            
             widgets.scrollArea_2.setVisible(True)
+            #For loop to show results based on how many results come through - max is 15
             for i in range(len(self.searchList)):
                 if(i == 0):
                     widgets.SearchMovieWidget.setHidden(False)
@@ -213,8 +230,6 @@ class MainWindow(QMainWindow):
                 if(i == 14):
                     widgets.SearchMovieWidget_15.setHidden(False)
                     widgets.Title_15.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
-            
-            
             
 
         # PRINT BTN NAME
