@@ -70,7 +70,7 @@ class Ui_MainWindow(object):
 "}\n"
 "#topLogo {\n"
 "	background-color: rgb(33, 37, 43);\n"
-"	background-image: url(:/images/images/images/PyDracula.png);\n"
+"	background-image: url(:/images/images/images/SpinWheel.png);\n"
 "	background-position: centered;\n"
 "	background-repeat: no-repeat;\n"
 "}\n"
@@ -1464,16 +1464,17 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.searchBar = QLineEdit(self.widget)
         self.searchBar.setObjectName(u"searchBar")
-        self.searchBar.setMinimumSize(QSize(0, 50))
+        self.searchBar.setMinimumSize(QSize(0, 40))
+        self.searchBar.setMaximumHeight(40)
 
-        self.horizontalLayout_7.addWidget(self.searchBar)
+        self.horizontalLayout_7.addWidget(self.searchBar, 0, Qt.AlignTop)
 
         self.btn_SearchMovie = QPushButton(self.widget)
         self.btn_SearchMovie.setObjectName(u"btn_SearchMovie")
-        self.btn_SearchMovie.setMinimumSize(QSize(0, 45))
+        self.btn_SearchMovie.setMinimumSize(QSize(0, 40))
         self.btn_SearchMovie.setStyleSheet(u"background-color: rgb(44, 49, 58);")
 
-        self.horizontalLayout_7.addWidget(self.btn_SearchMovie, 0, Qt.AlignRight|Qt.AlignVCenter)
+        self.horizontalLayout_7.addWidget(self.btn_SearchMovie, 0, Qt.AlignRight|Qt.AlignTop)
 
 
         self.verticalLayout_22.addWidget(self.widget)
@@ -2331,7 +2332,7 @@ class Ui_MainWindow(object):
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
         self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Widgets", None))
         self.btn_new.setText(QCoreApplication.translate("MainWindow", u"New", None))
-        self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Save", None))
+        self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Search", None))
         self.btn_exit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.toggleLeftBox.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
         self.extraLabel.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
