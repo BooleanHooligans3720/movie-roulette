@@ -35,10 +35,10 @@ class Backend:
 	
 		return searchList
 	
-	def addToList():
+	#def addToList():
      
-    def getStreamingServices(movieID: int):
+   # def getStreamingServices(movieID: int):
          
-	def getList():
+	#def getList():
 	
-	def print():
+	#def print():

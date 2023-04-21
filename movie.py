@@ -14,7 +14,7 @@ class movie:
     self.runtime = int(self.info['runtime'])
     self.popularity = self.info['popularity']
     self.date = int(self.info['release_date'][0:4])
-    self.details = self.info['details']
+    #self.details = self.info['details']
     #self.printInfo()
 
   def getID(self):
