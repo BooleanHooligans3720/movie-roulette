@@ -1445,14 +1445,16 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.searchBar = QLineEdit(self.widget)
         self.searchBar.setObjectName(u"searchBar")
-        self.searchBar.setMinimumSize(QSize(0, 50))
-
-        self.horizontalLayout_7.addWidget(self.searchBar)
+        self.searchBar.setMinimumSize(QSize(0, 40))
+        self.searchBar.setMaximumHeight(40)
+        self.horizontalLayout_7.addWidget(self.searchBar, 0, Qt.AlignTop)
 
         self.btn_SearchMovie = QPushButton(self.widget)
         self.btn_SearchMovie.setObjectName(u"btn_SearchMovie")
-        self.btn_SearchMovie.setMinimumSize(QSize(0, 45))
+        self.btn_SearchMovie.setMinimumSize(QSize(0, 40))
         self.btn_SearchMovie.setStyleSheet(u"background-color: rgb(44, 49, 58);")
+        self.btn_SearchMovie.setMaximumHeight(40)
+        self.horizontalLayout_7.addWidget(self.btn_SearchMovie, 0, Qt.AlignRight|Qt.AlignVCenter)
 
         self.horizontalLayout_7.addWidget(self.btn_SearchMovie, 0, Qt.AlignRight|Qt.AlignVCenter)
 

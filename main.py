@@ -145,17 +145,11 @@ class MainWindow(QMainWindow):
             
         if btnName == "btn_spin":
             widgets.stackedWidget.setCurrentWidget(widgets.LoadingScreen)
-<<<<<<< HEAD
-            widgets.LoadingMovie.start()
-            print("Spin button clicked")
-            
-=======
             self.LoadingMovie.start()
             #UIFunctions.resetStyle(self, btnName)
             #$btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
             print("Spin button clicked")
         
->>>>>>> EvenMoreSearchPageLuke
         if btnName == "btn_SearchMovie":
             print("pressed search")
             
