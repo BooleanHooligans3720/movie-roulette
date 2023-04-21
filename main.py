@@ -142,9 +142,8 @@ class MainWindow(QMainWindow):
         if btnName == "btn_spin":
             widgets.stackedWidget.setCurrentWidget(widgets.LoadingScreen)
             widgets.LoadingMovie.start()
-            UIFunctions.resetStyle(self, btnName)
-            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
             print("Spin button clicked")
+            
         if btnName == "btn_SearchMovie":
             print("pressed search")
             ##hiding the movie widgets at the start, so multiple searches won't keep old search results

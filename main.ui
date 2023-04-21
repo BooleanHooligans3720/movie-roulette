@@ -974,7 +974,8 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-magnifying-glass.png)</string>
+                   <string notr="true">
+background-image: url(:/icons/images/icons/cil-magnifying-glass.png)</string>
                   </property>
                   <property name="text">
                    <string>Save</string>
@@ -1865,7 +1866,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>4</number>
+                      <number>0</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="layoutDirection">
@@ -1913,69 +1914,6 @@ background-repeat: no-repeat;
                          <property name="text">
                           <string>Spin The Wheel</string>
                          </property>
-                        </widget>
-                       </item>
-                       <item alignment="Qt::AlignHCenter">
-                        <widget class="QComboBox" name="WatchListComboBox">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                           <horstretch>0</horstretch>
-                           <verstretch>0</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="minimumSize">
-                          <size>
-                           <width>450</width>
-                           <height>0</height>
-                          </size>
-                         </property>
-                         <property name="font">
-                          <font>
-                           <family>Segoe UI</family>
-                           <pointsize>10</pointsize>
-                           <italic>false</italic>
-                           <bold>false</bold>
-                          </font>
-                         </property>
-                         <property name="autoFillBackground">
-                          <bool>false</bool>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(33, 37, 43);</string>
-                         </property>
-                         <property name="editable">
-                          <bool>true</bool>
-                         </property>
-                         <property name="currentText">
-                          <string>Watch Lists</string>
-                         </property>
-                         <property name="iconSize">
-                          <size>
-                           <width>16</width>
-                           <height>16</height>
-                          </size>
-                         </property>
-                         <property name="placeholderText">
-                          <string/>
-                         </property>
-                         <property name="frame">
-                          <bool>true</bool>
-                         </property>
-                         <item>
-                          <property name="text">
-                           <string>Test 1</string>
-                          </property>
-                         </item>
-                         <item>
-                          <property name="text">
-                           <string>Test 2</string>
-                          </property>
-                         </item>
-                         <item>
-                          <property name="text">
-                           <string>Test 3</string>
-                          </property>
-                         </item>
                         </widget>
                        </item>
                       </layout>
@@ -2871,7 +2809,7 @@ background-repeat: no-repeat;
                           </size>
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_7">
-                          <item>
+                          <item alignment="Qt::AlignTop">
                            <widget class="QLineEdit" name="searchBar">
                             <property name="minimumSize">
                              <size>
