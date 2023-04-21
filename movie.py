@@ -16,6 +16,7 @@ class movie:
     self.date = int(self.info['release_date'][0:4])
     #self.details = self.info['details']
     #self.printInfo()
+    self.description = (self.info['overview'])
 
   def getID(self):
     return self.id
@@ -35,6 +36,9 @@ class movie:
 
   def getDate(self):
     return self.date
+  
+  def getDescription(self):
+    return self.description
 
     #function to print the data
   def printInfo(self):
