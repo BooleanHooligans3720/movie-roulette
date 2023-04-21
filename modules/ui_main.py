@@ -70,7 +70,7 @@ class Ui_MainWindow(object):
 "}\n"
 "#topLogo {\n"
 "	background-color: rgb(33, 37, 43);\n"
-"	background-image: url(:/images/images/images/SpinWheel.png);\n"
+"	background-image: url(:/images/images/images/PyDracula.png);\n"
 "	background-position: centered;\n"
 "	background-repeat: no-repeat;\n"
 "}\n"
@@ -1064,25 +1064,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_21.addWidget(self.btn_spin)
 
-        self.WatchListComboBox = QComboBox(self.home)
-        self.WatchListComboBox.addItem("")
-        self.WatchListComboBox.addItem("")
-        self.WatchListComboBox.addItem("")
-        self.WatchListComboBox.setObjectName(u"WatchListComboBox")
-        sizePolicy4 = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
-        sizePolicy4.setHorizontalStretch(0)
-        sizePolicy4.setVerticalStretch(0)
-        sizePolicy4.setHeightForWidth(self.WatchListComboBox.sizePolicy().hasHeightForWidth())
-        self.WatchListComboBox.setSizePolicy(sizePolicy4)
-        self.WatchListComboBox.setMinimumSize(QSize(450, 0))
-        self.WatchListComboBox.setFont(font)
-        self.WatchListComboBox.setAutoFillBackground(False)
-        self.WatchListComboBox.setStyleSheet(u"background-color: rgb(33, 37, 43);")
-        self.WatchListComboBox.setEditable(True)
-        self.WatchListComboBox.setIconSize(QSize(16, 16))
-        self.WatchListComboBox.setFrame(True)
-
-        self.verticalLayout_21.addWidget(self.WatchListComboBox, 0, Qt.AlignHCenter)
 
         self.stackedWidget.addWidget(self.home)
         self.LoadingScreen = QWidget()
@@ -1370,11 +1351,11 @@ class Ui_MainWindow(object):
         __qtablewidgetitem23 = QTableWidgetItem()
         self.tableWidget.setItem(0, 3, __qtablewidgetitem23)
         self.tableWidget.setObjectName(u"tableWidget")
-        sizePolicy5 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
-        sizePolicy5.setHorizontalStretch(0)
-        sizePolicy5.setVerticalStretch(0)
-        sizePolicy5.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
-        self.tableWidget.setSizePolicy(sizePolicy5)
+        sizePolicy4 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy4.setHorizontalStretch(0)
+        sizePolicy4.setVerticalStretch(0)
+        sizePolicy4.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
+        self.tableWidget.setSizePolicy(sizePolicy4)
         palette = QPalette()
         brush = QBrush(QColor(221, 221, 221, 255))
         brush.setStyle(Qt.SolidPattern)
@@ -1464,17 +1445,16 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.searchBar = QLineEdit(self.widget)
         self.searchBar.setObjectName(u"searchBar")
-        self.searchBar.setMinimumSize(QSize(0, 40))
-        self.searchBar.setMaximumHeight(40)
+        self.searchBar.setMinimumSize(QSize(0, 50))
 
-        self.horizontalLayout_7.addWidget(self.searchBar, 0, Qt.AlignTop)
+        self.horizontalLayout_7.addWidget(self.searchBar)
 
         self.btn_SearchMovie = QPushButton(self.widget)
         self.btn_SearchMovie.setObjectName(u"btn_SearchMovie")
-        self.btn_SearchMovie.setMinimumSize(QSize(0, 40))
+        self.btn_SearchMovie.setMinimumSize(QSize(0, 45))
         self.btn_SearchMovie.setStyleSheet(u"background-color: rgb(44, 49, 58);")
 
-        self.horizontalLayout_7.addWidget(self.btn_SearchMovie, 0, Qt.AlignRight|Qt.AlignTop)
+        self.horizontalLayout_7.addWidget(self.btn_SearchMovie, 0, Qt.AlignRight|Qt.AlignVCenter)
 
 
         self.verticalLayout_22.addWidget(self.widget)
@@ -2332,7 +2312,7 @@ class Ui_MainWindow(object):
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
         self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Widgets", None))
         self.btn_new.setText(QCoreApplication.translate("MainWindow", u"New", None))
-        self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Search", None))
+        self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Save", None))
         self.btn_exit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.toggleLeftBox.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
         self.extraLabel.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
@@ -2378,12 +2358,8 @@ class Ui_MainWindow(object):
 #endif // QT_CONFIG(tooltip)
         self.closeAppBtn.setText("")
         self.btn_spin.setText(QCoreApplication.translate("MainWindow", u"Spin The Wheel", None))
-        self.WatchListComboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"Test 1", None))
-        self.WatchListComboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"Test 2", None))
-        self.WatchListComboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"Test 3", None))
 
-        self.WatchListComboBox.setCurrentText(QCoreApplication.translate("MainWindow", u"Watch Lists", None))
-        self.WatchListComboBox.setPlaceholderText("")
+
         self.LoadingLabel.setText("")
         self.labelBoxBlenderInstalation.setText(QCoreApplication.translate("MainWindow", u"FILE BOX", None))
         self.lineEdit.setText("")
