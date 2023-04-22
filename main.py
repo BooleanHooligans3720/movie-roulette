@@ -180,50 +180,110 @@ class MainWindow(QMainWindow):
             for i in range(len(self.searchList)):
                 if(i == 0):
                     widgets.SearchMovieWidget.setHidden(False)
-                    widgets.Title.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
-                    widgets.Details.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 1):
                     widgets.SearchMovieWidget_2.setHidden(False)
-                    widgets.Title_2.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_2.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_2.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_2.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 2):
                     widgets.SearchMovieWidget_3.setHidden(False)
-                    widgets.Title_3.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", Nonee))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_3.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_3.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_3.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 3):
                     widgets.SearchMovieWidget_4.setHidden(False)
-                    widgets.Title_4.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_4.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_4.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_4.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 4):
                     widgets.SearchMovieWidget_5.setHidden(False)
-                    widgets.Title_5.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_5.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_5.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_5.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 5):
                     widgets.SearchMovieWidget_6.setHidden(False)
-                    widgets.Title_6.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_6.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_6.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_6.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 6):
                     widgets.SearchMovieWidget_7.setHidden(False)
-                    widgets.Title_7.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_7.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_7.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_7.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 7):
                     widgets.SearchMovieWidget_8.setHidden(False)
-                    widgets.Title_8.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_8.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_8.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_8.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 8):
                     widgets.SearchMovieWidget_9.setHidden(False)
-                    widgets.Title_9.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_9.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_9.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_9.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 9):
                     widgets.SearchMovieWidget_10.setHidden(False)
-                    widgets.Title_10.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_10.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_10.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_10.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 10):
                     widgets.SearchMovieWidget_11.setHidden(False)
-                    widgets.Title_11.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_11.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_11.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_11.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 11):
                     widgets.SearchMovieWidget_12.setHidden(False)
-                    widgets.Title_12.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_12.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_12.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_12.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
+
                 if(i == 12):
                     widgets.SearchMovieWidget_13.setHidden(False)
-                    widgets.Title_13.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_13.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_13.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_13.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 13):
                     widgets.SearchMovieWidget_14.setHidden(False)
-                    widgets.Title_14.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_14.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_14.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_14.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 14):
                     widgets.SearchMovieWidget_15.setHidden(False)
-                    widgets.Title_15.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + self.searchList[i].getDate() + ")", None))
+                    if(self.searchList[i].getDate()):
+                        widgets.Title_15.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
+                    else:
+                        widgets.Title_15.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    widgets.Details_15.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
             
 
         # PRINT BTN NAME

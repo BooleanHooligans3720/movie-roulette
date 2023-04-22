@@ -10,13 +10,27 @@ class movie:
     self.info = tmdb.Movies(self.id).info()
     #assigns data to the variables
     self.title = self.info['title']
-    self.genre = self.info['genres'][0]['name']
-    self.runtime = int(self.info['runtime'])
-    self.popularity = self.info['popularity']
-    self.date = int(self.info['release_date'][0:4])
-    #self.details = self.info['details']
+    if(self.info['genres']):
+      self.genre = self.info['genres'][0]['name']
+    else:
+          self.genre = None
+    if(self.info['runtime']):
+      self.runtime = int(self.info['runtime'])
+    else:
+          self.runtime = None
+    if(self.info['popularity']):
+      self.popularity = self.info['popularity']
+    else:
+          self.popularity = None
+    if(self.info['release_date']):
+          self.date = int(self.info['release_date'][0:4])
+    else:
+          self.date = None
     #self.printInfo()
-    self.description = (self.info['overview'])
+    if(self.info['overview']):
+      self.description = (self.info['overview'])
+    else:
+          self.description = None
 
   def getID(self):
     return self.id
@@ -25,7 +39,7 @@ class movie:
   def getTitle(self):
     return self.title
 
-  def getGenre(self):
+  def getGenre(self):    
     return self.genre
 
   def getRuntime(self):
@@ -35,7 +49,7 @@ class movie:
     return self.popularity
 
   def getDate(self):
-    return self.date
+      return self.date
   
   def getDescription(self):
     return self.description

@@ -1511,6 +1511,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton = QPushButton(self.SearchMovieWidget)
         self.addMovieButton.setObjectName(u"addMovieButton")
+        self.addMovieButton.setMinimumSize(QSize(200, 75))
         self.addMovieButton.setMaximumSize(QSize(200, 75))
         self.addMovieButton.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -1521,7 +1522,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_2 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_2.setObjectName(u"SearchMovieWidget_2")
-        self.SearchMovieWidget_2.setEnabled(False)
+        self.SearchMovieWidget_2.setEnabled(True)
         self.SearchMovieWidget_2.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_2.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_2.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1557,6 +1558,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_2 = QPushButton(self.SearchMovieWidget_2)
         self.addMovieButton_2.setObjectName(u"addMovieButton_2")
+        self.addMovieButton_2.setMinimumSize(QSize(200, 75))
         self.addMovieButton_2.setMaximumSize(QSize(200, 75))
         self.addMovieButton_2.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -1567,7 +1569,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_3 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_3.setObjectName(u"SearchMovieWidget_3")
-        self.SearchMovieWidget_3.setEnabled(False)
+        self.SearchMovieWidget_3.setEnabled(True)
         self.SearchMovieWidget_3.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_3.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_3.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1603,6 +1605,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_3 = QPushButton(self.SearchMovieWidget_3)
         self.addMovieButton_3.setObjectName(u"addMovieButton_3")
+        self.addMovieButton_3.setMinimumSize(QSize(200, 75))
         self.addMovieButton_3.setMaximumSize(QSize(200, 75))
         self.addMovieButton_3.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -1613,7 +1616,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_4 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_4.setObjectName(u"SearchMovieWidget_4")
-        self.SearchMovieWidget_4.setEnabled(False)
+        self.SearchMovieWidget_4.setEnabled(True)
         self.SearchMovieWidget_4.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_4.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_4.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1649,6 +1652,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_4 = QPushButton(self.SearchMovieWidget_4)
         self.addMovieButton_4.setObjectName(u"addMovieButton_4")
+        self.addMovieButton_4.setMinimumSize(QSize(200, 75))
         self.addMovieButton_4.setMaximumSize(QSize(200, 75))
         self.addMovieButton_4.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -1659,7 +1663,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_5 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_5.setObjectName(u"SearchMovieWidget_5")
-        self.SearchMovieWidget_5.setEnabled(False)
+        self.SearchMovieWidget_5.setEnabled(True)
         self.SearchMovieWidget_5.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_5.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_5.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1695,6 +1699,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_5 = QPushButton(self.SearchMovieWidget_5)
         self.addMovieButton_5.setObjectName(u"addMovieButton_5")
+        self.addMovieButton_5.setMinimumSize(QSize(200, 75))
         self.addMovieButton_5.setMaximumSize(QSize(200, 75))
         self.addMovieButton_5.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -1705,7 +1710,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_6 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_6.setObjectName(u"SearchMovieWidget_6")
-        self.SearchMovieWidget_6.setEnabled(False)
+        self.SearchMovieWidget_6.setEnabled(True)
         self.SearchMovieWidget_6.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_6.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_6.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1741,6 +1746,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_6 = QPushButton(self.SearchMovieWidget_6)
         self.addMovieButton_6.setObjectName(u"addMovieButton_6")
+        self.addMovieButton_6.setMinimumSize(QSize(200, 75))
         self.addMovieButton_6.setMaximumSize(QSize(200, 75))
         self.addMovieButton_6.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -1751,7 +1757,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_7 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_7.setObjectName(u"SearchMovieWidget_7")
-        self.SearchMovieWidget_7.setEnabled(False)
+        self.SearchMovieWidget_7.setEnabled(True)
         self.SearchMovieWidget_7.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_7.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_7.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1787,6 +1793,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_7 = QPushButton(self.SearchMovieWidget_7)
         self.addMovieButton_7.setObjectName(u"addMovieButton_7")
+        self.addMovieButton_7.setMinimumSize(QSize(200, 75))
         self.addMovieButton_7.setMaximumSize(QSize(200, 75))
         self.addMovieButton_7.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -1797,7 +1804,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_8 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_8.setObjectName(u"SearchMovieWidget_8")
-        self.SearchMovieWidget_8.setEnabled(False)
+        self.SearchMovieWidget_8.setEnabled(True)
         self.SearchMovieWidget_8.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_8.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_8.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1833,6 +1840,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_8 = QPushButton(self.SearchMovieWidget_8)
         self.addMovieButton_8.setObjectName(u"addMovieButton_8")
+        self.addMovieButton_8.setMinimumSize(QSize(200, 75))
         self.addMovieButton_8.setMaximumSize(QSize(200, 75))
         self.addMovieButton_8.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -1843,7 +1851,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_9 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_9.setObjectName(u"SearchMovieWidget_9")
-        self.SearchMovieWidget_9.setEnabled(False)
+        self.SearchMovieWidget_9.setEnabled(True)
         self.SearchMovieWidget_9.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_9.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_9.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1879,6 +1887,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_9 = QPushButton(self.SearchMovieWidget_9)
         self.addMovieButton_9.setObjectName(u"addMovieButton_9")
+        self.addMovieButton_9.setMinimumSize(QSize(200, 75))
         self.addMovieButton_9.setMaximumSize(QSize(200, 75))
         self.addMovieButton_9.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -1889,7 +1898,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_10 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_10.setObjectName(u"SearchMovieWidget_10")
-        self.SearchMovieWidget_10.setEnabled(False)
+        self.SearchMovieWidget_10.setEnabled(True)
         self.SearchMovieWidget_10.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_10.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_10.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1925,6 +1934,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_10 = QPushButton(self.SearchMovieWidget_10)
         self.addMovieButton_10.setObjectName(u"addMovieButton_10")
+        self.addMovieButton_10.setMinimumSize(QSize(200, 75))
         self.addMovieButton_10.setMaximumSize(QSize(200, 75))
         self.addMovieButton_10.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -1935,7 +1945,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_11 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_11.setObjectName(u"SearchMovieWidget_11")
-        self.SearchMovieWidget_11.setEnabled(False)
+        self.SearchMovieWidget_11.setEnabled(True)
         self.SearchMovieWidget_11.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_11.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_11.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1971,6 +1981,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_11 = QPushButton(self.SearchMovieWidget_11)
         self.addMovieButton_11.setObjectName(u"addMovieButton_11")
+        self.addMovieButton_11.setMinimumSize(QSize(200, 75))
         self.addMovieButton_11.setMaximumSize(QSize(200, 75))
         self.addMovieButton_11.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -1981,7 +1992,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_12 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_12.setObjectName(u"SearchMovieWidget_12")
-        self.SearchMovieWidget_12.setEnabled(False)
+        self.SearchMovieWidget_12.setEnabled(True)
         self.SearchMovieWidget_12.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_12.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_12.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -2017,6 +2028,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_12 = QPushButton(self.SearchMovieWidget_12)
         self.addMovieButton_12.setObjectName(u"addMovieButton_12")
+        self.addMovieButton_12.setMinimumSize(QSize(200, 75))
         self.addMovieButton_12.setMaximumSize(QSize(200, 75))
         self.addMovieButton_12.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -2027,7 +2039,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_13 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_13.setObjectName(u"SearchMovieWidget_13")
-        self.SearchMovieWidget_13.setEnabled(False)
+        self.SearchMovieWidget_13.setEnabled(True)
         self.SearchMovieWidget_13.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_13.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_13.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -2063,6 +2075,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_13 = QPushButton(self.SearchMovieWidget_13)
         self.addMovieButton_13.setObjectName(u"addMovieButton_13")
+        self.addMovieButton_13.setMinimumSize(QSize(200, 75))
         self.addMovieButton_13.setMaximumSize(QSize(200, 75))
         self.addMovieButton_13.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -2073,7 +2086,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_14 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_14.setObjectName(u"SearchMovieWidget_14")
-        self.SearchMovieWidget_14.setEnabled(False)
+        self.SearchMovieWidget_14.setEnabled(True)
         self.SearchMovieWidget_14.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_14.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_14.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -2109,6 +2122,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_14 = QPushButton(self.SearchMovieWidget_14)
         self.addMovieButton_14.setObjectName(u"addMovieButton_14")
+        self.addMovieButton_14.setMinimumSize(QSize(200, 75))
         self.addMovieButton_14.setMaximumSize(QSize(200, 75))
         self.addMovieButton_14.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 
@@ -2119,7 +2133,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_15 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_15.setObjectName(u"SearchMovieWidget_15")
-        self.SearchMovieWidget_15.setEnabled(False)
+        self.SearchMovieWidget_15.setEnabled(True)
         self.SearchMovieWidget_15.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_15.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_15.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -2155,6 +2169,7 @@ class Ui_MainWindow(object):
 
         self.addMovieButton_15 = QPushButton(self.SearchMovieWidget_15)
         self.addMovieButton_15.setObjectName(u"addMovieButton_15")
+        self.addMovieButton_15.setMinimumSize(QSize(200, 75))
         self.addMovieButton_15.setMaximumSize(QSize(200, 75))
         self.addMovieButton_15.setStyleSheet(u"background-color: rgb(48, 53, 63);")
 

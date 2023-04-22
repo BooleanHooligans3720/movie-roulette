@@ -1866,7 +1866,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>0</number>
+                      <number>4</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="layoutDirection">
@@ -1916,72 +1916,6 @@ background-repeat: no-repeat;
                          </property>
                         </widget>
                        </item>
-<<<<<<< HEAD
-=======
-                       <item alignment="Qt::AlignHCenter">
-                        <widget class="QComboBox" name="WatchListComboBox">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                           <horstretch>0</horstretch>
-                           <verstretch>0</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="minimumSize">
-                          <size>
-                           <width>450</width>
-                           <height>0</height>
-                          </size>
-                         </property>
-                         <property name="font">
-                          <font>
-                           <family>Segoe UI</family>
-                           <pointsize>10</pointsize>
-                           <italic>false</italic>
-                           <bold>false</bold>
-                          </font>
-                         </property>
-                         <property name="autoFillBackground">
-                          <bool>false</bool>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">background-color: rgb(33, 37, 43);</string>
-                         </property>
-                         <property name="editable">
-                          <bool>true</bool>
-                         </property>
-                         <property name="currentText">
-                          <string>Test 1</string>
-                         </property>
-                         <property name="iconSize">
-                          <size>
-                           <width>16</width>
-                           <height>16</height>
-                          </size>
-                         </property>
-                         <property name="placeholderText">
-                          <string/>
-                         </property>
-                         <property name="frame">
-                          <bool>true</bool>
-                         </property>
-                         <item>
-                          <property name="text">
-                           <string>Test 1</string>
-                          </property>
-                         </item>
-                         <item>
-                          <property name="text">
-                           <string>Test 2</string>
-                          </property>
-                         </item>
-                         <item>
-                          <property name="text">
-                           <string>Test 3</string>
-                          </property>
-                         </item>
-                        </widget>
-                       </item>
->>>>>>> EvenMoreSearchPageLuke
                       </layout>
                      </widget>
                      <widget class="QWidget" name="LoadingScreen">
@@ -2293,7 +2227,7 @@ background-repeat: no-repeat;
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>218</width>
+                                 <width>353</width>
                                  <height>218</height>
                                 </rect>
                                </property>
@@ -2990,6 +2924,12 @@ background-repeat: no-repeat;
                               </item>
                               <item>
                                <widget class="QPushButton" name="addMovieButton">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>200</width>
+                                  <height>0</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>200</width>
