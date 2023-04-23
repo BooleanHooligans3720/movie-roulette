@@ -1485,7 +1485,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
         self.posterWidget = QWidget(self.SearchMovieWidget)
         self.posterWidget.setObjectName(u"posterWidget")
+        self.posterWidget.setMinimumSize(QSize(95, 128))
         self.posterWidget.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel = QLabel(self.posterWidget)
+        self.posterLabel.setObjectName(u"posterLabel")
+        self.posterLabel.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_8.addWidget(self.posterWidget)
 
@@ -1532,7 +1536,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
         self.posterWidget_2 = QWidget(self.SearchMovieWidget_2)
         self.posterWidget_2.setObjectName(u"posterWidget_2")
+        self.posterWidget_2.setMinimumSize(QSize(95, 128))
         self.posterWidget_2.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_2 = QLabel(self.posterWidget)
+        self.posterLabel_2.setObjectName(u"posterLabel")
+        self.posterLabel_2.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_10.addWidget(self.posterWidget_2)
 
@@ -1579,7 +1587,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
         self.posterWidget_3 = QWidget(self.SearchMovieWidget_3)
         self.posterWidget_3.setObjectName(u"posterWidget_3")
+        self.posterWidget_3.setMinimumSize(QSize(95, 128))
         self.posterWidget_3.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_3 = QLabel(self.posterWidget)
+        self.posterLabel_3.setObjectName(u"posterLabel")
+        self.posterLabel_3.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_13.addWidget(self.posterWidget_3)
 
@@ -1626,7 +1638,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
         self.posterWidget_4 = QWidget(self.SearchMovieWidget_4)
         self.posterWidget_4.setObjectName(u"posterWidget_4")
+        self.posterWidget_4.setMinimumSize(QSize(95, 128))
         self.posterWidget_4.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_4 = QLabel(self.posterWidget)
+        self.posterLabel_4.setObjectName(u"posterLabel")
+        self.posterLabel_4.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_14.addWidget(self.posterWidget_4)
 
@@ -1673,7 +1689,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
         self.posterWidget_5 = QWidget(self.SearchMovieWidget_5)
         self.posterWidget_5.setObjectName(u"posterWidget_5")
+        self.posterWidget_5.setMinimumSize(QSize(95, 128))
         self.posterWidget_5.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_5 = QLabel(self.posterWidget)
+        self.posterLabel_5.setObjectName(u"posterLabel")
+        self.posterLabel_5.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_15.addWidget(self.posterWidget_5)
 
@@ -1720,7 +1740,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
         self.posterWidget_6 = QWidget(self.SearchMovieWidget_6)
         self.posterWidget_6.setObjectName(u"posterWidget_6")
+        self.posterWidget_6.setMinimumSize(QSize(95, 128))
         self.posterWidget_6.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_6 = QLabel(self.posterWidget)
+        self.posterLabel_6.setObjectName(u"posterLabel")
+        self.posterLabel_6.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_16.addWidget(self.posterWidget_6)
 
@@ -1767,7 +1791,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
         self.posterWidget_7 = QWidget(self.SearchMovieWidget_7)
         self.posterWidget_7.setObjectName(u"posterWidget_7")
+        self.posterWidget_7.setMinimumSize(QSize(95, 128))
         self.posterWidget_7.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_7 = QLabel(self.posterWidget)
+        self.posterLabel_7.setObjectName(u"posterLabel")
+        self.posterLabel_7.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_17.addWidget(self.posterWidget_7)
 
@@ -1814,7 +1842,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_18.setObjectName(u"horizontalLayout_18")
         self.posterWidget_8 = QWidget(self.SearchMovieWidget_8)
         self.posterWidget_8.setObjectName(u"posterWidget_8")
+        self.posterWidget_8.setMinimumSize(QSize(95, 128))
         self.posterWidget_8.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_8 = QLabel(self.posterWidget)
+        self.posterLabel_8.setObjectName(u"posterLabel")
+        self.posterLabel_8.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_18.addWidget(self.posterWidget_8)
 
@@ -1861,7 +1893,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
         self.posterWidget_9 = QWidget(self.SearchMovieWidget_9)
         self.posterWidget_9.setObjectName(u"posterWidget_9")
+        self.posterWidget_9.setMinimumSize(QSize(95, 128))
         self.posterWidget_9.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_9 = QLabel(self.posterWidget)
+        self.posterLabel_9.setObjectName(u"posterLabel")
+        self.posterLabel_9.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_19.addWidget(self.posterWidget_9)
 
@@ -1908,7 +1944,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_20.setObjectName(u"horizontalLayout_20")
         self.posterWidget_10 = QWidget(self.SearchMovieWidget_10)
         self.posterWidget_10.setObjectName(u"posterWidget_10")
+        self.posterWidget_10.setMinimumSize(QSize(95, 128))
         self.posterWidget_10.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_9 = QLabel(self.posterWidget)
+        self.posterLabel_9.setObjectName(u"posterLabel")
+        self.posterLabel_9.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_20.addWidget(self.posterWidget_10)
 
@@ -1955,7 +1995,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_21.setObjectName(u"horizontalLayout_21")
         self.posterWidget_11 = QWidget(self.SearchMovieWidget_11)
         self.posterWidget_11.setObjectName(u"posterWidget_11")
+        self.posterWidget_11.setMinimumSize(QSize(95, 128))
         self.posterWidget_11.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_11= QLabel(self.posterWidget)
+        self.posterLabel_11.setObjectName(u"posterLabel")
+        self.posterLabel_11.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_21.addWidget(self.posterWidget_11)
 
@@ -2002,7 +2046,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_22.setObjectName(u"horizontalLayout_22")
         self.posterWidget_12 = QWidget(self.SearchMovieWidget_12)
         self.posterWidget_12.setObjectName(u"posterWidget_12")
+        self.posterWidget_12.setMinimumSize(QSize(95, 128))
         self.posterWidget_12.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_12 = QLabel(self.posterWidget)
+        self.posterLabel_12.setObjectName(u"posterLabel")
+        self.posterLabel_12.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_22.addWidget(self.posterWidget_12)
 
@@ -2049,7 +2097,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_23.setObjectName(u"horizontalLayout_23")
         self.posterWidget_13 = QWidget(self.SearchMovieWidget_13)
         self.posterWidget_13.setObjectName(u"posterWidget_13")
+        self.posterWidget_13.setMinimumSize(QSize(95, 128))
         self.posterWidget_13.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_13= QLabel(self.posterWidget)
+        self.posterLabel_13.setObjectName(u"posterLabel")
+        self.posterLabel_13.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_23.addWidget(self.posterWidget_13)
 
@@ -2096,7 +2148,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_24.setObjectName(u"horizontalLayout_24")
         self.posterWidget_14 = QWidget(self.SearchMovieWidget_14)
         self.posterWidget_14.setObjectName(u"posterWidget_14")
+        self.posterWidget_14.setMinimumSize(QSize(95, 128))
         self.posterWidget_14.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_14 = QLabel(self.posterWidget)
+        self.posterLabel_14.setObjectName(u"posterLabel")
+        self.posterLabel_14.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_24.addWidget(self.posterWidget_14)
 
@@ -2143,7 +2199,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_25.setObjectName(u"horizontalLayout_25")
         self.posterWidget_15 = QWidget(self.SearchMovieWidget_15)
         self.posterWidget_15.setObjectName(u"posterWidget_15")
+        self.posterWidget_15.setMinimumSize(QSize(95, 128))
         self.posterWidget_15.setMaximumSize(QSize(95, 16777215))
+        self.posterLabel_15 = QLabel(self.posterWidget)
+        self.posterLabel_15.setObjectName(u"posterLabel")
+        self.posterLabel_15.setGeometry(QRect(40, 60, 63, 20))
 
         self.horizontalLayout_25.addWidget(self.posterWidget_15)
 

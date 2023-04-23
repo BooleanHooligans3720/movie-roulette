@@ -31,6 +31,11 @@ class movie:
       self.description = (self.info['overview'])
     else:
           self.description = None
+    if(self.info['poster_path']):
+       self.poster_path = self.info['poster_path']
+       print(self.poster_path)
+    else:
+       self.poster_path = None
 
   def getID(self):
     return self.id
@@ -53,6 +58,8 @@ class movie:
   
   def getDescription(self):
     return self.description
+  def getPoster(self):
+     return self.poster_path
 
     #function to print the data
   def printInfo(self):

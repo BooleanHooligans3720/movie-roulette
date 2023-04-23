@@ -2227,8 +2227,8 @@ background-repeat: no-repeat;
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>353</width>
-                                 <height>218</height>
+                                 <width>222</width>
+                                 <height>222</height>
                                 </rect>
                                </property>
                                <property name="styleSheet">
@@ -2856,9 +2856,9 @@ background-repeat: no-repeat;
                           <property name="geometry">
                            <rect>
                             <x>0</x>
-                            <y>0</y>
-                            <width>1150</width>
-                            <height>2352</height>
+                            <y>-1848</y>
+                            <width>1146</width>
+                            <height>2370</height>
                            </rect>
                           </property>
                           <layout class="QVBoxLayout" name="verticalLayout_23">
@@ -2885,12 +2885,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_8">
                               <item>
                                <widget class="QWidget" name="posterWidget" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>40</x>
+                                   <y>60</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -2970,12 +2989,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_10">
                               <item>
                                <widget class="QWidget" name="posterWidget_2" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_2">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>40</x>
+                                   <y>70</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -3049,12 +3087,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_13">
                               <item>
                                <widget class="QWidget" name="posterWidget_3" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_3">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>60</x>
+                                   <y>60</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -3128,12 +3185,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_14">
                               <item>
                                <widget class="QWidget" name="posterWidget_4" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_4">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>40</x>
+                                   <y>70</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -3207,12 +3283,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_15">
                               <item>
                                <widget class="QWidget" name="posterWidget_5" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_5">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>50</x>
+                                   <y>70</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -3286,12 +3381,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_16">
                               <item>
                                <widget class="QWidget" name="posterWidget_6" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_6">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>50</x>
+                                   <y>40</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -3365,12 +3479,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_17">
                               <item>
                                <widget class="QWidget" name="posterWidget_7" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_7">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>60</x>
+                                   <y>60</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -3444,12 +3577,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_18">
                               <item>
                                <widget class="QWidget" name="posterWidget_8" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_8">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>50</x>
+                                   <y>50</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -3523,12 +3675,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_19">
                               <item>
                                <widget class="QWidget" name="posterWidget_9" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_9">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>60</x>
+                                   <y>70</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -3602,12 +3773,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_20">
                               <item>
                                <widget class="QWidget" name="posterWidget_10" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_10">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>40</x>
+                                   <y>90</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -3681,12 +3871,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_21">
                               <item>
                                <widget class="QWidget" name="posterWidget_11" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_11">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>20</x>
+                                   <y>80</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -3760,12 +3969,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_22">
                               <item>
                                <widget class="QWidget" name="posterWidget_12" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_12">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>50</x>
+                                   <y>70</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -3839,12 +4067,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_23">
                               <item>
                                <widget class="QWidget" name="posterWidget_13" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_13">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>60</x>
+                                   <y>70</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -3918,12 +4165,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_24">
                               <item>
                                <widget class="QWidget" name="posterWidget_14" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_14">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>10</x>
+                                   <y>90</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
@@ -3997,12 +4263,31 @@ background-repeat: no-repeat;
                              <layout class="QHBoxLayout" name="horizontalLayout_25">
                               <item>
                                <widget class="QWidget" name="posterWidget_15" native="true">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>95</width>
+                                  <height>128</height>
+                                 </size>
+                                </property>
                                 <property name="maximumSize">
                                  <size>
                                   <width>95</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
+                                <widget class="QLabel" name="posterLabel_15">
+                                 <property name="geometry">
+                                  <rect>
+                                   <x>30</x>
+                                   <y>100</y>
+                                   <width>63</width>
+                                   <height>20</height>
+                                  </rect>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                </widget>
                                </widget>
                               </item>
                               <item>
