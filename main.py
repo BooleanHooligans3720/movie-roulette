@@ -18,9 +18,7 @@ import sys
 import os
 import platform
 import splitBackend
-from PIL import Image, ImageQt
-import requests
-from io import BytesIO
+
 
 # IMPORT / GUI AND MODULES AND WIDGETS
 # ///////////////////////////////////////////////////////////////
@@ -28,11 +26,15 @@ from modules import *
 from widgets import *
 os.environ["QT_FONT_DPI"] = "96" # FIX Problem for High DPI and Scale above 100%
 
+from PIL import Image, ImageQt
+import requests
+from io import BytesIO
+
 # SET AS GLOBAL WIDGETS
 # ///////////////////////////////////////////////////////////////
 widgets = None
 
-smallPosterUrl = "https://image.tmdb.org/t/p/w95"
+smallPosterUrl = "https://image.tmdb.org/t/p/"
 bigPosterUrl = "https://image.tmdb.org/t/p/w145"
 
 class MainWindow(QMainWindow):
@@ -191,9 +193,12 @@ class MainWindow(QMainWindow):
                     else:
                         widgets.Title.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
                     if(self.searchList[i].getPoster()):
-                        response = requests.get(smallPosterUrl + self.searchList[i].getPoster())
+                        response = requests.get(self.searchList[i].getPoster())
                         posterImg = Image.open(BytesIO(response.content))
-                        widgets.posterLabel.setPixmap(ImageQt(posterImg))
+                        posterImg = posterImg.resize((150, 225), Image.ANTIALIAS)
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel.setPixmap(posterImg)
+                        print(self.searchList[i].getPoster())
                     widgets.Details.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 1):
                     widgets.SearchMovieWidget_2.setHidden(False)

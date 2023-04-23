@@ -32,7 +32,8 @@ class movie:
     else:
           self.description = None
     if(self.info['poster_path']):
-       self.poster_path = self.info['poster_path']
+      
+       self.poster_path = "https://image.tmdb.org/t/p/w500" + self.info['poster_path']
        print(self.poster_path)
     else:
        self.poster_path = None
