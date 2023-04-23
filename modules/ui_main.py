@@ -1487,9 +1487,20 @@ class Ui_MainWindow(object):
         self.posterWidget.setObjectName(u"posterWidget")
         self.posterWidget.setMinimumSize(QSize(95, 128))
         self.posterWidget.setMaximumSize(QSize(95, 16777215))
+        
+        self.horizontalLayout_26 = QHBoxLayout(self.posterWidget)
+        self.horizontalLayout_26.setObjectName(u"horizontalLayout_26")
+        
+        
+        
         self.posterLabel = QLabel(self.posterWidget)
         self.posterLabel.setObjectName(u"posterLabel")
-        self.posterLabel.setGeometry(QRect(40, 60, 63, 20))
+        self.posterLabel.setMinimumSize(QSize(95, 128))
+        self.posterLabel.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
+        self.posterLabel.setScaledContents(True)
+        self.posterLabel.setStyleSheet(u"background-image: url(:/icons/images/images/transparent.png);")
+        
+        self.horizontalLayout_26.addWidget(self.posterLabel)
 
         self.horizontalLayout_8.addWidget(self.posterWidget)
 
@@ -1540,9 +1551,13 @@ class Ui_MainWindow(object):
         self.posterWidget_2.setMaximumSize(QSize(95, 16777215))
         self.posterLabel_2 = QLabel(self.posterWidget)
         self.posterLabel_2.setObjectName(u"posterLabel")
-        self.posterLabel_2.setGeometry(QRect(40, 60, 63, 20))
+        self.posterLabel_2.setMinimumSize(QSize(95, 128))
+        self.posterLabel_2.setScaledContents(True)
 
         self.horizontalLayout_10.addWidget(self.posterWidget_2)
+        self.horizontalLayout_27 = QHBoxLayout(self.posterWidget_2)
+        self.horizontalLayout_27.setObjectName(u"horizontalLayout_26")
+        self.horizontalLayout_27.addWidget(self.posterLabel_2)
 
         self.TitleWidget_2 = QWidget(self.SearchMovieWidget_2)
         self.TitleWidget_2.setObjectName(u"TitleWidget_2")
@@ -1592,6 +1607,10 @@ class Ui_MainWindow(object):
         self.posterLabel_3 = QLabel(self.posterWidget)
         self.posterLabel_3.setObjectName(u"posterLabel")
         self.posterLabel_3.setGeometry(QRect(40, 60, 63, 20))
+        
+        self.horizontalLayout_28 = QHBoxLayout(self.posterWidget_3)
+        self.horizontalLayout_28.setObjectName(u"horizontalLayout_26")
+        self.horizontalLayout_28.addWidget(self.posterLabel_3)
 
         self.horizontalLayout_13.addWidget(self.posterWidget_3)
 

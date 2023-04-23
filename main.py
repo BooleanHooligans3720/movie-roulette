@@ -195,10 +195,12 @@ class MainWindow(QMainWindow):
                     if(self.searchList[i].getPoster()):
                         response = requests.get(self.searchList[i].getPoster())
                         posterImg = Image.open(BytesIO(response.content))
-                        posterImg = posterImg.resize((150, 225), Image.ANTIALIAS)
                         posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel.setText("")
                         widgets.posterLabel.setPixmap(posterImg)
                         print(self.searchList[i].getPoster())
+                    else:
+                        widgets.posterLabel.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 1):
                     widgets.SearchMovieWidget_2.setHidden(False)

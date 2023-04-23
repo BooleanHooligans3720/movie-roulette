@@ -2227,8 +2227,8 @@ background-repeat: no-repeat;
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>222</width>
-                                 <height>222</height>
+                                 <width>218</width>
+                                 <height>218</height>
                                 </rect>
                                </property>
                                <property name="styleSheet">
@@ -2856,9 +2856,9 @@ background-repeat: no-repeat;
                           <property name="geometry">
                            <rect>
                             <x>0</x>
-                            <y>-1848</y>
-                            <width>1146</width>
-                            <height>2370</height>
+                            <y>0</y>
+                            <width>1150</width>
+                            <height>2352</height>
                            </rect>
                           </property>
                           <layout class="QVBoxLayout" name="verticalLayout_23">
@@ -2883,7 +2883,7 @@ background-repeat: no-repeat;
                               <string notr="true">background-color: rgb(44, 49, 58);</string>
                              </property>
                              <layout class="QHBoxLayout" name="horizontalLayout_8">
-                              <item>
+                              <item alignment="Qt::AlignLeft">
                                <widget class="QWidget" name="posterWidget" native="true">
                                 <property name="minimumSize">
                                  <size>
@@ -2897,19 +2897,30 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>40</x>
-                                   <y>60</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_26">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>95</width>
+                                     <height>128</height>
+                                    </size>
+                                   </property>
+                                   <property name="autoFillBackground">
+                                    <bool>true</bool>
+                                   </property>
+                                   <property name="text">
+                                    <string> </string>
+                                   </property>
+                                   <property name="pixmap">
+                                    <pixmap resource="resources.qrc">:/images/images/images/No_Image_Available.jpg</pixmap>
+                                   </property>
+                                   <property name="scaledContents">
+                                    <bool>true</bool>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -3001,19 +3012,15 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_2">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>40</x>
-                                   <y>70</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_27">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_2">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -3099,19 +3106,15 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_3">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>60</x>
-                                   <y>60</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_28">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_3">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -3197,19 +3200,15 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_4">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>40</x>
-                                   <y>70</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_29">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_4">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -3295,19 +3294,15 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_5">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>50</x>
-                                   <y>70</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_30">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_5">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -3393,19 +3388,15 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_6">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>50</x>
-                                   <y>40</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_31">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_6">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -3491,19 +3482,15 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_7">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>60</x>
-                                   <y>60</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_32">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_7">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -3589,19 +3576,15 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_8">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>50</x>
-                                   <y>50</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_33">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_8">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -3687,19 +3670,15 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_9">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>60</x>
-                                   <y>70</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_34">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_9">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -3785,19 +3764,15 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_10">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>40</x>
-                                   <y>90</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_35">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_10">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -3883,19 +3858,15 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_11">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>20</x>
-                                   <y>80</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_36">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_11">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -3981,19 +3952,15 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_12">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>50</x>
-                                   <y>70</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_37">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_12">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -4079,19 +4046,18 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_13">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>60</x>
-                                   <y>70</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_38">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_13">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                   <property name="scaledContents">
+                                    <bool>true</bool>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -4177,19 +4143,15 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_14">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>10</x>
-                                   <y>90</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_39">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_14">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>
@@ -4275,19 +4237,15 @@ background-repeat: no-repeat;
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <widget class="QLabel" name="posterLabel_15">
-                                 <property name="geometry">
-                                  <rect>
-                                   <x>30</x>
-                                   <y>100</y>
-                                   <width>63</width>
-                                   <height>20</height>
-                                  </rect>
-                                 </property>
-                                 <property name="text">
-                                  <string/>
-                                 </property>
-                                </widget>
+                                <layout class="QHBoxLayout" name="horizontalLayout_40">
+                                 <item>
+                                  <widget class="QLabel" name="posterLabel_15">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
                                </widget>
                               </item>
                               <item>

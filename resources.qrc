@@ -4,6 +4,7 @@
         <file>images/images/SpinWheel.gif</file>
         <file>images/images/transparent.png</file>
         <file>images/images/SpinWheel.png</file>
+        <file>images/images/No_Image_Available.jpg</file>
     </qresource>
     <qresource prefix="/icons">
         <file>images/icons/cil-3d.png</file>
