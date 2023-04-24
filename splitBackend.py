@@ -105,7 +105,24 @@ class Backend:
 
 	# right now we can only spin once before the program has to be reloaded 
 	def movieRouletteSpin(self):
-		result = randomPicker.getWeightedRandom(self.movieList)
+		result: movie.movie = randomPicker.getWeightedRandom(self.movieList)
+
+		# reset streaming availability to make a clean slate for the next movie called
+		self.netflix = False
+		self.apple = False
+		self.prime = False
+		self.disney = False
+		self.hbo = False
+		self.hulu = False
+		self.peacock = False
+		self.paramount = False
+		self.starz = False
+		self.showtime = False
+		self.mubi = False
+	
+		# update streaming availability for current movie
+		self.setStreamingServices(result.getID())
+  
 		return result
 
 	def getNetflix(self):
