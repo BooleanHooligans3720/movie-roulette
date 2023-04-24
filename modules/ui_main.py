@@ -1498,7 +1498,6 @@ class Ui_MainWindow(object):
         self.posterLabel.setMinimumSize(QSize(95, 128))
         self.posterLabel.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
         self.posterLabel.setScaledContents(True)
-        self.posterLabel.setStyleSheet(u"background-image: url(:/icons/images/images/transparent.png);")
         
         self.horizontalLayout_26.addWidget(self.posterLabel)
 

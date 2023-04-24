@@ -196,7 +196,6 @@ class MainWindow(QMainWindow):
                         response = requests.get(self.searchList[i].getPoster())
                         posterImg = Image.open(BytesIO(response.content))
                         posterImg = ImageQt.toqpixmap(posterImg)
-                        widgets.posterLabel.setText("")
                         widgets.posterLabel.setPixmap(posterImg)
                         print(self.searchList[i].getPoster())
                     else:
