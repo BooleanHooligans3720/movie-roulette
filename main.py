@@ -200,7 +200,7 @@ class MainWindow(QMainWindow):
             widgets.Name.setText(QCoreApplication.translate("MainWindow","" + randomResult.getTitle(),None))
             widgets.Runtime.setText(QCoreApplication.translate("MainWindow","Runtime (mins): \n" + str(randomResult.getRuntime()),None))
             widgets.Rating.setText(QCoreApplication.translate("MainWindow","Release Date: \n" + str(randomResult.getDate()),None))
-            widgets.Genre.setText(QCoreApplication.translate("MainWindow","Genre: \n" + randomResult.getGenre(),None))
+            widgets.Genre.setText(QCoreApplication.translate("MainWindow","Genre: \n" + str(randomResult.getGenre()),None))
             widgets.UserScore.setText(QCoreApplication.translate("MainWindow","Popularity: \n" + str(randomResult.getPopularity()),None))
             response = requests.get(randomResult.getPoster())
             posterImg = Image.open(BytesIO(response.content))
