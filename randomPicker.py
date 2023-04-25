@@ -3,6 +3,8 @@ import movie
 from typing import List
 import tmdbsimple as tmdb
 
+
+
 def getWeightedRandom(movieList: List[movie.movie],genre,runtimeMin,runtimeMax,popularity,dateMin,dateMax):
     
   # booleans to determine if the user wants to weight the search on these options 
@@ -91,4 +93,5 @@ def getPureRandom(movieList: List[movie.movie]):
 
 #if the list of movies and the params are all blank this will return a random movie
 def getRandomID():
-	return movie.movie(random.randint(1, tmdb.Movies.latest()['id']))
+	latest: movie.movie = tmdb.Movies.latest()['id']
+	return movie.movie(random.randint(1, latest.getId()))
