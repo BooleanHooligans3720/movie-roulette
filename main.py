@@ -18,6 +18,7 @@ import sys
 import os
 import platform
 import splitBackend
+import randomPicker
 
 
 # IMPORT / GUI AND MODULES AND WIDGETS
@@ -76,8 +77,6 @@ class MainWindow(QMainWindow):
         # ///////////////////////////////////////////////////////////////
         # widgets.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         
-        widgets.topLogo.setStyleSheet(u"background-image: url(:/images/images/images/SpinWheel.png);")
-        
         widgets.posterLabel.setScaledContents(True)
         widgets.posterLabel_2.setScaledContents(True)
         widgets.posterLabel_3.setScaledContents(True)
@@ -121,17 +120,38 @@ class MainWindow(QMainWindow):
         widgets.addMovieButton_13.clicked.connect(self.buttonClick)
         widgets.addMovieButton_14.clicked.connect(self.buttonClick)
         widgets.addMovieButton_15.clicked.connect(self.buttonClick)
-    
+        widgets.rollAgain.clicked.connect(self.buttonClick)
+        widgets.Action.clicked.connect(self.buttonClick)
+        widgets.Adventure.clicked.connect(self.buttonClick)
+        widgets.Animation.clicked.connect(self.buttonClick)
+        widgets.Comedy.clicked.connect(self.buttonClick)
+        widgets.Crime.clicked.connect(self.buttonClick)
+        widgets.Documentary.clicked.connect(self.buttonClick)
+        widgets.Drama.clicked.connect(self.buttonClick)
+        widgets.Family.clicked.connect(self.buttonClick)
+        widgets.Fantasy.clicked.connect(self.buttonClick)
+        widgets.History.clicked.connect(self.buttonClick)
+        widgets.Horror.clicked.connect(self.buttonClick)
+        widgets.Music.clicked.connect(self.buttonClick)
+        widgets.Mystery.clicked.connect(self.buttonClick)
+        widgets.Romance.clicked.connect(self.buttonClick)
+        widgets.SciFi.clicked.connect(self.buttonClick)
+        widgets.Thriller.clicked.connect(self.buttonClick)
+        widgets.War.clicked.connect(self.buttonClick)
+        widgets.Western.clicked.connect(self.buttonClick)
+
+
+
         # EXTRA LEFT BOX
         def openCloseLeftBox():
             UIFunctions.toggleLeftBox(self, True)
-        #widgets.toggleLeftBox.clicked.connect(openCloseLeftBox)
-       # widgets.extraCloseColumnBtn.clicked.connect(openCloseLeftBox)
+        widgets.toggleLeftBox.clicked.connect(openCloseLeftBox)
+        widgets.extraCloseColumnBtn.clicked.connect(openCloseLeftBox)
 
         # EXTRA RIGHT BOX
         def openCloseRightBox():
             UIFunctions.toggleRightBox(self, True)
-        #widgets.settingsTopBtn.clicked.connect(openCloseRightBox)
+        widgets.settingsTopBtn.clicked.connect(openCloseRightBox)
 
         # SHOW APP
         # ///////////////////////////////////////////////////////////////
@@ -162,8 +182,20 @@ class MainWindow(QMainWindow):
     def buttonClick(self):
         # GET BUTTON CLICKED
         btn = self.sender()
-        btnName = btn.objectName()
+        btnName = btn.objectName()  
 
+        if btnName == "rollAgain":
+            randomResult = randomPicker.getRandomID()
+            widgets.Description.setText(QCoreApplication.translate("MainWindow","" + str(randomResult.getDescription()),None))
+            widgets.Name.setText(QCoreApplication.translate("MainWindow","" + randomResult.getTitle(),None))
+            widgets.Runtime.setText(QCoreApplication.translate("MainWindow","Runtime (mins): \n" + str(randomResult.getRuntime()),None))
+            widgets.Rating.setText(QCoreApplication.translate("MainWindow","Release Date: \n" + str(randomResult.getDate()),None))
+            widgets.Genre.setText(QCoreApplication.translate("MainWindow","Genre: \n" + randomResult.getGenre(),None))
+            widgets.UserScore.setText(QCoreApplication.translate("MainWindow","Popularity: \n" + str(randomResult.getPopularity()),None))
+            response = requests.get(randomResult.getPoster())
+            posterImg = Image.open(BytesIO(response.content))
+            posterImg = ImageQt.toqpixmap(posterImg)
+            widgets.Poster.setPixmap(posterImg)
         # SHOW HOME PAGE
         if btnName == "btn_home":
             widgets.stackedWidget.setCurrentWidget(widgets.home)
@@ -190,10 +222,22 @@ class MainWindow(QMainWindow):
         if btnName == "btn_spin":
             widgets.stackedWidget.setCurrentWidget(widgets.LoadingScreen)
             self.LoadingMovie.start()
-            
+            randomResult = randomPicker.getRandomID()
+            widgets.Description.setText(QCoreApplication.translate("MainWindow","" + str(randomResult.getDescription()),None))
+            widgets.Name.setText(QCoreApplication.translate("MainWindow","" + randomResult.getTitle(),None))
+            widgets.Runtime.setText(QCoreApplication.translate("MainWindow","Runtime (mins): \n" + str(randomResult.getRuntime()),None))
+            widgets.Rating.setText(QCoreApplication.translate("MainWindow","Release Date: \n" + str(randomResult.getDate()),None))
+            widgets.Genre.setText(QCoreApplication.translate("MainWindow","Genre: \n" + randomResult.getGenre(),None))
+            widgets.UserScore.setText(QCoreApplication.translate("MainWindow","Popularity: \n" + str(randomResult.getPopularity()),None))
+            response = requests.get(randomResult.getPoster())
+            posterImg = Image.open(BytesIO(response.content))
+            posterImg = ImageQt.toqpixmap(posterImg)
+            widgets.Poster.setPixmap(posterImg)
+            widgets.stackedWidget.setCurrentWidget(widgets.new_page)
+
             #UIFunctions.resetStyle(self, btnName)
             #$btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
-            print("Spin button clicked")
+            #print("Spin button clicked")
         
         if btnName == "btn_SearchMovie":
             print("pressed search")
@@ -214,11 +258,6 @@ class MainWindow(QMainWindow):
             widgets.SearchMovieWidget_13.setHidden(True)
             widgets.SearchMovieWidget_14.setHidden(True)
             widgets.SearchMovieWidget_15.setHidden(True)
-            
-            
-            
-
-            
             
             #Makes a list to show results
             search = str(widgets.searchBar.text())
@@ -441,49 +480,49 @@ class MainWindow(QMainWindow):
                         widgets.posterLabel_15.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_15.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                     
-        if btnName == "addMovieButton" and not self.searchList[0] in self.movieList:
+        if btnName == "addMovieButton":
             self.movieList.append(self.searchList[0])
             
-        if btnName == "addMovieButton_2" and not self.searchList[1] in self.movieList:
+        if btnName == "addMovieButton_2":
             self.movieList.append(self.searchList[1])
             
-        if btnName == "addMovieButton_3" and not self.searchList[2] in self.movieList:
+        if btnName == "addMovieButton_3":
             self.movieList.append(self.searchList[2])
             
-        if btnName == "addMovieButton_4" and not self.searchList[3] in self.movieList:
+        if btnName == "addMovieButton_4":
             self.movieList.append(self.searchList[3])
             
-        if btnName == "addMovieButton_5" and not self.searchList[4] in self.movieList:
+        if btnName == "addMovieButton_5":
             self.movieList.append(self.searchList[4])
             
-        if btnName == "addMovieButton_6" and not self.searchList[5] in self.movieList:
+        if btnName == "addMovieButton_6":
             self.movieList.append(self.searchList[5])
             
-        if btnName == "addMovieButton_7" and not self.searchList[6] in self.movieList:
+        if btnName == "addMovieButton_7":
             self.movieList.append(self.searchList[6])
             
-        if btnName == "addMovieButton_8" and not self.searchList[7] in self.movieList:
+        if btnName == "addMovieButton_8":
             self.movieList.append(self.searchList[7])
             
-        if btnName == "addMovieButton_9" and not self.searchList[8] in self.movieList:
+        if btnName == "addMovieButton_9":
             self.movieList.append(self.searchList[8])
             
-        if btnName == "addMovieButton_10" and not self.searchList[9] in self.movieList:
+        if btnName == "addMovieButton_10":
             self.movieList.append(self.searchList[9])
             
-        if btnName == "addMovieButton_11" and not self.searchList[10] in self.movieList:
+        if btnName == "addMovieButton_11":
             self.movieList.append(self.searchList[10])
             
-        if btnName == "addMovieButton_12" and not self.searchList[11] in self.movieList:
+        if btnName == "addMovieButton_12":
             self.movieList.append(self.searchList[11])
             
-        if btnName == "addMovieButton_13" and not self.searchList[12] in self.movieList:
+        if btnName == "addMovieButton_13":
             self.movieList.append(self.searchList[12])
             
-        if btnName == "addMovieButton_14" and not self.searchList[13] in self.movieList:
+        if btnName == "addMovieButton_14":
             self.movieList.append(self.searchList[13])
             
-        if btnName == "addMovieButton_15" and not self.searchList[14] in self.movieList:
+        if btnName == "addMovieButton_15":
             self.movieList.append(self.searchList[14])
             
 
