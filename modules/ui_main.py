@@ -1510,7 +1510,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_26.setObjectName(u"horizontalLayout_26")
         self.posterLabel = QLabel(self.posterWidget)
         self.posterLabel.setObjectName(u"posterLabel")
-        self.posterLabel.setMinimumSize(QSize(95, 128))
         self.posterLabel.setAutoFillBackground(False)
         self.posterLabel.setStyleSheet(u"background-image: url(:/images/images/images/transparent.png);")
         self.posterLabel.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
@@ -1561,7 +1560,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_2 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_2.setObjectName(u"SearchMovieWidget_2")
-        self.SearchMovieWidget_2.setEnabled(False)
+        self.SearchMovieWidget_2.setEnabled(True)
         self.SearchMovieWidget_2.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_2.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_2.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1596,7 +1595,7 @@ class Ui_MainWindow(object):
 
         self.Details_2 = QLabel(self.TitleWidget_2)
         self.Details_2.setObjectName(u"Details_2")
-        self.Details_2.setEnabled(False)
+        self.Details_2.setEnabled(True)
         self.Details_2.setWordWrap(True)
 
         self.verticalLayout_25.addWidget(self.Details_2)
@@ -1616,7 +1615,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_3 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_3.setObjectName(u"SearchMovieWidget_3")
-        self.SearchMovieWidget_3.setEnabled(False)
+        self.SearchMovieWidget_3.setEnabled(True)
         self.SearchMovieWidget_3.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_3.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_3.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1653,7 +1652,7 @@ class Ui_MainWindow(object):
 
         self.Details_3 = QLabel(self.TitleWidget_3)
         self.Details_3.setObjectName(u"Details_3")
-        self.Details_3.setEnabled(False)
+        self.Details_3.setEnabled(True)
         self.Details_3.setWordWrap(True)
 
         self.verticalLayout_26.addWidget(self.Details_3)
@@ -1673,7 +1672,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_4 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_4.setObjectName(u"SearchMovieWidget_4")
-        self.SearchMovieWidget_4.setEnabled(False)
+        self.SearchMovieWidget_4.setEnabled(True)
         self.SearchMovieWidget_4.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_4.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_4.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1709,7 +1708,7 @@ class Ui_MainWindow(object):
 
         self.Details_4 = QLabel(self.TitleWidget_4)
         self.Details_4.setObjectName(u"Details_4")
-        self.Details_4.setEnabled(False)
+        self.Details_4.setEnabled(True)
         self.Details_4.setWordWrap(True)
 
         self.verticalLayout_27.addWidget(self.Details_4)
@@ -1729,7 +1728,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_5 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_5.setObjectName(u"SearchMovieWidget_5")
-        self.SearchMovieWidget_5.setEnabled(False)
+        self.SearchMovieWidget_5.setEnabled(True)
         self.SearchMovieWidget_5.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_5.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_5.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1765,7 +1764,7 @@ class Ui_MainWindow(object):
 
         self.Details_5 = QLabel(self.TitleWidget_5)
         self.Details_5.setObjectName(u"Details_5")
-        self.Details_5.setEnabled(False)
+        self.Details_5.setEnabled(True)
         self.Details_5.setWordWrap(True)
 
         self.verticalLayout_28.addWidget(self.Details_5)
@@ -1785,7 +1784,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_6 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_6.setObjectName(u"SearchMovieWidget_6")
-        self.SearchMovieWidget_6.setEnabled(False)
+        self.SearchMovieWidget_6.setEnabled(True)
         self.SearchMovieWidget_6.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_6.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_6.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1821,7 +1820,7 @@ class Ui_MainWindow(object):
 
         self.Details_6 = QLabel(self.TitleWidget_6)
         self.Details_6.setObjectName(u"Details_6")
-        self.Details_6.setEnabled(False)
+        self.Details_6.setEnabled(True)
         self.Details_6.setWordWrap(True)
 
         self.verticalLayout_29.addWidget(self.Details_6)
@@ -1841,7 +1840,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_7 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_7.setObjectName(u"SearchMovieWidget_7")
-        self.SearchMovieWidget_7.setEnabled(False)
+        self.SearchMovieWidget_7.setEnabled(True)
         self.SearchMovieWidget_7.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_7.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_7.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1877,7 +1876,7 @@ class Ui_MainWindow(object):
 
         self.Details_7 = QLabel(self.TitleWidget_7)
         self.Details_7.setObjectName(u"Details_7")
-        self.Details_7.setEnabled(False)
+        self.Details_7.setEnabled(True)
         self.Details_7.setWordWrap(True)
 
         self.verticalLayout_30.addWidget(self.Details_7)
@@ -1897,7 +1896,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_8 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_8.setObjectName(u"SearchMovieWidget_8")
-        self.SearchMovieWidget_8.setEnabled(False)
+        self.SearchMovieWidget_8.setEnabled(True)
         self.SearchMovieWidget_8.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_8.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_8.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1933,7 +1932,7 @@ class Ui_MainWindow(object):
 
         self.Details_8 = QLabel(self.TitleWidget_8)
         self.Details_8.setObjectName(u"Details_8")
-        self.Details_8.setEnabled(False)
+        self.Details_8.setEnabled(True)
         self.Details_8.setWordWrap(True)
 
         self.verticalLayout_31.addWidget(self.Details_8)
@@ -1953,7 +1952,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_9 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_9.setObjectName(u"SearchMovieWidget_9")
-        self.SearchMovieWidget_9.setEnabled(False)
+        self.SearchMovieWidget_9.setEnabled(True)
         self.SearchMovieWidget_9.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_9.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_9.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -1989,7 +1988,7 @@ class Ui_MainWindow(object):
 
         self.Details_9 = QLabel(self.TitleWidget_9)
         self.Details_9.setObjectName(u"Details_9")
-        self.Details_9.setEnabled(False)
+        self.Details_9.setEnabled(True)
         self.Details_9.setWordWrap(True)
 
         self.verticalLayout_32.addWidget(self.Details_9)
@@ -2009,7 +2008,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_10 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_10.setObjectName(u"SearchMovieWidget_10")
-        self.SearchMovieWidget_10.setEnabled(False)
+        self.SearchMovieWidget_10.setEnabled(True)
         self.SearchMovieWidget_10.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_10.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_10.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -2045,7 +2044,7 @@ class Ui_MainWindow(object):
 
         self.Details_10 = QLabel(self.TitleWidget_10)
         self.Details_10.setObjectName(u"Details_10")
-        self.Details_10.setEnabled(False)
+        self.Details_10.setEnabled(True)
         self.Details_10.setWordWrap(True)
 
         self.verticalLayout_33.addWidget(self.Details_10)
@@ -2065,7 +2064,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_11 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_11.setObjectName(u"SearchMovieWidget_11")
-        self.SearchMovieWidget_11.setEnabled(False)
+        self.SearchMovieWidget_11.setEnabled(True)
         self.SearchMovieWidget_11.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_11.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_11.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -2101,7 +2100,7 @@ class Ui_MainWindow(object):
 
         self.Details_11 = QLabel(self.TitleWidget_11)
         self.Details_11.setObjectName(u"Details_11")
-        self.Details_11.setEnabled(False)
+        self.Details_11.setEnabled(True)
         self.Details_11.setWordWrap(True)
 
         self.verticalLayout_34.addWidget(self.Details_11)
@@ -2121,7 +2120,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_12 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_12.setObjectName(u"SearchMovieWidget_12")
-        self.SearchMovieWidget_12.setEnabled(False)
+        self.SearchMovieWidget_12.setEnabled(True)
         self.SearchMovieWidget_12.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_12.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_12.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -2157,7 +2156,7 @@ class Ui_MainWindow(object):
 
         self.Details_12 = QLabel(self.TitleWidget_12)
         self.Details_12.setObjectName(u"Details_12")
-        self.Details_12.setEnabled(False)
+        self.Details_12.setEnabled(True)
         self.Details_12.setWordWrap(True)
 
         self.verticalLayout_35.addWidget(self.Details_12)
@@ -2177,7 +2176,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_13 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_13.setObjectName(u"SearchMovieWidget_13")
-        self.SearchMovieWidget_13.setEnabled(False)
+        self.SearchMovieWidget_13.setEnabled(True)
         self.SearchMovieWidget_13.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_13.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_13.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -2214,7 +2213,7 @@ class Ui_MainWindow(object):
 
         self.Details_13 = QLabel(self.TitleWidget_13)
         self.Details_13.setObjectName(u"Details_13")
-        self.Details_13.setEnabled(False)
+        self.Details_13.setEnabled(True)
         self.Details_13.setWordWrap(True)
 
         self.verticalLayout_36.addWidget(self.Details_13)
@@ -2234,7 +2233,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_14 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_14.setObjectName(u"SearchMovieWidget_14")
-        self.SearchMovieWidget_14.setEnabled(False)
+        self.SearchMovieWidget_14.setEnabled(True)
         self.SearchMovieWidget_14.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_14.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_14.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -2270,7 +2269,7 @@ class Ui_MainWindow(object):
 
         self.Details_14 = QLabel(self.TitleWidget_14)
         self.Details_14.setObjectName(u"Details_14")
-        self.Details_14.setEnabled(False)
+        self.Details_14.setEnabled(True)
         self.Details_14.setWordWrap(True)
 
         self.verticalLayout_37.addWidget(self.Details_14)
@@ -2290,7 +2289,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_15 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_15.setObjectName(u"SearchMovieWidget_15")
-        self.SearchMovieWidget_15.setEnabled(False)
+        self.SearchMovieWidget_15.setEnabled(True)
         self.SearchMovieWidget_15.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_15.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_15.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -2326,7 +2325,7 @@ class Ui_MainWindow(object):
 
         self.Details_15 = QLabel(self.TitleWidget_15)
         self.Details_15.setObjectName(u"Details_15")
-        self.Details_15.setEnabled(False)
+        self.Details_15.setEnabled(True)
         self.Details_15.setWordWrap(True)
 
         self.verticalLayout_38.addWidget(self.Details_15)

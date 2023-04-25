@@ -75,6 +75,25 @@ class MainWindow(QMainWindow):
         # QTableWidget PARAMETERS
         # ///////////////////////////////////////////////////////////////
         # widgets.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        
+        widgets.posterLabel.setScaledContents(True)
+        widgets.posterLabel_2.setScaledContents(True)
+        widgets.posterLabel_3.setScaledContents(True)
+        widgets.posterLabel_4.setScaledContents(True)
+        widgets.posterLabel_5.setScaledContents(True)
+        widgets.posterLabel_6.setScaledContents(True)
+        widgets.posterLabel_7.setScaledContents(True)
+        widgets.posterLabel_8.setScaledContents(True)
+        widgets.posterLabel_9.setScaledContents(True)
+        widgets.posterLabel_10.setScaledContents(True)
+        widgets.posterLabel_11.setScaledContents(True)
+        widgets.posterLabel_12.setScaledContents(True)
+        widgets.posterLabel_13.setScaledContents(True)
+        widgets.posterLabel_14.setScaledContents(True)
+        widgets.posterLabel_15.setScaledContents(True)
+        
+        self.movieList = []
+        self.searchList = []
 
         # BUTTONS CLICK
         # ///////////////////////////////////////////////////////////////
@@ -85,7 +104,22 @@ class MainWindow(QMainWindow):
         widgets.btn_new.clicked.connect(self.buttonClick)
         widgets.btn_save.clicked.connect(self.buttonClick)
         widgets.btn_SearchMovie.clicked.connect(self.buttonClick)
-
+        widgets.addMovieButton.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_2.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_3.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_4.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_5.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_6.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_7.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_8.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_9.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_10.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_11.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_12.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_13.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_14.clicked.connect(self.buttonClick)
+        widgets.addMovieButton_15.clicked.connect(self.buttonClick)
+    
         # EXTRA LEFT BOX
         def openCloseLeftBox():
             UIFunctions.toggleLeftBox(self, True)
@@ -178,6 +212,11 @@ class MainWindow(QMainWindow):
             widgets.SearchMovieWidget_14.setHidden(True)
             widgets.SearchMovieWidget_15.setHidden(True)
             
+            
+            
+
+            
+            
             #Makes a list to show results
             search = str(widgets.searchBar.text())
             self.searchList = splitBackend.Backend.searchMovies(search)
@@ -197,7 +236,6 @@ class MainWindow(QMainWindow):
                         posterImg = Image.open(BytesIO(response.content))
                         posterImg = ImageQt.toqpixmap(posterImg)
                         widgets.posterLabel.setPixmap(posterImg)
-                        print(self.searchList[i].getPoster())
                     else:
                         widgets.posterLabel.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
@@ -207,6 +245,13 @@ class MainWindow(QMainWindow):
                         widgets.Title_2.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_2.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_2.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_2.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_2.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 2):
                     widgets.SearchMovieWidget_3.setHidden(False)
@@ -214,6 +259,13 @@ class MainWindow(QMainWindow):
                         widgets.Title_3.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_3.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_3.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_3.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_3.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 3):
                     widgets.SearchMovieWidget_4.setHidden(False)
@@ -221,6 +273,13 @@ class MainWindow(QMainWindow):
                         widgets.Title_4.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_4.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_4.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_4.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_4.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 4):
                     widgets.SearchMovieWidget_5.setHidden(False)
@@ -228,6 +287,13 @@ class MainWindow(QMainWindow):
                         widgets.Title_5.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_5.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_5.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_5.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_5.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 5):
                     widgets.SearchMovieWidget_6.setHidden(False)
@@ -235,6 +301,14 @@ class MainWindow(QMainWindow):
                         widgets.Title_6.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_6.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                        
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_6.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_6.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_6.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 6):
                     widgets.SearchMovieWidget_7.setHidden(False)
@@ -242,6 +316,13 @@ class MainWindow(QMainWindow):
                         widgets.Title_7.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_7.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_7.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_7.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_7.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 7):
                     widgets.SearchMovieWidget_8.setHidden(False)
@@ -249,6 +330,13 @@ class MainWindow(QMainWindow):
                         widgets.Title_8.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_8.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_8.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_8.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_8.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 8):
                     widgets.SearchMovieWidget_9.setHidden(False)
@@ -256,6 +344,13 @@ class MainWindow(QMainWindow):
                         widgets.Title_9.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_9.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_9.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_9.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_9.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 9):
                     widgets.SearchMovieWidget_10.setHidden(False)
@@ -263,6 +358,13 @@ class MainWindow(QMainWindow):
                         widgets.Title_10.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_10.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_10.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_10.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_10.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 10):
                     widgets.SearchMovieWidget_11.setHidden(False)
@@ -270,6 +372,13 @@ class MainWindow(QMainWindow):
                         widgets.Title_11.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_11.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_11.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_11.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_11.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 11):
                     widgets.SearchMovieWidget_12.setHidden(False)
@@ -277,6 +386,13 @@ class MainWindow(QMainWindow):
                         widgets.Title_12.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_12.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_12.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_12.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_12.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
 
                 if(i == 12):
@@ -285,6 +401,13 @@ class MainWindow(QMainWindow):
                         widgets.Title_13.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_13.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_13.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_13.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_13.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 13):
                     widgets.SearchMovieWidget_14.setHidden(False)
@@ -292,6 +415,13 @@ class MainWindow(QMainWindow):
                         widgets.Title_14.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_14.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_14.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_14.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_14.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                 if(i == 14):
                     widgets.SearchMovieWidget_15.setHidden(False)
@@ -299,7 +429,59 @@ class MainWindow(QMainWindow):
                         widgets.Title_15.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle() + " (" + str(self.searchList[i].getDate()) + ")", None))
                     else:
                         widgets.Title_15.setText(QCoreApplication.translate("MainWindow", "" + self.searchList[i].getTitle(), None))
+                    if(self.searchList[i].getPoster()):
+                        response = requests.get(self.searchList[i].getPoster())
+                        posterImg = Image.open(BytesIO(response.content))
+                        posterImg = ImageQt.toqpixmap(posterImg)
+                        widgets.posterLabel_15.setPixmap(posterImg)
+                    else:
+                        widgets.posterLabel_15.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_15.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
+                    
+        if btnName == "addMovieButton":
+            self.movieList.append(self.searchList[0])
+            
+        if btnName == "addMovieButton_2":
+            self.movieList.append(self.searchList[1])
+            
+        if btnName == "addMovieButton_3":
+            self.movieList.append(self.searchList[2])
+            
+        if btnName == "addMovieButton_4":
+            self.movieList.append(self.searchList[3])
+            
+        if btnName == "addMovieButton_5":
+            self.movieList.append(self.searchList[4])
+            
+        if btnName == "addMovieButton_6":
+            self.movieList.append(self.searchList[5])
+            
+        if btnName == "addMovieButton_7":
+            self.movieList.append(self.searchList[6])
+            
+        if btnName == "addMovieButton_8":
+            self.movieList.append(self.searchList[7])
+            
+        if btnName == "addMovieButton_9":
+            self.movieList.append(self.searchList[8])
+            
+        if btnName == "addMovieButton_10":
+            self.movieList.append(self.searchList[9])
+            
+        if btnName == "addMovieButton_11":
+            self.movieList.append(self.searchList[10])
+            
+        if btnName == "addMovieButton_12":
+            self.movieList.append(self.searchList[11])
+            
+        if btnName == "addMovieButton_13":
+            self.movieList.append(self.searchList[12])
+            
+        if btnName == "addMovieButton_14":
+            self.movieList.append(self.searchList[13])
+            
+        if btnName == "addMovieButton_15":
+            self.movieList.append(self.searchList[14])
             
 
         # PRINT BTN NAME

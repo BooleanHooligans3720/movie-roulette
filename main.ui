@@ -2869,7 +2869,7 @@ background-repeat: no-repeat;
                           <property name="geometry">
                            <rect>
                             <x>0</x>
-                            <y>-329</y>
+                            <y>0</y>
                             <width>1150</width>
                             <height>2352</height>
                            </rect>
@@ -2915,8 +2915,8 @@ background-repeat: no-repeat;
                                   <widget class="QLabel" name="posterLabel">
                                    <property name="minimumSize">
                                     <size>
-                                     <width>95</width>
-                                     <height>128</height>
+                                     <width>0</width>
+                                     <height>0</height>
                                     </size>
                                    </property>
                                    <property name="autoFillBackground">
@@ -3282,6 +3282,9 @@ background-repeat: no-repeat;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <property name="scaledContents">
+                                    <bool>true</bool>
+                                   </property>
                                   </widget>
                                  </item>
                                 </layout>
@@ -3387,6 +3390,9 @@ background-repeat: no-repeat;
                                   <widget class="QLabel" name="posterLabel_5">
                                    <property name="text">
                                     <string/>
+                                   </property>
+                                   <property name="scaledContents">
+                                    <bool>true</bool>
                                    </property>
                                   </widget>
                                  </item>
@@ -3494,6 +3500,9 @@ background-repeat: no-repeat;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <property name="scaledContents">
+                                    <bool>true</bool>
+                                   </property>
                                   </widget>
                                  </item>
                                 </layout>
@@ -3599,6 +3608,9 @@ background-repeat: no-repeat;
                                   <widget class="QLabel" name="posterLabel_7">
                                    <property name="text">
                                     <string/>
+                                   </property>
+                                   <property name="scaledContents">
+                                    <bool>true</bool>
                                    </property>
                                   </widget>
                                  </item>
@@ -3706,6 +3718,9 @@ background-repeat: no-repeat;
                                    <property name="text">
                                     <string/>
                                    </property>
+                                   <property name="scaledContents">
+                                    <bool>true</bool>
+                                   </property>
                                   </widget>
                                  </item>
                                 </layout>
@@ -3811,6 +3826,9 @@ background-repeat: no-repeat;
                                   <widget class="QLabel" name="posterLabel_9">
                                    <property name="text">
                                     <string/>
+                                   </property>
+                                   <property name="scaledContents">
+                                    <bool>true</bool>
                                    </property>
                                   </widget>
                                  </item>
