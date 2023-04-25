@@ -1,6 +1,7 @@
 import random
 import movie
 from typing import List
+import tmdbsimple as tmdb
 
 def getWeightedRandom(movieList: List[movie.movie],genre,runtimeMin,runtimeMax,popularity,dateMin,dateMax):
     
@@ -90,4 +91,4 @@ def getPureRandom(movieList: List[movie.movie]):
 
 #if the list of movies and the params are all blank this will return a random movie
 def getRandomID():
-	return movie.movie(random.randint(1,9999))
+	return movie.movie(random.randint(1, tmdb.Movies.latest()['id']))
