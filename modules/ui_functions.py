@@ -25,32 +25,32 @@ GLOBAL_TITLE_BAR = True
 class UIFunctions(MainWindow):
     # MAXIMIZE/RESTORE
     # ///////////////////////////////////////////////////////////////
-    def maximize_restore(self):
-        global GLOBAL_STATE
-        status = GLOBAL_STATE
-        if status == False:
-            self.showMaximized()
-            GLOBAL_STATE = True
-            self.ui.appMargins.setContentsMargins(0, 0, 0, 0)
-            self.ui.maximizeRestoreAppBtn.setToolTip("Restore")
-            self.ui.maximizeRestoreAppBtn.setIcon(QIcon(u":/icons/images/icons/icon_restore.png"))
-            self.ui.frame_size_grip.hide()
-            self.left_grip.hide()
-            self.right_grip.hide()
-            self.top_grip.hide()
-            self.bottom_grip.hide()
-        else:
-            GLOBAL_STATE = False
-            self.showNormal()
-            self.resize(self.width()+1, self.height()+1)
-            self.ui.appMargins.setContentsMargins(10, 10, 10, 10)
-            self.ui.maximizeRestoreAppBtn.setToolTip("Maximize")
-            self.ui.maximizeRestoreAppBtn.setIcon(QIcon(u":/icons/images/icons/icon_maximize.png"))
-            self.ui.frame_size_grip.show()
-            self.left_grip.show()
-            self.right_grip.show()
-            self.top_grip.show()
-            self.bottom_grip.show()
+    #def maximize_restore(self):
+    #    global GLOBAL_STATE
+    #    status = GLOBAL_STATE
+    #    if status == False:
+    #        self.showMaximized()
+    #        GLOBAL_STATE = True
+    #        self.ui.appMargins.setContentsMargins(0, 0, 0, 0)
+    #        self.ui.maximizeRestoreAppBtn.setToolTip("Restore")
+    #        self.ui.maximizeRestoreAppBtn.setIcon(QIcon(u":/icons/images/icons/icon_restore.png"))
+    #        self.ui.frame_size_grip.hide()
+    #        self.left_grip.hide()
+    #        self.right_grip.hide()
+    #        self.top_grip.hide()
+    #        self.bottom_grip.hide()
+    #    else:
+    #        GLOBAL_STATE = False
+    #        self.showNormal()
+    #        self.resize(self.width()+1, self.height()+1)
+    #        self.ui.appMargins.setContentsMargins(10, 10, 10, 10)
+    #        self.ui.maximizeRestoreAppBtn.setToolTip("Maximize")
+    #        self.ui.maximizeRestoreAppBtn.setIcon(QIcon(u":/icons/images/icons/icon_maximize.png"))
+    #        self.ui.frame_size_grip.show()
+    #        self.left_grip.show()
+    #        self.right_grip.show()
+    #        self.top_grip.show()
+    #        self.bottom_grip.show()
 
     # RETURN STATUS
     # ///////////////////////////////////////////////////////////////
@@ -213,11 +213,11 @@ class UIFunctions(MainWindow):
     # START - GUI DEFINITIONS
     # ///////////////////////////////////////////////////////////////
     def uiDefinitions(self):
-        def dobleClickMaximizeRestore(event):
+        #def dobleClickMaximizeRestore(event):
             # IF DOUBLE CLICK CHANGE STATUS
-            if event.type() == QEvent.MouseButtonDblClick:
-                QTimer.singleShot(250, lambda: UIFunctions.maximize_restore(self))
-        self.ui.titleRightInfo.mouseDoubleClickEvent = dobleClickMaximizeRestore
+        #    if event.type() == QEvent.MouseButtonDblClick:
+        #        QTimer.singleShot(250, lambda: UIFunctions.maximize_restore(self))
+        # self.ui.titleRightInfo.mouseDoubleClickEvent = dobleClickMaximizeRestore
 
         if Settings.ENABLE_CUSTOM_TITLE_BAR:
             #STANDARD TITLE BAR
@@ -227,8 +227,8 @@ class UIFunctions(MainWindow):
             # MOVE WINDOW / MAXIMIZE / RESTORE
             def moveWindow(event):
                 # IF MAXIMIZED CHANGE TO NORMAL
-                if UIFunctions.returStatus(self):
-                    UIFunctions.maximize_restore(self)
+                # if UIFunctions.returStatus(self):
+                #     UIFunctions.maximize_restore(self)
                 # MOVE WINDOW
                 if event.buttons() == Qt.LeftButton:
                     self.move(self.pos() + event.globalPos() - self.dragPos)
@@ -245,7 +245,7 @@ class UIFunctions(MainWindow):
         else:
             self.ui.appMargins.setContentsMargins(0, 0, 0, 0)
             self.ui.minimizeAppBtn.hide()
-            self.ui.maximizeRestoreAppBtn.hide()
+            #self.ui.maximizeRestoreAppBtn.hide()
             self.ui.closeAppBtn.hide()
             self.ui.frame_size_grip.hide()
 
@@ -265,7 +265,7 @@ class UIFunctions(MainWindow):
         self.ui.minimizeAppBtn.clicked.connect(lambda: self.showMinimized())
 
         # MAXIMIZE/RESTORE
-        self.ui.maximizeRestoreAppBtn.clicked.connect(lambda: UIFunctions.maximize_restore(self))
+        #self.ui.maximizeRestoreAppBtn.clicked.connect(lambda: UIFunctions.maximize_restore(self))
 
         # CLOSE APPLICATION
         self.ui.closeAppBtn.clicked.connect(lambda: self.close())
