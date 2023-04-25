@@ -1466,13 +1466,13 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.searchBar = QLineEdit(self.SearchBoxArea)
         self.searchBar.setObjectName(u"searchBar")
-        self.searchBar.setMinimumSize(QSize(0, 50))
+        self.searchBar.setMinimumSize(QSize(0, 40))
 
         self.horizontalLayout_7.addWidget(self.searchBar, 0, Qt.AlignTop)
 
         self.btn_SearchMovie = QPushButton(self.SearchBoxArea)
         self.btn_SearchMovie.setObjectName(u"btn_SearchMovie")
-        self.btn_SearchMovie.setMinimumSize(QSize(0, 45))
+        self.btn_SearchMovie.setMinimumSize(QSize(0, 40))
         self.btn_SearchMovie.setStyleSheet(u"background-color: rgb(44, 49, 58);")
 
         self.horizontalLayout_7.addWidget(self.btn_SearchMovie, 0, Qt.AlignRight|Qt.AlignVCenter)
@@ -1523,18 +1523,25 @@ class Ui_MainWindow(object):
 
         self.TitleWidget = QWidget(self.SearchMovieWidget)
         self.TitleWidget.setObjectName(u"TitleWidget")
+        sizePolicy3.setHeightForWidth(self.TitleWidget.sizePolicy().hasHeightForWidth())
+        self.TitleWidget.setSizePolicy(sizePolicy3)
+        self.TitleWidget.setMinimumSize(QSize(800, 0))
+        self.TitleWidget.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_24 = QVBoxLayout(self.TitleWidget)
         self.verticalLayout_24.setObjectName(u"verticalLayout_24")
         self.Title = QLabel(self.TitleWidget)
         self.Title.setObjectName(u"Title")
         self.Title.setStyleSheet(u"")
+        self.Title.setWordWrap(True)
 
         self.verticalLayout_24.addWidget(self.Title)
 
         self.Details = QLabel(self.TitleWidget)
         self.Details.setObjectName(u"Details")
         self.Details.setEnabled(True)
+        self.Details.setMinimumSize(QSize(777, 0))
+        self.Details.setWordWrap(True)
 
         self.verticalLayout_24.addWidget(self.Details)
 
@@ -1583,12 +1590,14 @@ class Ui_MainWindow(object):
         self.Title_2 = QLabel(self.TitleWidget_2)
         self.Title_2.setObjectName(u"Title_2")
         self.Title_2.setStyleSheet(u"")
+        self.Title_2.setWordWrap(True)
 
         self.verticalLayout_25.addWidget(self.Title_2)
 
         self.Details_2 = QLabel(self.TitleWidget_2)
         self.Details_2.setObjectName(u"Details_2")
         self.Details_2.setEnabled(False)
+        self.Details_2.setWordWrap(True)
 
         self.verticalLayout_25.addWidget(self.Details_2)
 
@@ -1630,18 +1639,22 @@ class Ui_MainWindow(object):
 
         self.TitleWidget_3 = QWidget(self.SearchMovieWidget_3)
         self.TitleWidget_3.setObjectName(u"TitleWidget_3")
+        self.TitleWidget_3.setMinimumSize(QSize(800, 0))
+        self.TitleWidget_3.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget_3.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_26 = QVBoxLayout(self.TitleWidget_3)
         self.verticalLayout_26.setObjectName(u"verticalLayout_26")
         self.Title_3 = QLabel(self.TitleWidget_3)
         self.Title_3.setObjectName(u"Title_3")
         self.Title_3.setStyleSheet(u"")
+        self.Title_3.setWordWrap(True)
 
         self.verticalLayout_26.addWidget(self.Title_3)
 
         self.Details_3 = QLabel(self.TitleWidget_3)
         self.Details_3.setObjectName(u"Details_3")
         self.Details_3.setEnabled(False)
+        self.Details_3.setWordWrap(True)
 
         self.verticalLayout_26.addWidget(self.Details_3)
 
@@ -1683,18 +1696,21 @@ class Ui_MainWindow(object):
 
         self.TitleWidget_4 = QWidget(self.SearchMovieWidget_4)
         self.TitleWidget_4.setObjectName(u"TitleWidget_4")
+        self.TitleWidget_4.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget_4.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_27 = QVBoxLayout(self.TitleWidget_4)
         self.verticalLayout_27.setObjectName(u"verticalLayout_27")
         self.Title_4 = QLabel(self.TitleWidget_4)
         self.Title_4.setObjectName(u"Title_4")
         self.Title_4.setStyleSheet(u"")
+        self.Title_4.setWordWrap(True)
 
         self.verticalLayout_27.addWidget(self.Title_4)
 
         self.Details_4 = QLabel(self.TitleWidget_4)
         self.Details_4.setObjectName(u"Details_4")
         self.Details_4.setEnabled(False)
+        self.Details_4.setWordWrap(True)
 
         self.verticalLayout_27.addWidget(self.Details_4)
 
@@ -1736,18 +1752,21 @@ class Ui_MainWindow(object):
 
         self.TitleWidget_5 = QWidget(self.SearchMovieWidget_5)
         self.TitleWidget_5.setObjectName(u"TitleWidget_5")
+        self.TitleWidget_5.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget_5.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_28 = QVBoxLayout(self.TitleWidget_5)
         self.verticalLayout_28.setObjectName(u"verticalLayout_28")
         self.Title_5 = QLabel(self.TitleWidget_5)
         self.Title_5.setObjectName(u"Title_5")
         self.Title_5.setStyleSheet(u"")
+        self.Title_5.setWordWrap(True)
 
         self.verticalLayout_28.addWidget(self.Title_5)
 
         self.Details_5 = QLabel(self.TitleWidget_5)
         self.Details_5.setObjectName(u"Details_5")
         self.Details_5.setEnabled(False)
+        self.Details_5.setWordWrap(True)
 
         self.verticalLayout_28.addWidget(self.Details_5)
 
@@ -1789,18 +1808,21 @@ class Ui_MainWindow(object):
 
         self.TitleWidget_6 = QWidget(self.SearchMovieWidget_6)
         self.TitleWidget_6.setObjectName(u"TitleWidget_6")
+        self.TitleWidget_6.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget_6.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_29 = QVBoxLayout(self.TitleWidget_6)
         self.verticalLayout_29.setObjectName(u"verticalLayout_29")
         self.Title_6 = QLabel(self.TitleWidget_6)
         self.Title_6.setObjectName(u"Title_6")
         self.Title_6.setStyleSheet(u"")
+        self.Title_6.setWordWrap(True)
 
         self.verticalLayout_29.addWidget(self.Title_6)
 
         self.Details_6 = QLabel(self.TitleWidget_6)
         self.Details_6.setObjectName(u"Details_6")
         self.Details_6.setEnabled(False)
+        self.Details_6.setWordWrap(True)
 
         self.verticalLayout_29.addWidget(self.Details_6)
 
@@ -1842,18 +1864,21 @@ class Ui_MainWindow(object):
 
         self.TitleWidget_7 = QWidget(self.SearchMovieWidget_7)
         self.TitleWidget_7.setObjectName(u"TitleWidget_7")
+        self.TitleWidget_7.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget_7.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_30 = QVBoxLayout(self.TitleWidget_7)
         self.verticalLayout_30.setObjectName(u"verticalLayout_30")
         self.Title_7 = QLabel(self.TitleWidget_7)
         self.Title_7.setObjectName(u"Title_7")
         self.Title_7.setStyleSheet(u"")
+        self.Title_7.setWordWrap(True)
 
         self.verticalLayout_30.addWidget(self.Title_7)
 
         self.Details_7 = QLabel(self.TitleWidget_7)
         self.Details_7.setObjectName(u"Details_7")
         self.Details_7.setEnabled(False)
+        self.Details_7.setWordWrap(True)
 
         self.verticalLayout_30.addWidget(self.Details_7)
 
@@ -1895,18 +1920,21 @@ class Ui_MainWindow(object):
 
         self.TitleWidget_8 = QWidget(self.SearchMovieWidget_8)
         self.TitleWidget_8.setObjectName(u"TitleWidget_8")
+        self.TitleWidget_8.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget_8.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_31 = QVBoxLayout(self.TitleWidget_8)
         self.verticalLayout_31.setObjectName(u"verticalLayout_31")
         self.Title_8 = QLabel(self.TitleWidget_8)
         self.Title_8.setObjectName(u"Title_8")
         self.Title_8.setStyleSheet(u"")
+        self.Title_8.setWordWrap(True)
 
         self.verticalLayout_31.addWidget(self.Title_8)
 
         self.Details_8 = QLabel(self.TitleWidget_8)
         self.Details_8.setObjectName(u"Details_8")
         self.Details_8.setEnabled(False)
+        self.Details_8.setWordWrap(True)
 
         self.verticalLayout_31.addWidget(self.Details_8)
 
@@ -1948,18 +1976,21 @@ class Ui_MainWindow(object):
 
         self.TitleWidget_9 = QWidget(self.SearchMovieWidget_9)
         self.TitleWidget_9.setObjectName(u"TitleWidget_9")
+        self.TitleWidget_9.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget_9.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_32 = QVBoxLayout(self.TitleWidget_9)
         self.verticalLayout_32.setObjectName(u"verticalLayout_32")
         self.Title_9 = QLabel(self.TitleWidget_9)
         self.Title_9.setObjectName(u"Title_9")
         self.Title_9.setStyleSheet(u"")
+        self.Title_9.setWordWrap(True)
 
         self.verticalLayout_32.addWidget(self.Title_9)
 
         self.Details_9 = QLabel(self.TitleWidget_9)
         self.Details_9.setObjectName(u"Details_9")
         self.Details_9.setEnabled(False)
+        self.Details_9.setWordWrap(True)
 
         self.verticalLayout_32.addWidget(self.Details_9)
 
@@ -2001,18 +2032,21 @@ class Ui_MainWindow(object):
 
         self.TitleWidget_10 = QWidget(self.SearchMovieWidget_10)
         self.TitleWidget_10.setObjectName(u"TitleWidget_10")
+        self.TitleWidget_10.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget_10.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_33 = QVBoxLayout(self.TitleWidget_10)
         self.verticalLayout_33.setObjectName(u"verticalLayout_33")
         self.Title_10 = QLabel(self.TitleWidget_10)
         self.Title_10.setObjectName(u"Title_10")
         self.Title_10.setStyleSheet(u"")
+        self.Title_10.setWordWrap(True)
 
         self.verticalLayout_33.addWidget(self.Title_10)
 
         self.Details_10 = QLabel(self.TitleWidget_10)
         self.Details_10.setObjectName(u"Details_10")
         self.Details_10.setEnabled(False)
+        self.Details_10.setWordWrap(True)
 
         self.verticalLayout_33.addWidget(self.Details_10)
 
@@ -2054,18 +2088,21 @@ class Ui_MainWindow(object):
 
         self.TitleWidget_11 = QWidget(self.SearchMovieWidget_11)
         self.TitleWidget_11.setObjectName(u"TitleWidget_11")
+        self.TitleWidget_11.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget_11.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_34 = QVBoxLayout(self.TitleWidget_11)
         self.verticalLayout_34.setObjectName(u"verticalLayout_34")
         self.Title_11 = QLabel(self.TitleWidget_11)
         self.Title_11.setObjectName(u"Title_11")
         self.Title_11.setStyleSheet(u"")
+        self.Title_11.setWordWrap(True)
 
         self.verticalLayout_34.addWidget(self.Title_11)
 
         self.Details_11 = QLabel(self.TitleWidget_11)
         self.Details_11.setObjectName(u"Details_11")
         self.Details_11.setEnabled(False)
+        self.Details_11.setWordWrap(True)
 
         self.verticalLayout_34.addWidget(self.Details_11)
 
@@ -2107,18 +2144,21 @@ class Ui_MainWindow(object):
 
         self.TitleWidget_12 = QWidget(self.SearchMovieWidget_12)
         self.TitleWidget_12.setObjectName(u"TitleWidget_12")
+        self.TitleWidget_12.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget_12.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_35 = QVBoxLayout(self.TitleWidget_12)
         self.verticalLayout_35.setObjectName(u"verticalLayout_35")
         self.Title_12 = QLabel(self.TitleWidget_12)
         self.Title_12.setObjectName(u"Title_12")
         self.Title_12.setStyleSheet(u"")
+        self.Title_12.setWordWrap(True)
 
         self.verticalLayout_35.addWidget(self.Title_12)
 
         self.Details_12 = QLabel(self.TitleWidget_12)
         self.Details_12.setObjectName(u"Details_12")
         self.Details_12.setEnabled(False)
+        self.Details_12.setWordWrap(True)
 
         self.verticalLayout_35.addWidget(self.Details_12)
 
@@ -2161,18 +2201,21 @@ class Ui_MainWindow(object):
 
         self.TitleWidget_13 = QWidget(self.SearchMovieWidget_13)
         self.TitleWidget_13.setObjectName(u"TitleWidget_13")
+        self.TitleWidget_13.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget_13.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_36 = QVBoxLayout(self.TitleWidget_13)
         self.verticalLayout_36.setObjectName(u"verticalLayout_36")
         self.Title_13 = QLabel(self.TitleWidget_13)
         self.Title_13.setObjectName(u"Title_13")
         self.Title_13.setStyleSheet(u"")
+        self.Title_13.setWordWrap(True)
 
         self.verticalLayout_36.addWidget(self.Title_13)
 
         self.Details_13 = QLabel(self.TitleWidget_13)
         self.Details_13.setObjectName(u"Details_13")
         self.Details_13.setEnabled(False)
+        self.Details_13.setWordWrap(True)
 
         self.verticalLayout_36.addWidget(self.Details_13)
 
@@ -2214,18 +2257,21 @@ class Ui_MainWindow(object):
 
         self.TitleWidget_14 = QWidget(self.SearchMovieWidget_14)
         self.TitleWidget_14.setObjectName(u"TitleWidget_14")
+        self.TitleWidget_14.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget_14.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_37 = QVBoxLayout(self.TitleWidget_14)
         self.verticalLayout_37.setObjectName(u"verticalLayout_37")
         self.Title_14 = QLabel(self.TitleWidget_14)
         self.Title_14.setObjectName(u"Title_14")
         self.Title_14.setStyleSheet(u"")
+        self.Title_14.setWordWrap(True)
 
         self.verticalLayout_37.addWidget(self.Title_14)
 
         self.Details_14 = QLabel(self.TitleWidget_14)
         self.Details_14.setObjectName(u"Details_14")
         self.Details_14.setEnabled(False)
+        self.Details_14.setWordWrap(True)
 
         self.verticalLayout_37.addWidget(self.Details_14)
 
@@ -2267,18 +2313,21 @@ class Ui_MainWindow(object):
 
         self.TitleWidget_15 = QWidget(self.SearchMovieWidget_15)
         self.TitleWidget_15.setObjectName(u"TitleWidget_15")
+        self.TitleWidget_15.setMaximumSize(QSize(800, 16777215))
         self.TitleWidget_15.setStyleSheet(u"background-color: rgb(44, 49, 58);")
         self.verticalLayout_38 = QVBoxLayout(self.TitleWidget_15)
         self.verticalLayout_38.setObjectName(u"verticalLayout_38")
         self.Title_15 = QLabel(self.TitleWidget_15)
         self.Title_15.setObjectName(u"Title_15")
         self.Title_15.setStyleSheet(u"")
+        self.Title_15.setWordWrap(True)
 
         self.verticalLayout_38.addWidget(self.Title_15)
 
         self.Details_15 = QLabel(self.TitleWidget_15)
         self.Details_15.setObjectName(u"Details_15")
         self.Details_15.setEnabled(False)
+        self.Details_15.setWordWrap(True)
 
         self.verticalLayout_38.addWidget(self.Details_15)
 
@@ -2432,7 +2481,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(4)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2595,11 +2644,3 @@ class Ui_MainWindow(object):
         self.CreditLogoLabel.setText("")
     # retranslateUi
 
-# Error: main.ui: Warning: The name 'layoutWidget' (QWidget) is already in use, defaulting to 'layoutWidget1'.
-
-# main.ui: Warning: The name 'layoutWidget' (QWidget) is already in use, defaulting to 'layoutWidget2'.
-
-# main.ui: Warning: The name 'layoutWidget' (QWidget) is already in use, defaulting to 'layoutWidget3'.
-
-
-# while executing 'C:\Users\Xbox\AppData\Local\Programs\Python\Python39\Lib\site-packages\PySide6\uic -g python main.ui'
