@@ -76,6 +76,8 @@ class MainWindow(QMainWindow):
         # ///////////////////////////////////////////////////////////////
         # widgets.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         
+        widgets.topLogo.setStyleSheet(u"background-image: url(:/images/images/images/SpinWheel.png);")
+        
         widgets.posterLabel.setScaledContents(True)
         widgets.posterLabel_2.setScaledContents(True)
         widgets.posterLabel_3.setScaledContents(True)
@@ -188,6 +190,7 @@ class MainWindow(QMainWindow):
         if btnName == "btn_spin":
             widgets.stackedWidget.setCurrentWidget(widgets.LoadingScreen)
             self.LoadingMovie.start()
+            
             #UIFunctions.resetStyle(self, btnName)
             #$btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
             print("Spin button clicked")
@@ -438,49 +441,49 @@ class MainWindow(QMainWindow):
                         widgets.posterLabel_15.setPixmap(QPixmap(u":/images/images/images/No_Image_Available.jpg"))
                     widgets.Details_15.setText(QCoreApplication.translate("MainWindow", self.searchList[i].getDescription(), None))
                     
-        if btnName == "addMovieButton":
+        if btnName == "addMovieButton" and not self.searchList[0] in self.movieList:
             self.movieList.append(self.searchList[0])
             
-        if btnName == "addMovieButton_2":
+        if btnName == "addMovieButton_2" and not self.searchList[1] in self.movieList:
             self.movieList.append(self.searchList[1])
             
-        if btnName == "addMovieButton_3":
+        if btnName == "addMovieButton_3" and not self.searchList[2] in self.movieList:
             self.movieList.append(self.searchList[2])
             
-        if btnName == "addMovieButton_4":
+        if btnName == "addMovieButton_4" and not self.searchList[3] in self.movieList:
             self.movieList.append(self.searchList[3])
             
-        if btnName == "addMovieButton_5":
+        if btnName == "addMovieButton_5" and not self.searchList[4] in self.movieList:
             self.movieList.append(self.searchList[4])
             
-        if btnName == "addMovieButton_6":
+        if btnName == "addMovieButton_6" and not self.searchList[5] in self.movieList:
             self.movieList.append(self.searchList[5])
             
-        if btnName == "addMovieButton_7":
+        if btnName == "addMovieButton_7" and not self.searchList[6] in self.movieList:
             self.movieList.append(self.searchList[6])
             
-        if btnName == "addMovieButton_8":
+        if btnName == "addMovieButton_8" and not self.searchList[7] in self.movieList:
             self.movieList.append(self.searchList[7])
             
-        if btnName == "addMovieButton_9":
+        if btnName == "addMovieButton_9" and not self.searchList[8] in self.movieList:
             self.movieList.append(self.searchList[8])
             
-        if btnName == "addMovieButton_10":
+        if btnName == "addMovieButton_10" and not self.searchList[9] in self.movieList:
             self.movieList.append(self.searchList[9])
             
-        if btnName == "addMovieButton_11":
+        if btnName == "addMovieButton_11" and not self.searchList[10] in self.movieList:
             self.movieList.append(self.searchList[10])
             
-        if btnName == "addMovieButton_12":
+        if btnName == "addMovieButton_12" and not self.searchList[11] in self.movieList:
             self.movieList.append(self.searchList[11])
             
-        if btnName == "addMovieButton_13":
+        if btnName == "addMovieButton_13" and not self.searchList[12] in self.movieList:
             self.movieList.append(self.searchList[12])
             
-        if btnName == "addMovieButton_14":
+        if btnName == "addMovieButton_14" and not self.searchList[13] in self.movieList:
             self.movieList.append(self.searchList[13])
             
-        if btnName == "addMovieButton_15":
+        if btnName == "addMovieButton_15" and not self.searchList[14] in self.movieList:
             self.movieList.append(self.searchList[14])
             
 
