@@ -657,6 +657,9 @@ Button */
                <height>42</height>
               </size>
              </property>
+             <property name="styleSheet">
+              <string notr="true">background-image: url(:/images/images/images/SpinWheel.png);</string>
+             </property>
              <property name="frameShape">
               <enum>QFrame::NoFrame</enum>
              </property>
@@ -1822,7 +1825,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>3</number>
+                      <number>1</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="layoutDirection">
@@ -1894,15 +1897,29 @@ background-repeat: no-repeat;
                       <property name="enabled">
                        <bool>true</bool>
                       </property>
-                      <layout class="QHBoxLayout" name="horizontalLayout_6">
-                       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-                        <widget class="QLabel" name="LoadingLabel">
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
+                      <widget class="QPushButton" name="ClearListSure">
+                       <property name="geometry">
+                        <rect>
+                         <x>350</x>
+                         <y>180</y>
+                         <width>491</width>
+                         <height>241</height>
+                        </rect>
+                       </property>
+                       <property name="autoFillBackground">
+                        <bool>false</bool>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">font: 700 15pt &quot;Consolas&quot;;
+border-color: rgb(36, 40, 47);
+background-color: rgb(36, 40, 47);
+
+</string>
+                       </property>
+                       <property name="text">
+                        <string>Are you sure you want to clear your list?</string>
+                       </property>
+                      </widget>
                      </widget>
                      <widget class="QWidget" name="widgets">
                       <property name="styleSheet">

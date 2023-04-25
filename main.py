@@ -67,7 +67,6 @@ class MainWindow(QMainWindow):
 
 
         self.LoadingMovie = QMovie(u":/images/images/images/SpinWheel.gif")
-        widgets.LoadingLabel.setMovie(self.LoadingMovie)
 
         # SET UI DEFINITIONS
         # ///////////////////////////////////////////////////////////////
@@ -101,6 +100,7 @@ class MainWindow(QMainWindow):
         widgets.btn_spin.clicked.connect(self.buttonClick)
         # LEFT MENUS
         widgets.btn_home.clicked.connect(self.buttonClick)
+        widgets.btn_exit.clicked.connect(self.buttonClick)
         widgets.btn_widgets.clicked.connect(self.buttonClick)
         widgets.btn_new.clicked.connect(self.buttonClick)
         widgets.btn_save.clicked.connect(self.buttonClick)
@@ -139,6 +139,7 @@ class MainWindow(QMainWindow):
         widgets.Thriller.clicked.connect(self.buttonClick)
         widgets.War.clicked.connect(self.buttonClick)
         widgets.Western.clicked.connect(self.buttonClick)
+        widgets.ClearListSure.clicked.connect(self.buttonClick)
 
 
 
@@ -183,9 +184,18 @@ class MainWindow(QMainWindow):
         # GET BUTTON CLICKED
         btn = self.sender()
         btnName = btn.objectName()  
+        
+        if btnName == "ClearListSure":
+            self.movieList.clear()
+        
+        if btnName == "btn_exit":
+            widgets.stackedWidget.setCurrentWidget(widgets.LoadingScreen)
 
         if btnName == "rollAgain":
-            randomResult = randomPicker.getRandomID()
+            if(len(self.movieList) == 0):
+                randomResult = randomPicker.getRandomID()
+            else:
+                randomResult = randomPicker.getPureRandom(self.movieList)
             widgets.Description.setText(QCoreApplication.translate("MainWindow","" + str(randomResult.getDescription()),None))
             widgets.Name.setText(QCoreApplication.translate("MainWindow","" + randomResult.getTitle(),None))
             widgets.Runtime.setText(QCoreApplication.translate("MainWindow","Runtime (mins): \n" + str(randomResult.getRuntime()),None))
@@ -222,7 +232,10 @@ class MainWindow(QMainWindow):
         if btnName == "btn_spin":
             widgets.stackedWidget.setCurrentWidget(widgets.LoadingScreen)
             self.LoadingMovie.start()
-            randomResult = randomPicker.getRandomID()
+            if(len(self.movieList) == 0):
+                randomResult = randomPicker.getRandomID()
+            else:
+                randomResult = randomPicker.getPureRandom(self.movieList)
             widgets.Description.setText(QCoreApplication.translate("MainWindow","" + str(randomResult.getDescription()),None))
             widgets.Name.setText(QCoreApplication.translate("MainWindow","" + randomResult.getTitle(),None))
             widgets.Runtime.setText(QCoreApplication.translate("MainWindow","Runtime (mins): \n" + str(randomResult.getRuntime()),None))

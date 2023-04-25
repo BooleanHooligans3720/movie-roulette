@@ -71,6 +71,7 @@ class Ui_MainWindow(object):
 "#topLogo {\n"
 "	background-color: rgb(33, 37, 43);\n"
 "	background-position: centered;\n"
+"       background-image: url(:/images/images/images/SpinWheel.png);\n"
 "	background-repeat: no-repeat;\n"
 "}\n"
 "#titleLeftApp { font: 63 12pt \"Segoe UI Semibold\"; }\n"
@@ -698,17 +699,17 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_8.addWidget(self.btn_save)
 
-        #self.btn_exit = QPushButton(self.topMenu)
-        #self.btn_exit.setObjectName(u"btn_exit")
-        #sizePolicy.setHeightForWidth(self.btn_exit.sizePolicy().hasHeightForWidth())
-        #self.btn_exit.setSizePolicy(sizePolicy)
-        #self.btn_exit.setMinimumSize(QSize(0, 45))
-        #self.btn_exit.setFont(font)
-        #self.btn_exit.setCursor(QCursor(Qt.PointingHandCursor))
-        #self.btn_exit.setLayoutDirection(Qt.LeftToRight)
-        #self.btn_exit.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-x.png);")
+        self.btn_exit = QPushButton(self.topMenu)
+        self.btn_exit.setObjectName(u"btn_exit")
+        sizePolicy.setHeightForWidth(self.btn_exit.sizePolicy().hasHeightForWidth())
+        self.btn_exit.setSizePolicy(sizePolicy)
+        self.btn_exit.setMinimumSize(QSize(0, 45))
+        self.btn_exit.setFont(font)
+        self.btn_exit.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_exit.setLayoutDirection(Qt.LeftToRight)
+        self.btn_exit.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-x.png);")
 
-#        self.verticalLayout_8.addWidget(self.btn_exit)
+        self.verticalLayout_8.addWidget(self.btn_exit)
 
 
         self.verticalMenuLayout.addWidget(self.topMenu, 0, Qt.AlignTop)
@@ -1042,16 +1043,22 @@ class Ui_MainWindow(object):
 "background-repeat: no-repeat;\n"
 "\n"
 "")
+        
         self.stackedWidget.addWidget(self.home)
         self.LoadingScreen = QWidget()
         self.LoadingScreen.setObjectName(u"LoadingScreen")
         self.LoadingScreen.setEnabled(True)
-        self.horizontalLayout_6 = QHBoxLayout(self.LoadingScreen)
-        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
-        self.LoadingLabel = QLabel(self.LoadingScreen)
-        self.LoadingLabel.setObjectName(u"LoadingLabel")
+        self.ClearListSure = QPushButton(self.LoadingScreen)
+        self.ClearListSure.setObjectName(u"ClearListSure")
+        self.ClearListSure.setGeometry(QRect(350, 180, 491, 241))
+        self.ClearListSure.setAutoFillBackground(False)
+        self.ClearListSure.setStyleSheet(u"font: 700 15pt \"Consolas\";\n"
+"border-color: rgb(36, 40, 47);\n"
+"background-color: rgb(36, 40, 47);\n"
+"\n"
+"")
 
-        self.horizontalLayout_6.addWidget(self.LoadingLabel, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
 
         self.stackedWidget.addWidget(self.LoadingScreen)
         self.widgets = QWidget()
@@ -2132,7 +2139,7 @@ class Ui_MainWindow(object):
 
         self.SearchMovieWidget_12 = QWidget(self.scrollAreaWidgetContents_2)
         self.SearchMovieWidget_12.setObjectName(u"SearchMovieWidget_12")
-        self.SearchMovieWidget_12.setEnabled(False)
+        self.SearchMovieWidget_12.setEnabled(True)
         self.SearchMovieWidget_12.setMinimumSize(QSize(0, 150))
         self.SearchMovieWidget_12.setMaximumSize(QSize(16777215, 150))
         self.SearchMovieWidget_12.setStyleSheet(u"background-color: rgb(44, 49, 58);")
@@ -2508,7 +2515,7 @@ class Ui_MainWindow(object):
         self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Filters", None))
         self.btn_new.setText(QCoreApplication.translate("MainWindow", u"Results", None))
         self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Search", None))
-        #self.btn_exit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+        self.btn_exit.setText(QCoreApplication.translate("MainWindow", u"Clear List", None))
         #self.toggleLeftBox.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
         #self.extraLabel.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
 #if QT_CONFIG(tooltip)
@@ -2548,8 +2555,8 @@ class Ui_MainWindow(object):
         self.closeAppBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close", None))
 #endif // QT_CONFIG(tooltip)
         self.closeAppBtn.setText("")
+        self.ClearListSure.setText(QCoreApplication.translate("MainWindow", u"Are you sure you want to clear your list?", None))
         self.btn_spin.setText(QCoreApplication.translate("MainWindow", u"Spin The Wheel", None))
-        self.LoadingLabel.setText("")
         self.Filters.setText(QCoreApplication.translate("MainWindow", u"Filters", None))
         self.Genre_2.setText(QCoreApplication.translate("MainWindow", u"Genre", None))
         self.Popularity.setText(QCoreApplication.translate("MainWindow", u"Popularity", None))
