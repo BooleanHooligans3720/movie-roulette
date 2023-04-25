@@ -93,5 +93,13 @@ def getPureRandom(movieList: List[movie.movie]):
 
 #if the list of movies and the params are all blank this will return a random movie
 def getRandomID():
-	latest: movie.movie = tmdb.Movies.latest()['id']
-	return movie.movie(random.randint(1, latest.getId()))
+	temp: movie.movie
+	while (True):
+		try:
+			temp = movie.movie(random.randint(1, 9999))
+			return temp
+		except:
+			print()
+	return temp
+
+# random.randint(1, 9999)

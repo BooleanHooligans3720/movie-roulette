@@ -1834,49 +1834,31 @@ li.checked::marker { content: &quot;\2612&quot;; }
                       <property name="styleSheet">
                        <string notr="true"/>
                       </property>
-                      <widget class="QPushButton" name="btn_spin">
-                       <property name="enabled">
-                        <bool>true</bool>
-                       </property>
-                       <property name="geometry">
-                        <rect>
-                         <x>210</x>
-                         <y>10</y>
-                         <width>760</width>
-                         <height>585</height>
-                        </rect>
-                       </property>
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="minimumSize">
-                        <size>
-                         <width>760</width>
-                         <height>585</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>760</width>
-                         <height>585</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <family>Segoe UI</family>
-                         <pointsize>36</pointsize>
-                         <italic>false</italic>
-                         <bold>true</bold>
-                        </font>
-                       </property>
-                       <property name="autoFillBackground">
-                        <bool>false</bool>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgba(0, 0, 0, 0);
+                      <layout class="QVBoxLayout" name="verticalLayout_21">
+                       <item>
+                        <widget class="QPushButton" name="btn_spin">
+                         <property name="enabled">
+                          <bool>true</bool>
+                         </property>
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>36</pointsize>
+                           <italic>false</italic>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="autoFillBackground">
+                          <bool>false</bool>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(0, 0, 0, 0);
 border-color: rgba(0, 0, 0, 0);
 font: 700 36pt &quot;Segoe UI&quot;;
 background-image: url(:/images/images/images/SpinWheel.gif);
@@ -1884,11 +1866,13 @@ background-position: center;
 background-repeat: no-repeat;
 
 </string>
-                       </property>
-                       <property name="text">
-                        <string>Spin The Wheel</string>
-                       </property>
-                      </widget>
+                         </property>
+                         <property name="text">
+                          <string>Spin The Wheel</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
                      </widget>
                      <widget class="QWidget" name="LoadingScreen">
                       <property name="enabled">
@@ -2540,7 +2524,7 @@ background-repeat: no-repeat;
                          <x>9</x>
                          <y>9</y>
                          <width>1160</width>
-                         <height>591</height>
+                         <height>278</height>
                         </rect>
                        </property>
                        <property name="frameShape">
@@ -2679,23 +2663,11 @@ background-repeat: no-repeat;
                        <widget class="QLabel" name="Poster">
                         <property name="geometry">
                          <rect>
-                          <x>49</x>
-                          <y>59</y>
-                          <width>200</width>
-                          <height>320</height>
+                          <x>30</x>
+                          <y>140</y>
+                          <width>81</width>
+                          <height>81</height>
                          </rect>
-                        </property>
-                        <property name="minimumSize">
-                         <size>
-                          <width>200</width>
-                          <height>320</height>
-                         </size>
-                        </property>
-                        <property name="maximumSize">
-                         <size>
-                          <width>200</width>
-                          <height>320</height>
-                         </size>
                         </property>
                         <property name="styleSheet">
                          <string notr="true">background-image: url(:/images/images/images/transparent.png);</string>
@@ -2703,52 +2675,15 @@ background-repeat: no-repeat;
                         <property name="text">
                          <string/>
                         </property>
-                        <property name="scaledContents">
-                         <bool>true</bool>
-                        </property>
-                       </widget>
-                       <widget class="QPushButton" name="rollAgain">
-                        <property name="geometry">
-                         <rect>
-                          <x>790</x>
-                          <y>370</y>
-                          <width>130</width>
-                          <height>30</height>
-                         </rect>
-                        </property>
-                        <property name="sizePolicy">
-                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                          <horstretch>0</horstretch>
-                          <verstretch>0</verstretch>
-                         </sizepolicy>
-                        </property>
-                        <property name="minimumSize">
-                         <size>
-                          <width>130</width>
-                          <height>30</height>
-                         </size>
-                        </property>
-                        <property name="maximumSize">
-                         <size>
-                          <width>130</width>
-                          <height>30</height>
-                         </size>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">font: 700 14pt &quot;Consolas&quot;;</string>
-                        </property>
-                        <property name="text">
-                         <string>Roll Again?</string>
-                        </property>
                        </widget>
                       </widget>
                       <widget class="QLabel" name="Description">
                        <property name="geometry">
                         <rect>
-                         <x>29</x>
-                         <y>420</y>
-                         <width>1110</width>
-                         <height>171</height>
+                         <x>40</x>
+                         <y>330</y>
+                         <width>631</width>
+                         <height>261</height>
                         </rect>
                        </property>
                        <property name="sizePolicy">
@@ -2759,7 +2694,7 @@ background-repeat: no-repeat;
                        </property>
                        <property name="maximumSize">
                         <size>
-                         <width>1110</width>
+                         <width>900</width>
                          <height>300</height>
                         </size>
                        </property>
@@ -2845,6 +2780,40 @@ background-repeat: no-repeat;
                        </property>
                        <property name="alignment">
                         <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                      <widget class="QPushButton" name="rollAgain">
+                       <property name="geometry">
+                        <rect>
+                         <x>790</x>
+                         <y>390</y>
+                         <width>130</width>
+                         <height>30</height>
+                        </rect>
+                       </property>
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>130</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>130</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">font: 700 14pt &quot;Consolas&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string>Roll Again?</string>
                        </property>
                       </widget>
                      </widget>
