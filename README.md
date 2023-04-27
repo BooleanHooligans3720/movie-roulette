@@ -7,13 +7,13 @@ This is a Python application that will select either a completely random movie o
 Download the whole project as a zip and extract the zip wherever you like. This program is also tested only with Python 3.9. We can not promise that it will work with later versions.
 
 You will need to install PySide6, Pillow, and tmdbSimple using the pip command.
-'''
+```
 pip install pyside6
 
 pip install pillow
 
 pip install tmdbsimple
-'''
+```
 You will also need api keys from both tmdb and rapid api's streaming availability api. These you can then paste into the splitbackend file in the quotations marks at the top.
 
 
