@@ -1,6 +1,6 @@
 # Movie Roulette
 
-This is a Python application that will select either a completely random movie or a random movie from a list you create while using the app.
+This is a Python application uses tmdb, PySide6, and pil to select either a completely random movie or a random movie from a list you create while using the app.
 
 ## Installation
 
