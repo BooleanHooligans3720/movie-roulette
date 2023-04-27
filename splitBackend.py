@@ -6,9 +6,9 @@ import movie
 from typing import List
 
 # set up API keys
-tmdb.API_KEY = '3acd4a216c74c749376f9d840b43977c'
+tmdb.API_KEY = ''
 headers = {
-	"X-RapidAPI-Key": "4a7b7c4310mshb50633bd3c4859ap1a7745jsn43373ef85cb8",
+	"X-RapidAPI-Key": "",
 	"X-RapidAPI-Host": "streaming-availability.p.rapidapi.com"
 }
 url = "https://streaming-availability.p.rapidapi.com/v2/get/basic"
