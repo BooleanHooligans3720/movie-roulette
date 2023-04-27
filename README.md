@@ -34,6 +34,3 @@ Luke and Will were involved in creating the front end of the application, while 
 https://tasks.office.com/Clemson.onmicrosoft.com/Home/PlanViews/SmBmMjLY5U27Ob5U7FvH6WQAEYOW?Type=PlanLink&Channel=Link&CreatedTime=638182042166410000
 
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
