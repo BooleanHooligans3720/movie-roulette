@@ -30,6 +30,9 @@ You can also just double-click the main.py file.
 We are a team of five who worked together to put out this product. We are Samuel Jackson, Will Critendon, Cristopher Hattan, Luke Jordan, and Owen Book.
 Luke and Will were involved in creating the front end of the application, while Sam, Chris, and Owen were charged with the logic.
 
+## User stories
+https://tasks.office.com/Clemson.onmicrosoft.com/Home/PlanViews/SmBmMjLY5U27Ob5U7FvH6WQAEYOW?Type=PlanLink&Channel=Link&CreatedTime=638182042166410000
+
 
 ## License
 
